@@ -13,6 +13,7 @@
 		C17CB46728A9D21A00FE54F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB46528A9D21A00FE54F3 /* Main.storyboard */; };
 		C17CB46928A9D22000FE54F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17CB46828A9D22000FE54F3 /* Assets.xcassets */; };
 		C17CB46C28A9D22000FE54F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB46A28A9D22000FE54F3 /* LaunchScreen.storyboard */; };
+		C17CB48128A9D3CF00FE54F3 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB48028A9D3CF00FE54F3 /* MyCustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C17CB46828A9D22000FE54F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C17CB46B28A9D22000FE54F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C17CB46D28A9D22000FE54F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C17CB48028A9D3CF00FE54F3 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		C17CB45E28A9D21A00FE54F3 /* ProyectoTwitter */ = {
 			isa = PBXGroup;
 			children = (
+				C17CB47328A9D30C00FE54F3 /* App */,
 				C17CB45F28A9D21A00FE54F3 /* AppDelegate.swift */,
 				C17CB46128A9D21A00FE54F3 /* SceneDelegate.swift */,
 				C17CB46328A9D21A00FE54F3 /* ViewController.swift */,
@@ -65,6 +68,110 @@
 				C17CB46D28A9D22000FE54F3 /* Info.plist */,
 			);
 			path = ProyectoTwitter;
+			sourceTree = "<group>";
+		};
+		C17CB47328A9D30C00FE54F3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C17CB47428A9D31800FE54F3 /* ViewsAndControllers */,
+				C17CB47928A9D35800FE54F3 /* Config */,
+				C17CB47828A9D34800FE54F3 /* Services */,
+				C17CB47728A9D33F00FE54F3 /* Commands */,
+				C17CB47628A9D33700FE54F3 /* Resources */,
+				C17CB47528A9D32F00FE54F3 /* Models */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C17CB47428A9D31800FE54F3 /* ViewsAndControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C17CB47E28A9D3AB00FE54F3 /* Main */,
+				C17CB47A28A9D38A00FE54F3 /* Auth */,
+			);
+			path = ViewsAndControllers;
+			sourceTree = "<group>";
+		};
+		C17CB47528A9D32F00FE54F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C17CB47628A9D33700FE54F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C17CB47728A9D33F00FE54F3 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		C17CB47828A9D34800FE54F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C17CB47928A9D35800FE54F3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C17CB48028A9D3CF00FE54F3 /* MyCustomView.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C17CB47A28A9D38A00FE54F3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C17CB47D28A9D3A000FE54F3 /* Register */,
+				C17CB47C28A9D39C00FE54F3 /* Login */,
+				C17CB47B28A9D39000FE54F3 /* OnBoarding */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C17CB47B28A9D39000FE54F3 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		C17CB47C28A9D39C00FE54F3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C17CB47D28A9D3A000FE54F3 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		C17CB47E28A9D3AB00FE54F3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C17CB47F28A9D3B700FE54F3 /* Main */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C17CB47F28A9D3B700FE54F3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17CB46428A9D21A00FE54F3 /* ViewController.swift in Sources */,
+				C17CB48128A9D3CF00FE54F3 /* MyCustomView.swift in Sources */,
 				C17CB46028A9D21A00FE54F3 /* AppDelegate.swift in Sources */,
 				C17CB46228A9D21A00FE54F3 /* SceneDelegate.swift in Sources */,
 			);
