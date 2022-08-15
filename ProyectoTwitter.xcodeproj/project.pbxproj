@@ -15,6 +15,10 @@
 		C17CB46C28A9D22000FE54F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB46A28A9D22000FE54F3 /* LaunchScreen.storyboard */; };
 		C17CB48128A9D3CF00FE54F3 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB48028A9D3CF00FE54F3 /* MyCustomView.swift */; };
 		C17CB48628A9D47800FE54F3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17CB48528A9D47800FE54F3 /* Media.xcassets */; };
+		C17CB48828A9D52100FE54F3 /* SingInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB48728A9D52100FE54F3 /* SingInViewController.swift */; };
+		C17CB48A28A9D52D00FE54F3 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB48928A9D52D00FE54F3 /* SingUpViewController.swift */; };
+		C17CB48D28A9D5A200FE54F3 /* SingIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB48C28A9D5A200FE54F3 /* SingIn.storyboard */; };
+		C17CB48F28A9D5AF00FE54F3 /* SingUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB48E28A9D5AE00FE54F3 /* SingUp.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		C17CB46D28A9D22000FE54F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C17CB48028A9D3CF00FE54F3 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 		C17CB48528A9D47800FE54F3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		C17CB48728A9D52100FE54F3 /* SingInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInViewController.swift; sourceTree = "<group>"; };
+		C17CB48928A9D52D00FE54F3 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		C17CB48C28A9D5A200FE54F3 /* SingIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingIn.storyboard; sourceTree = "<group>"; };
+		C17CB48E28A9D5AE00FE54F3 /* SingUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingUp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +140,8 @@
 		C17CB47A28A9D38A00FE54F3 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				C17CB47D28A9D3A000FE54F3 /* Register */,
-				C17CB47C28A9D39C00FE54F3 /* Login */,
+				C17CB47D28A9D3A000FE54F3 /* SingIn */,
+				C17CB47C28A9D39C00FE54F3 /* SingUp */,
 				C17CB47B28A9D39000FE54F3 /* OnBoarding */,
 			);
 			path = Auth;
@@ -148,18 +156,22 @@
 			path = OnBoarding;
 			sourceTree = "<group>";
 		};
-		C17CB47C28A9D39C00FE54F3 /* Login */ = {
+		C17CB47C28A9D39C00FE54F3 /* SingUp */ = {
 			isa = PBXGroup;
 			children = (
+				C17CB48928A9D52D00FE54F3 /* SingUpViewController.swift */,
+				C17CB48E28A9D5AE00FE54F3 /* SingUp.storyboard */,
 			);
-			path = Login;
+			path = SingUp;
 			sourceTree = "<group>";
 		};
-		C17CB47D28A9D3A000FE54F3 /* Register */ = {
+		C17CB47D28A9D3A000FE54F3 /* SingIn */ = {
 			isa = PBXGroup;
 			children = (
+				C17CB48728A9D52100FE54F3 /* SingInViewController.swift */,
+				C17CB48C28A9D5A200FE54F3 /* SingIn.storyboard */,
 			);
-			path = Register;
+			path = SingIn;
 			sourceTree = "<group>";
 		};
 		C17CB47E28A9D3AB00FE54F3 /* Main */ = {
@@ -251,10 +263,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17CB48F28A9D5AF00FE54F3 /* SingUp.storyboard in Resources */,
 				C17CB46C28A9D22000FE54F3 /* LaunchScreen.storyboard in Resources */,
 				C17CB46928A9D22000FE54F3 /* Assets.xcassets in Resources */,
 				C17CB48628A9D47800FE54F3 /* Media.xcassets in Resources */,
 				C17CB46728A9D21A00FE54F3 /* Main.storyboard in Resources */,
+				C17CB48D28A9D5A200FE54F3 /* SingIn.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17CB48A28A9D52D00FE54F3 /* SingUpViewController.swift in Sources */,
 				C17CB46428A9D21A00FE54F3 /* ViewController.swift in Sources */,
+				C17CB48828A9D52100FE54F3 /* SingInViewController.swift in Sources */,
 				C17CB48128A9D3CF00FE54F3 /* MyCustomView.swift in Sources */,
 				C17CB46028A9D21A00FE54F3 /* AppDelegate.swift in Sources */,
 				C17CB46228A9D21A00FE54F3 /* SceneDelegate.swift in Sources */,
