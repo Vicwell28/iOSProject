@@ -1,66 +1,67 @@
 //
-//  ViewController.swift
+//  AddViewController.swift
 //  ProyectoTwitter
 //
-//  Created by soliduSystem on 14/08/22.
+//  Created by soliduSystem on 21/08/22.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class AddViewController: UIViewController {
     // MARK: - Override Func
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("ViewController viewDidLoad")
+        print("AddViewController viewDidLoad")
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("ViewController viewWillAppear")
+        print("AddViewController viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("ViewController viewDidAppear")
+        print("AddViewController viewDidAppear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("ViewController viewDidDisappear")
+        print("AddViewController viewDidDisappear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("ViewController viewWillDisappear")
+        print("AddViewController viewWillDisappear")
     }
 }
+
 // MARK: - IBOutlet
-extension ViewController {
+extension AddViewController {
     
 }
 
 // MARK: - IBAction
-extension ViewController {
+extension AddViewController {
     
 }
 
 // MARK: - Public Func
-extension ViewController {
+extension AddViewController {
     
 }
 
 // MARK: - Private Func
-extension ViewController {
+extension AddViewController {
     
 }
 
 // MARK: - Services
-extension ViewController {
+extension AddViewController {
     
 }
 
 // MARK: - Other
-extension ViewController {
+extension AddViewController {
     
 }
 

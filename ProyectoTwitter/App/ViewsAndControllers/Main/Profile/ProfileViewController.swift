@@ -1,66 +1,67 @@
 //
-//  ViewController.swift
+//  ProfileViewController.swift
 //  ProyectoTwitter
 //
-//  Created by soliduSystem on 14/08/22.
+//  Created by soliduSystem on 21/08/22.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ProfileViewController: UIViewController {
     // MARK: - Override Func
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("ViewController viewDidLoad")
+        print("ProfileViewController viewDidLoad")
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("ViewController viewWillAppear")
+        print("ProfileViewController viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("ViewController viewDidAppear")
+        print("ProfileViewController viewDidAppear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("ViewController viewDidDisappear")
+        print("ProfileViewController viewDidDisappear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("ViewController viewWillDisappear")
+        print("ProfileViewController viewWillDisappear")
     }
 }
+
 // MARK: - IBOutlet
-extension ViewController {
+extension ProfileViewController {
     
 }
 
 // MARK: - IBAction
-extension ViewController {
+extension ProfileViewController {
     
 }
 
 // MARK: - Public Func
-extension ViewController {
+extension ProfileViewController {
     
 }
 
 // MARK: - Private Func
-extension ViewController {
+extension ProfileViewController {
     
 }
 
 // MARK: - Services
-extension ViewController {
+extension ProfileViewController {
     
 }
 
 // MARK: - Other
-extension ViewController {
+extension ProfileViewController {
     
 }
 

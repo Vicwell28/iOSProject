@@ -1,66 +1,68 @@
 //
-//  ViewController.swift
+//  MapViewController.swift
 //  ProyectoTwitter
 //
-//  Created by soliduSystem on 14/08/22.
+//  Created by soliduSystem on 21/08/22.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MapViewController: UIViewController {
     // MARK: - Override Func
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("ViewController viewDidLoad")
+        print("MapViewController viewDidLoad")
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("ViewController viewWillAppear")
+        print("MapViewController viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("ViewController viewDidAppear")
+        print("MapViewController viewDidAppear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("ViewController viewDidDisappear")
+        print("MapViewController viewDidDisappear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("ViewController viewWillDisappear")
+        print("MapViewController viewWillDisappear")
     }
 }
+
 // MARK: - IBOutlet
-extension ViewController {
+extension MapViewController {
     
 }
 
 // MARK: - IBAction
-extension ViewController {
+extension MapViewController {
     
 }
 
 // MARK: - Public Func
-extension ViewController {
+extension MapViewController {
     
 }
 
 // MARK: - Private Func
-extension ViewController {
+extension MapViewController {
     
 }
 
 // MARK: - Services
-extension ViewController {
+extension MapViewController {
     
 }
 
 // MARK: - Other
-extension ViewController {
+extension MapViewController {
     
 }
+
 

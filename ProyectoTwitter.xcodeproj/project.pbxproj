@@ -20,8 +20,17 @@
 		C17CB48D28A9D5A200FE54F3 /* SingIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB48C28A9D5A200FE54F3 /* SingIn.storyboard */; };
 		C17CB48F28A9D5AF00FE54F3 /* SingUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB48E28A9D5AE00FE54F3 /* SingUp.storyboard */; };
 		C17CB49228A9D6E500FE54F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB49128A9D6E500FE54F3 /* Main.storyboard */; };
-		C17CB49428A9D6F300FE54F3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB49328A9D6F300FE54F3 /* MainViewController.swift */; };
 		C1CD346028B1C31600763C6E /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */; };
+		C1CD346628B1F7F000763C6E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD346528B1F7F000763C6E /* Home.storyboard */; };
+		C1CD346828B1F80800763C6E /* Star.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD346728B1F80800763C6E /* Star.storyboard */; };
+		C1CD346A28B1F83100763C6E /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD346928B1F83100763C6E /* Add.storyboard */; };
+		C1CD346C28B1F84C00763C6E /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD346B28B1F84C00763C6E /* Map.storyboard */; };
+		C1CD346E28B1F86600763C6E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD346D28B1F86600763C6E /* Profile.storyboard */; };
+		C1CD347128B1F93100763C6E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD347028B1F93100763C6E /* HomeViewController.swift */; };
+		C1CD347328B1F94200763C6E /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD347228B1F94200763C6E /* StarViewController.swift */; };
+		C1CD347628B1F95500763C6E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD347528B1F95500763C6E /* MapViewController.swift */; };
+		C1CD347928B1F96E00763C6E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD347828B1F96E00763C6E /* ProfileViewController.swift */; };
+		C1CD347B28B1F97F00763C6E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD347A28B1F97F00763C6E /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +49,17 @@
 		C17CB48C28A9D5A200FE54F3 /* SingIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingIn.storyboard; sourceTree = "<group>"; };
 		C17CB48E28A9D5AE00FE54F3 /* SingUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingUp.storyboard; sourceTree = "<group>"; };
 		C17CB49128A9D6E500FE54F3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C17CB49328A9D6F300FE54F3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		C1CD346528B1F7F000763C6E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C1CD346728B1F80800763C6E /* Star.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Star.storyboard; sourceTree = "<group>"; };
+		C1CD346928B1F83100763C6E /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
+		C1CD346B28B1F84C00763C6E /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		C1CD346D28B1F86600763C6E /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		C1CD347028B1F93100763C6E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C1CD347228B1F94200763C6E /* StarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewController.swift; sourceTree = "<group>"; };
+		C1CD347528B1F95500763C6E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C1CD347828B1F96E00763C6E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C1CD347A28B1F97F00763C6E /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +201,11 @@
 		C17CB47E28A9D3AB00FE54F3 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C1CD346F28B1F8F100763C6E /* Add */,
+				C1CD346428B1F7A500763C6E /* Profile */,
+				C1CD346328B1F79F00763C6E /* Map */,
+				C1CD346228B1F79700763C6E /* Star */,
+				C1CD346128B1F78F00763C6E /* Home */,
 				C17CB47F28A9D3B700FE54F3 /* Main */,
 			);
 			path = Main;
@@ -192,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				C17CB49128A9D6E500FE54F3 /* Main.storyboard */,
-				C17CB49328A9D6F300FE54F3 /* MainViewController.swift */,
 				C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */,
 			);
 			path = Main;
@@ -212,6 +234,51 @@
 				C17CB46828A9D22000FE54F3 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		C1CD346128B1F78F00763C6E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1CD346528B1F7F000763C6E /* Home.storyboard */,
+				C1CD347028B1F93100763C6E /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C1CD346228B1F79700763C6E /* Star */ = {
+			isa = PBXGroup;
+			children = (
+				C1CD346728B1F80800763C6E /* Star.storyboard */,
+				C1CD347228B1F94200763C6E /* StarViewController.swift */,
+			);
+			path = Star;
+			sourceTree = "<group>";
+		};
+		C1CD346328B1F79F00763C6E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C1CD346B28B1F84C00763C6E /* Map.storyboard */,
+				C1CD347528B1F95500763C6E /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C1CD346428B1F7A500763C6E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C1CD346D28B1F86600763C6E /* Profile.storyboard */,
+				C1CD347828B1F96E00763C6E /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C1CD346F28B1F8F100763C6E /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				C1CD346928B1F83100763C6E /* Add.storyboard */,
+				C1CD347A28B1F97F00763C6E /* AddViewController.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,12 +340,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17CB49228A9D6E500FE54F3 /* Main.storyboard in Resources */,
+				C1CD346828B1F80800763C6E /* Star.storyboard in Resources */,
+				C1CD346A28B1F83100763C6E /* Add.storyboard in Resources */,
 				C17CB48F28A9D5AF00FE54F3 /* SingUp.storyboard in Resources */,
 				C17CB46C28A9D22000FE54F3 /* LaunchScreen.storyboard in Resources */,
 				C17CB46928A9D22000FE54F3 /* Assets.xcassets in Resources */,
+				C1CD346E28B1F86600763C6E /* Profile.storyboard in Resources */,
 				C17CB48628A9D47800FE54F3 /* Media.xcassets in Resources */,
+				C1CD346C28B1F84C00763C6E /* Map.storyboard in Resources */,
 				C17CB46728A9D21A00FE54F3 /* OnBoarding.storyboard in Resources */,
 				C17CB48D28A9D5A200FE54F3 /* SingIn.storyboard in Resources */,
+				C1CD346628B1F7F000763C6E /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +361,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C17CB49428A9D6F300FE54F3 /* MainViewController.swift in Sources */,
 				C1CD346028B1C31600763C6E /* MainTabBarViewController.swift in Sources */,
 				C17CB48A28A9D52D00FE54F3 /* SingUpViewController.swift in Sources */,
+				C1CD347B28B1F97F00763C6E /* AddViewController.swift in Sources */,
 				C17CB46428A9D21A00FE54F3 /* OnBoardingViewController.swift in Sources */,
+				C1CD347628B1F95500763C6E /* MapViewController.swift in Sources */,
+				C1CD347128B1F93100763C6E /* HomeViewController.swift in Sources */,
 				C17CB48828A9D52100FE54F3 /* SingInViewController.swift in Sources */,
+				C1CD347928B1F96E00763C6E /* ProfileViewController.swift in Sources */,
 				C17CB48128A9D3CF00FE54F3 /* MyCustomView.swift in Sources */,
 				C17CB46028A9D21A00FE54F3 /* AppDelegate.swift in Sources */,
+				C1CD347328B1F94200763C6E /* StarViewController.swift in Sources */,
 				C17CB46228A9D21A00FE54F3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

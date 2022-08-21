@@ -8,7 +8,7 @@
 import UIKit
 
 class MainTabBarViewController: UITabBarController {
-    
+    // MARK: - Override Func
     let viewImage = UIView()
     var lables : [UILabel] = [UILabel]()
     var imagesViews : [UIImageView] = [UIImageView]()
@@ -35,7 +35,9 @@ class MainTabBarViewController: UITabBarController {
     private func drawItems(_ item : Int, images : [String], titles : [String]) -> Void {
         
         
-        let view = UIView(frame: CGRect(x: self.view.frame.size.width/2-self.view.frame.size.width*0.92/2, y: self.view.frame.size.height-100, width: self.view.frame.size.width*0.92, height: 60))
+        let view = UIView(frame: CGRect(x: self.view.frame.size.width/2-self.view.frame.size.width*0.92/2, y: self.view.frame.size.height-90, width: self.view.frame.size.width*0.92, height: 60))
+        view.backgroundColor = .white
+        view.cornerRadius = 18
         self.view.addSubview(view)
         
         viewImage.frame = CGRect(x: 0, y: 0, width: view.frame.size.width/Double(item), height: view.frame.size.height)
@@ -87,7 +89,37 @@ class MainTabBarViewController: UITabBarController {
         }
     }
     
-  
+}
+
+// MARK: - IBOutlet
+extension MainTabBarViewController {
     
 }
+
+// MARK: - IBAction
+extension MainTabBarViewController {
+    
+}
+
+// MARK: - Public Func
+extension MainTabBarViewController {
+    
+}
+
+// MARK: - Private Func
+extension MainTabBarViewController {
+    
+}
+
+// MARK: - Services
+extension MainTabBarViewController {
+    
+}
+
+// MARK: - Other
+extension MainTabBarViewController {
+    
+}
+
+
 

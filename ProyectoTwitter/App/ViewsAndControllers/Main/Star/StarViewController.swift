@@ -1,66 +1,67 @@
 //
-//  ViewController.swift
+//  StarViewController.swift
 //  ProyectoTwitter
 //
-//  Created by soliduSystem on 14/08/22.
+//  Created by soliduSystem on 21/08/22.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class StarViewController: UIViewController {
     // MARK: - Override Func
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("ViewController viewDidLoad")
+        print("StarViewController viewDidLoad")
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("ViewController viewWillAppear")
+        print("StarViewController viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("ViewController viewDidAppear")
+        print("StarViewController viewDidAppear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("ViewController viewDidDisappear")
+        print("StarViewController viewDidDisappear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("ViewController viewWillDisappear")
+        print("StarViewController viewWillDisappear")
     }
 }
+
 // MARK: - IBOutlet
-extension ViewController {
+extension StarViewController {
     
 }
 
 // MARK: - IBAction
-extension ViewController {
+extension StarViewController {
     
 }
 
 // MARK: - Public Func
-extension ViewController {
+extension StarViewController {
     
 }
 
 // MARK: - Private Func
-extension ViewController {
+extension StarViewController {
     
 }
 
 // MARK: - Services
-extension ViewController {
+extension StarViewController {
     
 }
 
 // MARK: - Other
-extension ViewController {
+extension StarViewController {
     
 }
 

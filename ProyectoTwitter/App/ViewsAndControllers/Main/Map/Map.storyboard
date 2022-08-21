@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="08P-n0-joo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Iof-D2-83C">
+            <objects>
+                <navigationController id="08P-n0-joo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="5Yk-Rt-9e7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="i2J-xT-CnS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J0Y-lp-mr1" kind="relationship" relationship="rootViewController" id="4iH-uV-TCG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mjd-by-6ra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2475" y="749"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="UP1-1D-wdv">
+            <objects>
+                <viewController id="J0Y-lp-mr1" customClass="MapViewController" customModule="ProyectoTwitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fRd-iO-cPO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Rxk-J8-egA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aH4-yL-NpJ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Rxk-J8-egA" secondAttribute="trailing" id="13C-0J-xXL"/>
+                            <constraint firstAttribute="bottom" secondItem="Rxk-J8-egA" secondAttribute="bottom" id="4ye-IT-Mu2"/>
+                            <constraint firstItem="Rxk-J8-egA" firstAttribute="leading" secondItem="fRd-iO-cPO" secondAttribute="leading" id="5iM-A0-ODS"/>
+                            <constraint firstItem="Rxk-J8-egA" firstAttribute="top" secondItem="fRd-iO-cPO" secondAttribute="top" id="GPK-Dp-03J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map" id="abf-JN-AWg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XES-6c-d9c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3342" y="749"/>
+        </scene>
+    </scenes>
+</document>

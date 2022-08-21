@@ -1,66 +1,69 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  ProyectoTwitter
 //
-//  Created by soliduSystem on 14/08/22.
+//  Created by soliduSystem on 21/08/22.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     // MARK: - Override Func
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("ViewController viewDidLoad")
-    }
 
+        print("HomeViewController viewDidLoad")
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("ViewController viewWillAppear")
+        print("HomeViewController viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("ViewController viewDidAppear")
+        print("HomeViewController viewDidAppear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("ViewController viewDidDisappear")
+        print("HomeViewController viewDidDisappear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("ViewController viewWillDisappear")
+        print("HomeViewController viewWillDisappear")
     }
 }
+
 // MARK: - IBOutlet
-extension ViewController {
+extension HomeViewController {
     
 }
 
 // MARK: - IBAction
-extension ViewController {
+extension HomeViewController {
     
 }
 
 // MARK: - Public Func
-extension ViewController {
+extension HomeViewController {
     
 }
 
 // MARK: - Private Func
-extension ViewController {
+extension HomeViewController {
     
 }
 
 // MARK: - Services
-extension ViewController {
+extension HomeViewController {
     
 }
 
 // MARK: - Other
-extension ViewController {
+extension HomeViewController {
     
 }
+
 
