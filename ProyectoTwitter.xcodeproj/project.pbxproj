@@ -21,6 +21,7 @@
 		C17CB48F28A9D5AF00FE54F3 /* SingUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB48E28A9D5AE00FE54F3 /* SingUp.storyboard */; };
 		C17CB49228A9D6E500FE54F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB49128A9D6E500FE54F3 /* Main.storyboard */; };
 		C17CB49428A9D6F300FE54F3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB49328A9D6F300FE54F3 /* MainViewController.swift */; };
+		C1CD346028B1C31600763C6E /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C17CB48E28A9D5AE00FE54F3 /* SingUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingUp.storyboard; sourceTree = "<group>"; };
 		C17CB49128A9D6E500FE54F3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C17CB49328A9D6F300FE54F3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			children = (
 				C17CB49128A9D6E500FE54F3 /* Main.storyboard */,
 				C17CB49328A9D6F300FE54F3 /* MainViewController.swift */,
+				C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17CB49428A9D6F300FE54F3 /* MainViewController.swift in Sources */,
+				C1CD346028B1C31600763C6E /* MainTabBarViewController.swift in Sources */,
 				C17CB48A28A9D52D00FE54F3 /* SingUpViewController.swift in Sources */,
 				C17CB46428A9D21A00FE54F3 /* OnBoardingViewController.swift in Sources */,
 				C17CB48828A9D52100FE54F3 /* SingInViewController.swift in Sources */,

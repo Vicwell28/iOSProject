@@ -25,7 +25,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Login">
+                                <state key="normal" title="Sing in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -37,6 +37,14 @@
                                     <segue destination="1gT-y2-d5l" kind="show" id="ucK-EK-ZCZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tY-lP-7wO">
+                                <rect key="frame" x="170.5" y="815.5" width="73" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sing up"/>
+                                <connections>
+                                    <segue destination="egZ-AF-CnZ" kind="show" id="bJp-kU-VHc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -44,6 +52,8 @@
                             <constraint firstItem="zJW-62-O1O" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.845411" id="6RI-Ux-Juw"/>
                             <constraint firstItem="zJW-62-O1O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q0j-J2-2xa"/>
                             <constraint firstItem="zJW-62-O1O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.75" id="dru-sE-XGM"/>
+                            <constraint firstItem="1tY-lP-7wO" firstAttribute="centerY" secondItem="zJW-62-O1O" secondAttribute="centerY" multiplier="1.06" id="vqQ-Ra-BgS"/>
+                            <constraint firstItem="1tY-lP-7wO" firstAttribute="centerX" secondItem="zJW-62-O1O" secondAttribute="centerX" id="wCc-bU-hel"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ERC-ep-KpU"/>
@@ -60,7 +70,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfV-YO-b5B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1698" y="62"/>
+            <point key="canvasLocation" x="1736" y="46"/>
+        </scene>
+        <!--SingIn-->
+        <scene sceneID="aZx-mi-Qe8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SingIn" id="egZ-AF-CnZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aN8-4i-qyh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhX-Ym-yLx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5c0-bD-tIe">
@@ -70,6 +90,16 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vq4-8G-G0X">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
