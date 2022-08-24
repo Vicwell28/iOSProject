@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct register : Codable {
+struct ResLoginRegister : Codable {
     let user : User
     let token : String
 }

@@ -34,7 +34,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="HXy-Fq-D5b" kind="presentation" identifier="" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="jfW-it-JuG"/>
+                                    <action selector="singInAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NjQ-lt-79z"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuI-zJ-poE">
@@ -136,6 +136,10 @@
                                     <constraint firstAttribute="width" secondItem="p2H-db-kJ5" secondAttribute="height" multiplier="7:3" id="qGk-Ix-agd"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="37G-M0-ajq">
+                                <rect key="frame" x="188.5" y="765.5" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -143,7 +147,9 @@
                         <constraints>
                             <constraint firstItem="t75-jR-h7j" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.845411" id="2kc-EU-LQO"/>
                             <constraint firstItem="t75-jR-h7j" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="1.75" id="3bo-dQ-vrM"/>
+                            <constraint firstItem="37G-M0-ajq" firstAttribute="centerX" secondItem="t75-jR-h7j" secondAttribute="centerX" id="46t-PM-zsi"/>
                             <constraint firstItem="3tw-yc-qge" firstAttribute="trailing" secondItem="yuI-zJ-poE" secondAttribute="trailing" id="4ZR-mO-yCu"/>
+                            <constraint firstItem="37G-M0-ajq" firstAttribute="centerY" secondItem="t75-jR-h7j" secondAttribute="centerY" id="7rm-eG-HFo"/>
                             <constraint firstItem="8Mw-d5-EZb" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="1.6" id="7vS-61-OVp"/>
                             <constraint firstItem="t75-jR-h7j" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Bnq-Zj-Pwm"/>
                             <constraint firstItem="yuI-zJ-poE" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" multiplier="0.9" id="EZ8-DP-PTt"/>
@@ -171,10 +177,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sing In" id="edm-p3-LAD"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="37G-M0-ajq" id="xta-VK-ywy"/>
                         <outlet property="emailTextField" destination="HNV-UV-VYy" id="IFV-Rt-K2K"/>
                         <outlet property="emailValidateLable" destination="3tw-yc-qge" id="bIm-dp-neA"/>
+                        <outlet property="loginButton" destination="t75-jR-h7j" id="Seo-Rz-Xwz"/>
                         <outlet property="passwordTextField" destination="iBW-u2-LYW" id="7ja-X9-mdj"/>
                         <outlet property="passwordValidateLable" destination="ZWJ-aB-ZuS" id="5AA-Lg-hOW"/>
+                        <segue destination="HXy-Fq-D5b" kind="presentation" identifier="segueMain" modalPresentationStyle="fullScreen" id="qxq-AY-Koy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -189,7 +198,9 @@
         <!--Main-->
         <scene sceneID="qlG-k2-dkd">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="HXy-Fq-D5b" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" id="HXy-Fq-D5b" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hve-mH-gTh"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qwh-UW-ZUU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="808" y="62"/>

@@ -38,6 +38,7 @@
 		C17CB48D28A9D5A200FE54F3 /* SingIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB48C28A9D5A200FE54F3 /* SingIn.storyboard */; };
 		C17CB48F28A9D5AF00FE54F3 /* SingUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB48E28A9D5AE00FE54F3 /* SingUp.storyboard */; };
 		C17CB49228A9D6E500FE54F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB49128A9D6E500FE54F3 /* Main.storyboard */; };
+		C1A7A53028B5F94200CD4C36 /* DataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A7A52F28B5F94200CD4C36 /* DataSingleton.swift */; };
 		C1CD346028B1C31600763C6E /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */; };
 		C1CD346628B1F7F000763C6E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD346528B1F7F000763C6E /* Home.storyboard */; };
 		C1CD346828B1F80800763C6E /* Star.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD346728B1F80800763C6E /* Star.storyboard */; };
@@ -98,6 +99,7 @@
 		C17CB48C28A9D5A200FE54F3 /* SingIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingIn.storyboard; sourceTree = "<group>"; };
 		C17CB48E28A9D5AE00FE54F3 /* SingUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingUp.storyboard; sourceTree = "<group>"; };
 		C17CB49128A9D6E500FE54F3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C1A7A52F28B5F94200CD4C36 /* DataSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSingleton.swift; sourceTree = "<group>"; };
 		C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		C1CD346528B1F7F000763C6E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C1CD346728B1F80800763C6E /* Star.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Star.storyboard; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		C17B709C28B5A1CA00AB9560 /* SharedData */ = {
 			isa = PBXGroup;
 			children = (
+				C1A7A52F28B5F94200CD4C36 /* DataSingleton.swift */,
 			);
 			path = SharedData;
 			sourceTree = "<group>";
@@ -231,11 +234,10 @@
 			isa = PBXGroup;
 			children = (
 				C17CB47428A9D31800FE54F3 /* ViewsAndControllers */,
-				C17CB47928A9D35800FE54F3 /* Config */,
-				C17CB47828A9D34800FE54F3 /* Services */,
 				C17CB47728A9D33F00FE54F3 /* Commands */,
-				C17CB47628A9D33700FE54F3 /* Resources */,
 				C17CB47528A9D32F00FE54F3 /* Models */,
+				C17CB47928A9D35800FE54F3 /* Config */,
+				C17CB47628A9D33700FE54F3 /* Resources */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -275,13 +277,6 @@
 				C17B709C28B5A1CA00AB9560 /* SharedData */,
 			);
 			path = Commands;
-			sourceTree = "<group>";
-		};
-		C17CB47828A9D34800FE54F3 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		C17CB47928A9D35800FE54F3 /* Config */ = {
@@ -506,6 +501,7 @@
 				C17B70BF28B5B48C00AB9560 /* ResIndexTweets.swift in Sources */,
 				C1CD347628B1F95500763C6E /* MapViewController.swift in Sources */,
 				C17B70C328B5B5C100AB9560 /* ReqStoreTweet.swift in Sources */,
+				C1A7A53028B5F94200CD4C36 /* DataSingleton.swift in Sources */,
 				C1CD347128B1F93100763C6E /* HomeViewController.swift in Sources */,
 				C17CB48828A9D52100FE54F3 /* SingInViewController.swift in Sources */,
 				C17B70C128B5B4BD00AB9560 /* Location.swift in Sources */,

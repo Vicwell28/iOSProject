@@ -13,8 +13,8 @@ class SingUpViewController: UIViewController {
     // MARK: - Override Func
     override func viewDidLoad() {
         super.viewDidLoad()
-
         print("LoginViewController viewDidLoad")
+        print("Token: \(dataSingleton.token)")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -81,7 +81,9 @@ class SingUpViewController: UIViewController {
     }
 
    
-   
+    var dataSingleton : DataSingleton = DataSingleton.shared
+
+    
     var activeField: UITextField?
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var usernameTextField: UITextField!
