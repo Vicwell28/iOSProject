@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C17B70A228B5AC4F00AB9560 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17B709E28B5AC4F00AB9560 /* Alamofire.xcframework */; };
+		C17B70A328B5AC4F00AB9560 /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C17B709E28B5AC4F00AB9560 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C17B70A428B5AC4F00AB9560 /* MarqueeLabel.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17B709F28B5AC4F00AB9560 /* MarqueeLabel.xcframework */; };
+		C17B70A528B5AC4F00AB9560 /* MarqueeLabel.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C17B709F28B5AC4F00AB9560 /* MarqueeLabel.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C17B70A628B5AC4F00AB9560 /* NotificationBanner.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17B70A028B5AC4F00AB9560 /* NotificationBanner.xcframework */; };
+		C17B70A728B5AC4F00AB9560 /* NotificationBanner.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C17B70A028B5AC4F00AB9560 /* NotificationBanner.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C17B70A828B5AC4F00AB9560 /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17B70A128B5AC4F00AB9560 /* SnapKit.xcframework */; };
+		C17B70A928B5AC4F00AB9560 /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C17B70A128B5AC4F00AB9560 /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C17CB46028A9D21A00FE54F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB45F28A9D21A00FE54F3 /* AppDelegate.swift */; };
 		C17CB46228A9D21A00FE54F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB46128A9D21A00FE54F3 /* SceneDelegate.swift */; };
 		C17CB46428A9D21A00FE54F3 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB46328A9D21A00FE54F3 /* OnBoardingViewController.swift */; };
@@ -33,7 +41,28 @@
 		C1CD347B28B1F97F00763C6E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD347A28B1F97F00763C6E /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C17B70AA28B5AC4F00AB9560 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C17B70A928B5AC4F00AB9560 /* SnapKit.xcframework in Embed Frameworks */,
+				C17B70A728B5AC4F00AB9560 /* NotificationBanner.xcframework in Embed Frameworks */,
+				C17B70A328B5AC4F00AB9560 /* Alamofire.xcframework in Embed Frameworks */,
+				C17B70A528B5AC4F00AB9560 /* MarqueeLabel.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C17B709E28B5AC4F00AB9560 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
+		C17B709F28B5AC4F00AB9560 /* MarqueeLabel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MarqueeLabel.xcframework; path = Carthage/Build/MarqueeLabel.xcframework; sourceTree = "<group>"; };
+		C17B70A028B5AC4F00AB9560 /* NotificationBanner.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NotificationBanner.xcframework; path = Carthage/Build/NotificationBanner.xcframework; sourceTree = "<group>"; };
+		C17B70A128B5AC4F00AB9560 /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = Carthage/Build/SnapKit.xcframework; sourceTree = "<group>"; };
 		C17CB45C28A9D21A00FE54F3 /* ProyectoTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17CB45F28A9D21A00FE54F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17CB46128A9D21A00FE54F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +96,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17B70A828B5AC4F00AB9560 /* SnapKit.xcframework in Frameworks */,
+				C17B70A628B5AC4F00AB9560 /* NotificationBanner.xcframework in Frameworks */,
+				C17B70A228B5AC4F00AB9560 /* Alamofire.xcframework in Frameworks */,
+				C17B70A428B5AC4F00AB9560 /* MarqueeLabel.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,11 +113,23 @@
 			path = SharedData;
 			sourceTree = "<group>";
 		};
+		C17B709D28B5AC4E00AB9560 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C17B709E28B5AC4F00AB9560 /* Alamofire.xcframework */,
+				C17B709F28B5AC4F00AB9560 /* MarqueeLabel.xcframework */,
+				C17B70A028B5AC4F00AB9560 /* NotificationBanner.xcframework */,
+				C17B70A128B5AC4F00AB9560 /* SnapKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C17CB45328A9D21A00FE54F3 = {
 			isa = PBXGroup;
 			children = (
 				C17CB45E28A9D21A00FE54F3 /* ProyectoTwitter */,
 				C17CB45D28A9D21A00FE54F3 /* Products */,
+				C17B709D28B5AC4E00AB9560 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,6 +344,7 @@
 				C17CB45828A9D21A00FE54F3 /* Sources */,
 				C17CB45928A9D21A00FE54F3 /* Frameworks */,
 				C17CB45A28A9D21A00FE54F3 /* Resources */,
+				C17B70AA28B5AC4F00AB9560 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

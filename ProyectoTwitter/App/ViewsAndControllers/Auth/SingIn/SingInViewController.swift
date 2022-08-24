@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import NotificationBanner
 
 class SingInViewController: UIViewController {
     // MARK: - Override Func

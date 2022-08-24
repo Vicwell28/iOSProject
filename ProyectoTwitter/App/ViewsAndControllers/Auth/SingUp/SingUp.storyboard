@@ -209,6 +209,9 @@
                                                 <real key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="singUpAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1bU-69-Kli"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

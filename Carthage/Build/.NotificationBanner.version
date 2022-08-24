@@ -1,0 +1,28 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "e856a462053daf80c7936056d64246983f3f4d14",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "05a8680272ce942124389b4d9c157c1b98a89a2dc2f6d9dc71487f7b05a22048",
+      "name" : "NotificationBanner",
+      "container" : "NotificationBanner.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "d0a5e05818a6a5d80ae1323617d44a929a50ad724555b408b852ab6b3d864e7a",
+      "name" : "NotificationBanner",
+      "container" : "NotificationBanner.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}

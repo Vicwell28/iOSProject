@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import NotificationBanner
 
 class SingUpViewController: UIViewController {
     // MARK: - Override Func
@@ -90,6 +92,7 @@ class SingUpViewController: UIViewController {
     @IBOutlet weak var emailValidateLable: UILabel!
     @IBOutlet weak var newPasswordValidateLable: UILabel!
     @IBOutlet weak var confirmNewPasswordValidateLable: UILabel!
+   
 }
 
 // MARK: - IBOutlet
@@ -105,6 +108,10 @@ extension SingUpViewController {
     
     @IBAction func verifyData(_ sender: UITextField) {
         verifyDataSingUp(sender)
+    }
+    
+    @IBAction func singUpAction() {
+        NotificationBanner(title: "LLENA LOS PUTOS CAMPOS", subtitle: "los campos por favo", style: .warning).show()
     }
 }
 
