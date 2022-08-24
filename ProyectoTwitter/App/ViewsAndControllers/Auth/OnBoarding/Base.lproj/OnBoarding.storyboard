@@ -34,7 +34,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="1gT-y2-d5l" kind="show" id="ucK-EK-ZCZ"/>
+                                    <segue destination="egZ-AF-CnZ" kind="show" id="5Uo-tw-2Qf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tY-lP-7wO">
@@ -42,16 +42,35 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sing up"/>
                                 <connections>
-                                    <segue destination="egZ-AF-CnZ" kind="show" id="bJp-kU-VHc"/>
+                                    <segue destination="1gT-y2-d5l" kind="show" id="nye-2O-mkd"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UIW-av-NKl">
+                                <rect key="frame" x="82" y="189" width="250" height="249"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UIW-av-NKl" secondAttribute="height" multiplier="1:1" id="yUs-7f-whr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is onBoarding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFo-He-Jb7">
+                                <rect key="frame" x="32" y="458.5" width="350" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zJW-62-O1O" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.845411" id="6RI-Ux-Juw"/>
+                            <constraint firstItem="UIW-av-NKl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="91v-Ve-MGP"/>
+                            <constraint firstItem="VFo-He-Jb7" firstAttribute="centerX" secondItem="UIW-av-NKl" secondAttribute="centerX" id="I7b-7N-WJz"/>
+                            <constraint firstItem="UIW-av-NKl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.603865" id="OTf-sF-EJh"/>
                             <constraint firstItem="zJW-62-O1O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q0j-J2-2xa"/>
+                            <constraint firstItem="VFo-He-Jb7" firstAttribute="width" secondItem="UIW-av-NKl" secondAttribute="width" multiplier="1.4" id="TBX-Sn-BQM"/>
                             <constraint firstItem="zJW-62-O1O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.75" id="dru-sE-XGM"/>
+                            <constraint firstItem="VFo-He-Jb7" firstAttribute="top" secondItem="UIW-av-NKl" secondAttribute="bottom" constant="20" id="flk-Sr-krZ"/>
+                            <constraint firstItem="UIW-av-NKl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ibN-kR-aBr"/>
                             <constraint firstItem="1tY-lP-7wO" firstAttribute="centerY" secondItem="zJW-62-O1O" secondAttribute="centerY" multiplier="1.06" id="vqQ-Ra-BgS"/>
                             <constraint firstItem="1tY-lP-7wO" firstAttribute="centerX" secondItem="zJW-62-O1O" secondAttribute="centerX" id="wCc-bU-hel"/>
                         </constraints>
@@ -112,6 +131,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="swift" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

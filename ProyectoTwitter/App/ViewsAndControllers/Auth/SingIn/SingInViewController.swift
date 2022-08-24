@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class SingInViewController: UIViewController {
     // MARK: - Override Func
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,35 +33,71 @@ class RegisterViewController: UIViewController {
         super.viewWillDisappear(animated)
         print("RegisterViewController viewWillDisappear")
     }
-}
-
-// MARK: - IBOutlet
-extension RegisterViewController {
+    
+    // MARK: - IBOutlet
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailValidateLable: UILabel!
+    @IBOutlet weak var passwordValidateLable: UILabel!
     
 }
-
 // MARK: - IBAction
-extension RegisterViewController {
+extension SingInViewController {
+    @IBAction func tapGesture(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
     
+    @IBAction func textFieldAction(_ sender: UITextField) {
+        self.verifyCredentials(sender)
+    }
 }
 
 // MARK: - Public Func
-extension RegisterViewController {
+extension SingInViewController {
     
 }
 
 // MARK: - Private Func
-extension RegisterViewController {
-    
+extension SingInViewController {
+    private func verifyCredentials(_ sender : UITextField){
+        if sender.tag == 0 {
+            if !sender.hasText {
+                self.emailValidateLable.isHidden = false
+            } else {
+                self.emailValidateLable.isHidden = true
+            }
+        } else {
+            if !sender.hasText {
+                self.passwordValidateLable.isHidden = false
+            } else {
+                self.passwordValidateLable.isHidden = true
+            }
+        }
+    }
 }
 
 // MARK: - Services
-extension RegisterViewController {
+extension SingInViewController {
     
 }
 
 // MARK: - Other
-extension RegisterViewController {
+extension SingInViewController {
     
+}
+// MARK: - UITextFieldDelegate
+extension SingInViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField.tag == 0 {
+            self.passwordTextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.verifyCredentials(textField)
+    }
 }
 

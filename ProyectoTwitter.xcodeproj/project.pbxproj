@@ -73,6 +73,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C17B709C28B5A1CA00AB9560 /* SharedData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SharedData;
+			sourceTree = "<group>";
+		};
 		C17CB45328A9D21A00FE54F3 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +149,7 @@
 		C17CB47728A9D33F00FE54F3 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				C17B709C28B5A1CA00AB9560 /* SharedData */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -538,7 +546,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -568,7 +576,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
