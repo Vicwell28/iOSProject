@@ -111,7 +111,7 @@ extension SingUpViewController {
     }
     
     @IBAction func singUpAction() {
-        NotificationBanner(title: "LLENA LOS PUTOS CAMPOS", subtitle: "los campos por favo", style: .warning).show()
+        NotificationBanner(title: "LLENA LOS PUTOS CAMPOS", subtitle: "los campos por favor", style: .warning).show()
     }
 }
 

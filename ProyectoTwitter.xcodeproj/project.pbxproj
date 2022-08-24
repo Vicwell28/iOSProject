@@ -15,6 +15,16 @@
 		C17B70A728B5AC4F00AB9560 /* NotificationBanner.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C17B70A028B5AC4F00AB9560 /* NotificationBanner.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C17B70A828B5AC4F00AB9560 /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17B70A128B5AC4F00AB9560 /* SnapKit.xcframework */; };
 		C17B70A928B5AC4F00AB9560 /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C17B70A128B5AC4F00AB9560 /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C17B70B028B5B16900AB9560 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70AF28B5B16900AB9560 /* Endpoints.swift */; };
+		C17B70B428B5B25A00AB9560 /* ReqLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70B328B5B25A00AB9560 /* ReqLogin.swift */; };
+		C17B70B628B5B26700AB9560 /* ResLoginRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70B528B5B26700AB9560 /* ResLoginRegister.swift */; };
+		C17B70B928B5B2C900AB9560 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70B828B5B2C900AB9560 /* User.swift */; };
+		C17B70BB28B5B36700AB9560 /* ResError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70BA28B5B36700AB9560 /* ResError.swift */; };
+		C17B70BD28B5B40600AB9560 /* ReqRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70BC28B5B40600AB9560 /* ReqRegister.swift */; };
+		C17B70BF28B5B48C00AB9560 /* ResIndexTweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70BE28B5B48C00AB9560 /* ResIndexTweets.swift */; };
+		C17B70C128B5B4BD00AB9560 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70C028B5B4BD00AB9560 /* Location.swift */; };
+		C17B70C328B5B5C100AB9560 /* ReqStoreTweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70C228B5B5C100AB9560 /* ReqStoreTweet.swift */; };
+		C17B70C528B5B6C300AB9560 /* ResDestroyTweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70C428B5B6C300AB9560 /* ResDestroyTweet.swift */; };
 		C17CB46028A9D21A00FE54F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB45F28A9D21A00FE54F3 /* AppDelegate.swift */; };
 		C17CB46228A9D21A00FE54F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB46128A9D21A00FE54F3 /* SceneDelegate.swift */; };
 		C17CB46428A9D21A00FE54F3 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CB46328A9D21A00FE54F3 /* OnBoardingViewController.swift */; };
@@ -63,6 +73,16 @@
 		C17B709F28B5AC4F00AB9560 /* MarqueeLabel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MarqueeLabel.xcframework; path = Carthage/Build/MarqueeLabel.xcframework; sourceTree = "<group>"; };
 		C17B70A028B5AC4F00AB9560 /* NotificationBanner.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NotificationBanner.xcframework; path = Carthage/Build/NotificationBanner.xcframework; sourceTree = "<group>"; };
 		C17B70A128B5AC4F00AB9560 /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = Carthage/Build/SnapKit.xcframework; sourceTree = "<group>"; };
+		C17B70AF28B5B16900AB9560 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		C17B70B328B5B25A00AB9560 /* ReqLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqLogin.swift; sourceTree = "<group>"; };
+		C17B70B528B5B26700AB9560 /* ResLoginRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResLoginRegister.swift; sourceTree = "<group>"; };
+		C17B70B828B5B2C900AB9560 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C17B70BA28B5B36700AB9560 /* ResError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResError.swift; sourceTree = "<group>"; };
+		C17B70BC28B5B40600AB9560 /* ReqRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqRegister.swift; sourceTree = "<group>"; };
+		C17B70BE28B5B48C00AB9560 /* ResIndexTweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResIndexTweets.swift; sourceTree = "<group>"; };
+		C17B70C028B5B4BD00AB9560 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C17B70C228B5B5C100AB9560 /* ReqStoreTweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqStoreTweet.swift; sourceTree = "<group>"; };
+		C17B70C428B5B6C300AB9560 /* ResDestroyTweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResDestroyTweet.swift; sourceTree = "<group>"; };
 		C17CB45C28A9D21A00FE54F3 /* ProyectoTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17CB45F28A9D21A00FE54F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C17CB46128A9D21A00FE54F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +144,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C17B70AB28B5B0F100AB9560 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C17B70B828B5B2C900AB9560 /* User.swift */,
+				C17B70C028B5B4BD00AB9560 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C17B70AC28B5B0F700AB9560 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				C17B70B228B5B24800AB9560 /* Auth */,
+				C17B70BA28B5B36700AB9560 /* ResError.swift */,
+				C17B70BE28B5B48C00AB9560 /* ResIndexTweets.swift */,
+				C17B70C428B5B6C300AB9560 /* ResDestroyTweet.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		C17B70AD28B5B0FD00AB9560 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				C17B70B128B5B24100AB9560 /* Auth */,
+				C17B70C228B5B5C100AB9560 /* ReqStoreTweet.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		C17B70AE28B5B12800AB9560 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				C17B70AF28B5B16900AB9560 /* Endpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		C17B70B128B5B24100AB9560 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C17B70B328B5B25A00AB9560 /* ReqLogin.swift */,
+				C17B70BC28B5B40600AB9560 /* ReqRegister.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C17B70B228B5B24800AB9560 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C17B70B528B5B26700AB9560 /* ResLoginRegister.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		C17CB45328A9D21A00FE54F3 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +252,10 @@
 		C17CB47528A9D32F00FE54F3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C17B70AE28B5B12800AB9560 /* Endpoints */,
+				C17B70AD28B5B0FD00AB9560 /* Request */,
+				C17B70AC28B5B0F700AB9560 /* Response */,
+				C17B70AB28B5B0F100AB9560 /* Models */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -417,16 +495,26 @@
 			files = (
 				C1CD346028B1C31600763C6E /* MainTabBarViewController.swift in Sources */,
 				C17CB48A28A9D52D00FE54F3 /* SingUpViewController.swift in Sources */,
+				C17B70B428B5B25A00AB9560 /* ReqLogin.swift in Sources */,
+				C17B70B028B5B16900AB9560 /* Endpoints.swift in Sources */,
+				C17B70B928B5B2C900AB9560 /* User.swift in Sources */,
 				C1CD347B28B1F97F00763C6E /* AddViewController.swift in Sources */,
+				C17B70BB28B5B36700AB9560 /* ResError.swift in Sources */,
+				C17B70BD28B5B40600AB9560 /* ReqRegister.swift in Sources */,
+				C17B70B628B5B26700AB9560 /* ResLoginRegister.swift in Sources */,
 				C17CB46428A9D21A00FE54F3 /* OnBoardingViewController.swift in Sources */,
+				C17B70BF28B5B48C00AB9560 /* ResIndexTweets.swift in Sources */,
 				C1CD347628B1F95500763C6E /* MapViewController.swift in Sources */,
+				C17B70C328B5B5C100AB9560 /* ReqStoreTweet.swift in Sources */,
 				C1CD347128B1F93100763C6E /* HomeViewController.swift in Sources */,
 				C17CB48828A9D52100FE54F3 /* SingInViewController.swift in Sources */,
+				C17B70C128B5B4BD00AB9560 /* Location.swift in Sources */,
 				C1CD347928B1F96E00763C6E /* ProfileViewController.swift in Sources */,
 				C17CB48128A9D3CF00FE54F3 /* MyCustomView.swift in Sources */,
 				C17CB46028A9D21A00FE54F3 /* AppDelegate.swift in Sources */,
 				C1CD347328B1F94200763C6E /* StarViewController.swift in Sources */,
 				C17CB46228A9D21A00FE54F3 /* SceneDelegate.swift in Sources */,
+				C17B70C528B5B6C300AB9560 /* ResDestroyTweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
