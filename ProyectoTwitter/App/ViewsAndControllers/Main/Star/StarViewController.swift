@@ -33,13 +33,19 @@ class StarViewController: UIViewController {
         super.viewWillDisappear(animated)
         print("StarViewController viewWillDisappear")
     }
-}
-
-// MARK: - IBOutlet
-extension StarViewController {
     
-}
+    var dataSingleton : DataSingleton = DataSingleton.shared
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
+    private func showLoading() -> Void{
+        self.activityIndicator.startAnimating()
+    }
+    
+    private func hideLoading() -> Void{
+        self.activityIndicator.stopAnimating()
+    }
+}
 // MARK: - IBAction
 extension StarViewController {
     

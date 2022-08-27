@@ -97,11 +97,6 @@ class SingUpViewController: UIViewController {
    
 }
 
-// MARK: - IBOutlet
-extension SingUpViewController {
-    
-}
-
 // MARK: - IBAction
 extension SingUpViewController {
     @IBAction func TapGesture(_ sender: UITapGestureRecognizer) {

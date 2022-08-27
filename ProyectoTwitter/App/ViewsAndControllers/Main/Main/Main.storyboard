@@ -11,7 +11,7 @@
         <scene sceneID="lHE-QM-2zT">
             <objects>
                 <tabBarController id="3Yb-CC-NwE" customClass="MainTabBarViewController" customModule="ProyectoTwitter" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="HrD-j1-cKm">
+                    <tabBar key="tabBar" hidden="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="HrD-j1-cKm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

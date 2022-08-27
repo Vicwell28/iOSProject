@@ -33,13 +33,19 @@ class ProfileViewController: UIViewController {
         super.viewWillDisappear(animated)
         print("ProfileViewController viewWillDisappear")
     }
-}
-
-// MARK: - IBOutlet
-extension ProfileViewController {
     
-}
+    var dataSingleton : DataSingleton = DataSingleton.shared
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
+    private func showLoading() -> Void{
+        self.activityIndicator.startAnimating()
+    }
+    
+    private func hideLoading() -> Void{
+        self.activityIndicator.stopAnimating()
+    }
+}
 // MARK: - IBAction
 extension ProfileViewController {
     

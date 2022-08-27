@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,14 +33,44 @@
                     <view key="view" contentMode="scaleToFill" id="eUC-UN-178">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eAW-wU-wAI">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wae-e7-AFK" id="wOy-Mw-0kR"/>
+                                    <outlet property="delegate" destination="Wae-e7-AFK" id="CRp-HK-qUM"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="V7P-pN-0Ur">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qk0-bT-Mh5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V7P-pN-0Ur" firstAttribute="centerY" secondItem="eUC-UN-178" secondAttribute="centerY" id="445-Ye-hoh"/>
+                            <constraint firstItem="qk0-bT-Mh5" firstAttribute="trailing" secondItem="eAW-wU-wAI" secondAttribute="trailing" id="6PP-ZV-tvu"/>
+                            <constraint firstItem="V7P-pN-0Ur" firstAttribute="centerX" secondItem="eUC-UN-178" secondAttribute="centerX" id="8gb-zE-YgM"/>
+                            <constraint firstItem="eAW-wU-wAI" firstAttribute="leading" secondItem="qk0-bT-Mh5" secondAttribute="leading" id="MEp-Md-iDt"/>
+                            <constraint firstItem="eAW-wU-wAI" firstAttribute="top" secondItem="qk0-bT-Mh5" secondAttribute="top" id="ZWD-aA-Kt6"/>
+                            <constraint firstItem="qk0-bT-Mh5" firstAttribute="bottom" secondItem="eAW-wU-wAI" secondAttribute="bottom" id="baQ-A6-Zun"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="HI6-uM-9Jk"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="V7P-pN-0Ur" id="vzQ-54-3av"/>
+                        <outlet property="tableView" destination="eAW-wU-wAI" id="f8C-nS-CjN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZJ-dN-Zgx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3339" y="-1375"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

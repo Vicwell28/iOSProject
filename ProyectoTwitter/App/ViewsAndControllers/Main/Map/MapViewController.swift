@@ -33,13 +33,19 @@ class MapViewController: UIViewController {
         super.viewWillDisappear(animated)
         print("MapViewController viewWillDisappear")
     }
-}
-
-// MARK: - IBOutlet
-extension MapViewController {
     
-}
+    var dataSingleton : DataSingleton = DataSingleton.shared
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
+    private func showLoading() -> Void{
+        self.activityIndicator.startAnimating()
+    }
+    
+    private func hideLoading() -> Void{
+        self.activityIndicator.stopAnimating()
+    }
+}
 // MARK: - IBAction
 extension MapViewController {
     

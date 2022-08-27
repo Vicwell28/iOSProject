@@ -34,10 +34,6 @@ class ViewController: UIViewController {
         print("ViewController viewWillDisappear")
     }
 }
-// MARK: - IBOutlet
-extension ViewController {
-    
-}
 
 // MARK: - IBAction
 extension ViewController {

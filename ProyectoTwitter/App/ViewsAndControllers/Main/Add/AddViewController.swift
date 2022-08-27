@@ -33,13 +33,19 @@ class AddViewController: UIViewController {
         super.viewWillDisappear(animated)
         print("AddViewController viewWillDisappear")
     }
-}
-
-// MARK: - IBOutlet
-extension AddViewController {
     
-}
+    var dataSingleton : DataSingleton = DataSingleton.shared
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
+    private func showLoading() -> Void{
+        self.activityIndicator.startAnimating()
+    }
+    
+    private func hideLoading() -> Void{
+        self.activityIndicator.stopAnimating()
+    }
+}
 // MARK: - IBAction
 extension AddViewController {
     

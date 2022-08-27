@@ -91,11 +91,6 @@ class MainTabBarViewController: UITabBarController {
     
 }
 
-// MARK: - IBOutlet
-extension MainTabBarViewController {
-    
-}
-
 // MARK: - IBAction
 extension MainTabBarViewController {
     
