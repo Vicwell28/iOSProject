@@ -15,6 +15,9 @@ class SingUpViewController: UIViewController {
         super.viewDidLoad()
         print("LoginViewController viewDidLoad")
         print("Token: \(dataSingleton.token)")
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(SingUpViewController.keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(SingUpViewController.keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,66 +38,20 @@ class SingUpViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         print("LoginViewController viewWillDisappear")
+
+        NotificationCenter.default.removeObserver(self, name: SingUpViewController.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: SingUpViewController.keyboardWillHideNotification, object: nil)
     }
-//    func registerForKeyboardNotifications(){
-//        //Adding notifies on keyboard appearing
-//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasShown(notification:)), name: NSNotification.Name.UIResponder.keyboardWillShowNotification, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillBeHidden(notification:)), name: NSNotification.Name.UIResponder.keyboardWillHideNotification, object: nil)
-//        NotificationCenter.default.addObserver(forName: ., object: <#T##Any?#>, queue: <#T##OperationQueue?#>, using: <#T##(Notification) -> Void#>)
-//    }
-//
-//    func deregisterFromKeyboardNotifications(){
-//        //Removing notifies on keyboard appearing
-//        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIResponder.keyboardWillShowNotification, object: nil)
-//        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIResponder.keyboardWillHideNotification, object: nil)
-//        NotificationCenter.default.removeObserver(self, name: .Nam, object: <#T##Any?#>)
-//    }
-
-    @objc func keyboardWasShown(notification: NSNotification){
-        //Need to calculate keyboard exact size due to Apple suggestions
-        self.scrollView.isScrollEnabled = true
-        var info = notification.userInfo!
-        let keyboardSize = (info[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size
-        let contentInsets : UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: keyboardSize!.height, right: 0.0)
-
-        self.scrollView.contentInset = contentInsets
-        self.scrollView.scrollIndicatorInsets = contentInsets
-
-        var aRect : CGRect = self.view.frame
-        aRect.size.height -= keyboardSize!.height
-        if let activeField = self.activeField {
-            if (!aRect.contains(activeField.frame.origin)){
-                self.scrollView.scrollRectToVisible(activeField.frame, animated: true)
-            }
-        }
-    }
-
-    @objc func keyboardWillBeHidden(notification: NSNotification){
-        //Once keyboard disappears, restore original positions
-        var info = notification.userInfo!
-        let keyboardSize = (info[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size
-        let contentInsets : UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: -keyboardSize!.height, right: 0.0)
-        self.scrollView.contentInset = contentInsets
-        self.scrollView.scrollIndicatorInsets = contentInsets
-        self.view.endEditing(true)
-        self.scrollView.isScrollEnabled = false
-    }
-
-   
-    var dataSingleton : DataSingleton = DataSingleton.shared
-
     
+    // MARK: - @IBOutlet
+    private var dataSingleton : DataSingleton = DataSingleton.shared
     var activeField: UITextField?
+    @IBOutlet weak var singUpButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var newPasswordTextField: UITextField!
-    @IBOutlet weak var confirmNewPasswordTextField: UITextField!
-    @IBOutlet weak var usernameValidateLable: UILabel!
-    @IBOutlet weak var emailValidateLable: UILabel!
-    @IBOutlet weak var newPasswordValidateLable: UILabel!
-    @IBOutlet weak var confirmNewPasswordValidateLable: UILabel!
-   
+    @IBOutlet var textFieldsCollection: [UITextField]!
+    @IBOutlet var lablesAlertCollection: [UILabel]!
+    
 }
 
 // MARK: - IBAction
@@ -104,53 +61,138 @@ extension SingUpViewController {
     }
     
     @IBAction func verifyData(_ sender: UITextField) {
-        verifyDataSingUp(sender)
+        let _ = verifyCredentials(sender)
     }
     
     @IBAction func singUpAction() {
-        NotificationBanner(title: "LLENA LOS PUTOS CAMPOS", subtitle: "los campos por favor", style: .warning).show()
+        self.singInRequest()
     }
 }
 
 // MARK: - Public Func
 extension SingUpViewController {
-    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+
+        self.scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+        self.scrollView.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+
+            if let activeField = activeField {
+                var aRect = self.view.frame;
+                aRect.size.height -= keyboardSize.height+activeField.frame.size.height;
+                
+                if !aRect.contains(activeField.superview!.frame.origin) {
+                let scrollPoint = CGPoint(x: 0, y: activeField.superview!.frame.origin.y-keyboardSize.height)
+                    self.scrollView.setContentOffset(scrollPoint, animated: true)
+                }
+            }
+       }
+
+       @objc func keyboardWillHide(notification: NSNotification) {
+           let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+           self.scrollView.contentInset = contentInset
+       }
 }
 
 // MARK: - Private Func
 extension SingUpViewController {
-    private func verifyDataSingUp(_ sender : UITextField){
-        if sender.tag == 0 {
-            if !sender.hasText {
-                self.usernameValidateLable.isHidden = false
+    private func verifyCredentials(_ sender : UITextField) -> Bool{
+        if let indexElement = self.textFieldsCollection.firstIndex(of: sender) {
+            if !self.textFieldsCollection[indexElement].hasText{
+                self.lablesAlertCollection[indexElement].isHidden = false
+                return false
             } else {
-                self.usernameValidateLable.isHidden = true
-            }
-        } else if sender.tag == 1 {
-            if !sender.hasText {
-                self.emailValidateLable.isHidden = false
-            } else {
-                self.emailValidateLable.isHidden = true
-            }
-        } else if sender.tag == 2 {
-            if !sender.hasText {
-                self.newPasswordValidateLable.isHidden = false
-            } else {
-                self.newPasswordValidateLable.isHidden = true
-            }
-        } else {
-            if !sender.hasText {
-                self.confirmNewPasswordValidateLable.isHidden = false
-            } else {
-                self.confirmNewPasswordValidateLable.isHidden = true
+                self.lablesAlertCollection[indexElement].isHidden = true
             }
         }
+        return true
+    }
+    
+    private func singInRequest(){
+        if !self.verifyCredentials(self.textFieldsCollection[0]) {
+            NotificationBanner(title: "Campo Email Requerido", subtitle: "llenar campos",  style: .warning).show()
+            return
+        }
+        
+        if !self.verifyCredentials(self.textFieldsCollection[1]) {
+            NotificationBanner(title: "Campo Pasword Requerido", subtitle: "llenar campos",  style: .warning).show()
+            return
+        }
+        
+        if !self.verifyCredentials(self.textFieldsCollection[2]) {
+            NotificationBanner(title: "Campo Email Requerido", subtitle: "llenar campos",  style: .warning).show()
+            return
+        }
+        
+        if !self.verifyCredentials(self.textFieldsCollection[3]) {
+            NotificationBanner(title: "Campo Pasword Requerido", subtitle: "llenar campos",  style: .warning).show()
+            return
+        }
+        
+        if self.textFieldsCollection[2].text! != self.textFieldsCollection[3].text! {
+            NotificationBanner(title: "", subtitle: "Password dont match",  style: .danger).show()
+            return
+        }
+        
+        self.servicePostSingUp()
+    }
+    
+    private func showLoading() -> Void{
+        self.singUpButton.isHidden = true
+        self.activityIndicator.startAnimating()
+    }
+
+    private func hideLoading() -> Void{
+        self.singUpButton.isHidden = false
+        self.activityIndicator.stopAnimating()
     }
 }
 
 // MARK: - Services
 extension SingUpViewController {
-    
+    private func servicePostSingUp(){
+        self.showLoading()
+        AF.request(
+            Endpoints.postAuthRegister,
+            method: .post,
+            parameters: ReqRegister(email: self.textFieldsCollection[1].text!, password: self.textFieldsCollection[2].text!, names: self.textFieldsCollection[0].text!),
+            encoder: JSONParameterEncoder.default,
+            headers: [
+                "Authorization": "\(self.dataSingleton.token)",
+                "Accept" : "application/json",
+                "Content-Type" : "application/json"
+            ],
+            requestModifier: {$0.timeoutInterval = 20}
+        ).responseData { (response) in
+            DispatchQueue.main.async { [self] in
+                self.hideLoading()
+                debugPrint(response)
+                switch response.result{
+                case .success(let data):
+                    switch response.response?.statusCode {
+                    case 200:
+                        do {
+                            let ResLogin = try JSONDecoder().decode(ResLoginRegister.self, from:Data(data))
+                            self.dataSingleton.token = ResLogin.token
+                            print("Token: \(self.dataSingleton.token)")
+                            self.performSegue(withIdentifier: "segueMain", sender: nil)
+                        } catch let error {
+                            NotificationBanner(title: "", subtitle:error.localizedDescription,  style: .warning).show()
+                        }
+                    default:
+                        do {
+                            let ResLogin = try JSONDecoder().decode(ResError.self, from:Data(data))
+                            NotificationBanner(title: "", subtitle:ResLogin.error,  style: .warning).show()
+                        } catch let error {
+                            NotificationBanner(title: "", subtitle: error.localizedDescription,  style: .warning).show()
+                        }
+                    }
+                case .failure(let error):
+                    NotificationBanner(title: "", subtitle: error.errorDescription,  style: .danger).show()
+                }
+            }
+        }
+    }
 }
 
 // MARK: - Other
@@ -162,11 +204,11 @@ extension SingUpViewController {
 extension SingUpViewController : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField.tag == 0 {
-            self.emailTextField.becomeFirstResponder()
+            self.textFieldsCollection[1].becomeFirstResponder()
         } else if textField.tag == 1 {
-            self.newPasswordTextField.becomeFirstResponder()
+            self.textFieldsCollection[2].becomeFirstResponder()
         } else if textField.tag == 2 {
-            self.confirmNewPasswordTextField.becomeFirstResponder()
+            self.textFieldsCollection[3].becomeFirstResponder()
         } else {
             textField.resignFirstResponder()
         }
@@ -178,7 +220,7 @@ extension SingUpViewController : UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        verifyDataSingUp(textField)
+        let _ = verifyCredentials(textField)
         activeField = nil
     }
 }

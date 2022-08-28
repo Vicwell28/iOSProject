@@ -13,41 +13,31 @@ class SingInViewController: UIViewController {
     // MARK: - Override Func
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("RegisterViewController viewDidLoad")
         print("Token: \(dataSingleton.token)")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("RegisterViewController viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("RegisterViewController viewDidAppear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("RegisterViewController viewDidDisappear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("RegisterViewController viewWillDisappear")
     }
     
     // MARK: - IBOutlet
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var emailValidateLable: UILabel!
-    @IBOutlet weak var passwordValidateLable: UILabel!
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var loginButton: UIButton!
-    
-    var dataSingleton : DataSingleton = DataSingleton.shared
-    
+    @IBOutlet var lablesAlertsCollection: [UILabel]!
+    @IBOutlet var textFieldsCollection: [UITextField]!
+    private var dataSingleton : DataSingleton = DataSingleton.shared
 }
 // MARK: - IBAction
 extension SingInViewController {
@@ -72,19 +62,12 @@ extension SingInViewController {
 // MARK: - Private Func
 extension SingInViewController {
     private func verifyCredentials(_ sender : UITextField) -> Bool{
-        if sender.tag == 0 {
-            if !sender.hasText {
-                self.emailValidateLable.isHidden = false
+        if let indexElement = self.textFieldsCollection.firstIndex(of: sender) {
+            if !self.textFieldsCollection[indexElement].hasText{
+                self.lablesAlertsCollection[indexElement].isHidden = false
                 return false
             } else {
-                self.emailValidateLable.isHidden = true
-            }
-        } else {
-            if !sender.hasText {
-                self.passwordValidateLable.isHidden = false
-                return false
-            } else {
-                self.passwordValidateLable.isHidden = true
+                self.lablesAlertsCollection[indexElement].isHidden = true
             }
         }
         return true
@@ -92,23 +75,41 @@ extension SingInViewController {
     
     private func singInRequest(){
         self.showLoading()
-        if !self.verifyCredentials(self.emailTextField) {
+        
+        if !self.verifyCredentials(self.textFieldsCollection[0]) {
             NotificationBanner(title: "Campo Email Requerido", subtitle: "llenar campos",  style: .warning).show()
             self.hideLoading()
             return
         }
         
-        if !self.verifyCredentials(self.passwordTextField) {
+        if !self.verifyCredentials(self.textFieldsCollection[1]) {
             NotificationBanner(title: "Campo Pasword Requerido", subtitle: "llenar campos",  style: .warning).show()
             self.hideLoading()
             return
         }
-        print("Este seria el email: \(self.emailTextField.text!) password: \(self.passwordTextField.text!)")
         
+        print("Este seria el email: \(self.textFieldsCollection[0].text!) password: \(self.textFieldsCollection[1].text!)")
+        self.servicePostLogin()
+        
+    }
+    
+    private func showLoading() -> Void{
+        self.loginButton.isHidden = true
+        self.activityIndicator.startAnimating()
+    }
+    
+    private func hideLoading() -> Void{
+        self.loginButton.isHidden = false
+        self.activityIndicator.stopAnimating()
+    }
+}
+// MARK: - Services
+extension SingInViewController {
+    private func servicePostLogin(){
         AF.request(
             Endpoints.postAuthLogin,
             method: .post,
-            parameters: ReqLogin(email: self.emailTextField.text!, password: self.passwordTextField.text!),
+            parameters: ReqLogin(email: self.textFieldsCollection[0].text!, password: self.textFieldsCollection[1].text!),
             encoder: JSONParameterEncoder.default,
             headers: [
                 "Authorization": "bearer \(self.dataSingleton.token)",
@@ -146,31 +147,14 @@ extension SingInViewController {
             }
         }
     }
-    
-    private func showLoading() -> Void{
-        self.loginButton.isHidden = true
-        self.activityIndicator.startAnimating()
-    }
-    
-    private func hideLoading() -> Void{
-        self.loginButton.isHidden = false
-        self.activityIndicator.stopAnimating()
-    }
-}
-// MARK: - Services
-extension SingInViewController {
-    
 }
 
-// MARK: - Other
-extension SingInViewController {
-    
-}
+
 // MARK: - UITextFieldDelegate
 extension SingInViewController : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField.tag == 0 {
-            self.passwordTextField.becomeFirstResponder()
+            self.textFieldsCollection[1].becomeFirstResponder()
         } else {
             textField.resignFirstResponder()
         }

@@ -178,11 +178,11 @@
                     <navigationItem key="navigationItem" title="Sing In" id="edm-p3-LAD"/>
                     <connections>
                         <outlet property="activityIndicator" destination="37G-M0-ajq" id="xta-VK-ywy"/>
-                        <outlet property="emailTextField" destination="HNV-UV-VYy" id="IFV-Rt-K2K"/>
-                        <outlet property="emailValidateLable" destination="3tw-yc-qge" id="bIm-dp-neA"/>
                         <outlet property="loginButton" destination="t75-jR-h7j" id="Seo-Rz-Xwz"/>
-                        <outlet property="passwordTextField" destination="iBW-u2-LYW" id="7ja-X9-mdj"/>
-                        <outlet property="passwordValidateLable" destination="ZWJ-aB-ZuS" id="5AA-Lg-hOW"/>
+                        <outletCollection property="textFieldsCollection" destination="HNV-UV-VYy" collectionClass="NSMutableArray" id="NX3-x3-7hp"/>
+                        <outletCollection property="textFieldsCollection" destination="iBW-u2-LYW" collectionClass="NSMutableArray" id="wZ4-6j-rFe"/>
+                        <outletCollection property="lablesAlertsCollection" destination="3tw-yc-qge" collectionClass="NSMutableArray" id="OOv-r0-Idy"/>
+                        <outletCollection property="lablesAlertsCollection" destination="ZWJ-aB-ZuS" collectionClass="NSMutableArray" id="O8W-XG-LkC"/>
                         <segue destination="HXy-Fq-D5b" kind="presentation" identifier="segueMain" modalPresentationStyle="fullScreen" id="qxq-AY-Koy"/>
                     </connections>
                 </viewController>

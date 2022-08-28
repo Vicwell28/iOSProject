@@ -213,9 +213,14 @@
                                             <action selector="singUpAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1bU-69-Kli"/>
                                         </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="fpv-pC-MSf">
+                                        <rect key="frame" x="188.5" y="700.5" width="37" height="37"/>
+                                        <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Mnz-KC-mMo" firstAttribute="width" secondItem="Mnz-KC-mMo" secondAttribute="height" multiplier="7:1" id="2wm-Nm-XdL"/>
+                                    <constraint firstItem="fpv-pC-MSf" firstAttribute="centerX" secondItem="0l8-oQ-sJa" secondAttribute="centerX" id="3Sg-yH-Cbn"/>
                                     <constraint firstItem="pR4-0w-342" firstAttribute="trailing" secondItem="644-Vh-8cC" secondAttribute="trailing" id="5gK-bC-uDu"/>
                                     <constraint firstItem="0l8-oQ-sJa" firstAttribute="width" secondItem="0l8-oQ-sJa" secondAttribute="height" multiplier="7:1" id="8GR-AK-WAN"/>
                                     <constraint firstItem="Fii-yk-xUZ" firstAttribute="top" secondItem="r8z-5Y-fhF" secondAttribute="top" constant="50" id="AFD-Io-kZW"/>
@@ -232,6 +237,7 @@
                                     <constraint firstItem="644-Vh-8cC" firstAttribute="top" secondItem="LBi-6U-Kbd" secondAttribute="bottom" constant="30" id="aKW-Xt-5lK"/>
                                     <constraint firstItem="LBi-6U-Kbd" firstAttribute="leading" secondItem="Mnz-KC-mMo" secondAttribute="leading" constant="5" id="bGM-Xp-M8G"/>
                                     <constraint firstItem="y88-CX-RjF" firstAttribute="top" secondItem="Fii-yk-xUZ" secondAttribute="bottom" constant="50" id="f7f-hg-bkL"/>
+                                    <constraint firstItem="fpv-pC-MSf" firstAttribute="centerY" secondItem="0l8-oQ-sJa" secondAttribute="centerY" id="gEd-Cr-M1F"/>
                                     <constraint firstItem="tXP-Yw-6KY" firstAttribute="width" secondItem="tXP-Yw-6KY" secondAttribute="height" multiplier="7:1" id="kjl-Mm-2BO"/>
                                     <constraint firstItem="tXP-Yw-6KY" firstAttribute="top" secondItem="pR4-0w-342" secondAttribute="bottom" constant="30" id="mcU-PY-aMJ"/>
                                     <constraint firstItem="Fsh-Pm-arD" firstAttribute="trailing" secondItem="tXP-Yw-6KY" secondAttribute="trailing" id="qKn-zm-7mN"/>
@@ -269,15 +275,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sing Up" id="iJB-Ax-yb0"/>
                     <connections>
-                        <outlet property="confirmNewPasswordTextField" destination="ZWJ-Dc-pjd" id="j9h-ev-jdB"/>
-                        <outlet property="confirmNewPasswordValidateLable" destination="Fsh-Pm-arD" id="Ag7-YM-7dI"/>
-                        <outlet property="emailTextField" destination="CI5-ww-zPb" id="6p4-4N-paW"/>
-                        <outlet property="emailValidateLable" destination="LBi-6U-Kbd" id="KxB-xx-Mc3"/>
-                        <outlet property="newPasswordTextField" destination="Y2M-y9-o7l" id="K12-YL-GP4"/>
-                        <outlet property="newPasswordValidateLable" destination="pR4-0w-342" id="B5W-ev-Y2a"/>
+                        <outlet property="activityIndicator" destination="fpv-pC-MSf" id="doz-eN-xDo"/>
                         <outlet property="scrollView" destination="r8z-5Y-fhF" id="sSe-O6-Pgr"/>
-                        <outlet property="usernameTextField" destination="P2O-rz-adh" id="BwW-9P-oc4"/>
-                        <outlet property="usernameValidateLable" destination="GpL-Gu-CH4" id="m6y-x5-2Oi"/>
+                        <outlet property="singUpButton" destination="0l8-oQ-sJa" id="6wh-mO-hP1"/>
+                        <outletCollection property="textFieldsCollection" destination="P2O-rz-adh" collectionClass="NSMutableArray" id="Wvb-PJ-aLa"/>
+                        <outletCollection property="textFieldsCollection" destination="CI5-ww-zPb" collectionClass="NSMutableArray" id="Jx7-fg-snb"/>
+                        <outletCollection property="textFieldsCollection" destination="Y2M-y9-o7l" collectionClass="NSMutableArray" id="wfg-ae-I2v"/>
+                        <outletCollection property="textFieldsCollection" destination="ZWJ-Dc-pjd" collectionClass="NSMutableArray" id="9Mr-49-XcU"/>
+                        <outletCollection property="lablesAlertCollection" destination="GpL-Gu-CH4" collectionClass="NSMutableArray" id="EyX-8X-d1o"/>
+                        <outletCollection property="lablesAlertCollection" destination="LBi-6U-Kbd" collectionClass="NSMutableArray" id="vca-xT-qIh"/>
+                        <outletCollection property="lablesAlertCollection" destination="pR4-0w-342" collectionClass="NSMutableArray" id="UHY-VZ-GL1"/>
+                        <outletCollection property="lablesAlertCollection" destination="Fsh-Pm-arD" collectionClass="NSMutableArray" id="MW8-Qv-eXg"/>
+                        <segue destination="X6n-4u-hI7" kind="presentation" identifier="segueMain" modalPresentationStyle="fullScreen" id="PvC-hm-2uF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -288,6 +297,14 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="16" y="62"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="LIR-TU-tJh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="X6n-4u-hI7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMb-Um-DXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747" y="62"/>
         </scene>
     </scenes>
     <resources>

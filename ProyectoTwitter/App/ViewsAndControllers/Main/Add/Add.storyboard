@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,21 +26,73 @@
             </objects>
             <point key="canvasLocation" x="2475" y="54"/>
         </scene>
-        <!--Add-->
+        <!--Add Tweet-->
         <scene sceneID="410-GE-tQ4">
             <objects>
                 <viewController id="Z9L-KE-zgr" customClass="AddViewController" customModule="ProyectoTwitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yB9-U3-C8b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jVq-DQ-WGu">
+                                <rect key="frame" x="27" y="149" width="360" height="150"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jVq-DQ-WGu" secondAttribute="height" multiplier="12:5" id="shE-9Z-ihp"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="no" returnKeyType="done" smartQuotesType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSl-nm-hW0">
+                                <rect key="frame" x="32" y="319" width="350" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vSl-nm-hW0" secondAttribute="height" multiplier="7:1" id="5MI-dq-jiC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Add Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="IgS-Zi-5c7"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="vSl-nm-hW0" firstAttribute="width" secondItem="yB9-U3-C8b" secondAttribute="width" multiplier="0.845411" id="2Np-GQ-ath"/>
+                            <constraint firstItem="jVq-DQ-WGu" firstAttribute="centerY" secondItem="yB9-U3-C8b" secondAttribute="centerY" multiplier="0.5" id="C9l-PE-BQ4"/>
+                            <constraint firstItem="jVq-DQ-WGu" firstAttribute="centerX" secondItem="yB9-U3-C8b" secondAttribute="centerX" id="TFG-DC-HLa"/>
+                            <constraint firstItem="vSl-nm-hW0" firstAttribute="centerX" secondItem="jVq-DQ-WGu" secondAttribute="centerX" id="a53-it-p5K"/>
+                            <constraint firstItem="jVq-DQ-WGu" firstAttribute="width" secondItem="yB9-U3-C8b" secondAttribute="width" multiplier="0.869565" id="vPh-td-cUb"/>
+                            <constraint firstItem="vSl-nm-hW0" firstAttribute="top" secondItem="jVq-DQ-WGu" secondAttribute="bottom" constant="20" id="vuu-UW-jIj"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aef-OD-74m" appends="YES" id="BPP-rq-D6e"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Add" id="TIC-Fb-twc"/>
+                    <navigationItem key="navigationItem" title="Add Tweet" id="TIC-Fb-twc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHM-Ug-w2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aef-OD-74m"/>
             </objects>
             <point key="canvasLocation" x="3342" y="54"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
