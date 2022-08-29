@@ -21,11 +21,11 @@ class HomeViewController: UIViewController {
         print("HomeViewController viewWillAppear")
         tableView.register(UINib(nibName: "MainOneTableViewCell", bundle: nil), forCellReuseIdentifier: "TweetTableViewCell")
         self.serviceGetIndexTweets()
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.tableView.setContentOffset(CGPoint(x: 0, y: 0), animated: true);
         print("HomeViewController viewDidAppear")
     }
     
@@ -128,7 +128,16 @@ extension HomeViewController : UITableViewDataSource {
         let cell  = tableView.dequeueReusableCell(withIdentifier: "TweetTableViewCell", for: indexPath)
         
         if let cell = cell as? MainOneTableViewCell {
-            cell.setUpCell(text: self.dataSourceTwetts[indexPath.row].text, username: self.dataSourceTwetts[indexPath.row].author.nickname, author: self.dataSourceTwetts[indexPath.row].author.names, imageView: nil)
+            cell.setUpCell(
+                text: self.dataSourceTwetts[indexPath.row].text,
+                username: self.dataSourceTwetts[indexPath.row].author.nickname,
+                author: self.dataSourceTwetts[indexPath.row].author.names,
+                imageView: nil,
+                hasVideo: self.dataSourceTwetts[indexPath.row].hasVideo,
+                hasImage: self.dataSourceTwetts[indexPath.row].hasImage,
+                hasLocation: self.dataSourceTwetts[indexPath.row].hasLocation,
+                urlImage: self.dataSourceTwetts[indexPath.row].imageUrl
+            )
         }
         return cell
     }

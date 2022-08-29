@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import NotificationBanner
 
 class ProfileViewController: UIViewController {
     // MARK: - Override Func

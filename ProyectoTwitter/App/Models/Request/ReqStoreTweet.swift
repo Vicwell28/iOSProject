@@ -9,7 +9,7 @@ import Foundation
 
 struct ReqStoreTweet : Codable {
     let text : String
-    let imageUrl : String
-    let videoUrl : String
-    let location : Location
+    let imageUrl : String?
+    let videoUrl : String?
+    let location : Location?
 }

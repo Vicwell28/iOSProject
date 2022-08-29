@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import NotificationBanner
 
 class MainTabBarViewController: UITabBarController {
     // MARK: - Override Func

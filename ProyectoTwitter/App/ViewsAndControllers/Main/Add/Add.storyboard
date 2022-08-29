@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jVq-DQ-WGu">
-                                <rect key="frame" x="27" y="149" width="360" height="150"/>
+                                <rect key="frame" x="27" y="171.5" width="360" height="150"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jVq-DQ-WGu" secondAttribute="height" multiplier="12:5" id="shE-9Z-ihp"/>
@@ -48,9 +48,12 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Z9L-KE-zgr" id="RCV-Yh-wum"/>
+                                </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSl-nm-hW0">
-                                <rect key="frame" x="32" y="319" width="350" height="50"/>
+                                <rect key="frame" x="32" y="341.5" width="350" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vSl-nm-hW0" secondAttribute="height" multiplier="7:1" id="5MI-dq-jiC"/>
@@ -65,16 +68,48 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addPostAction:" destination="Z9L-KE-zgr" eventType="touchUpInside" id="wyb-vT-bG4"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51F-xe-wXk">
+                                <rect key="frame" x="32" y="411.5" width="350" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="51F-xe-wXk" secondAttribute="height" multiplier="7:1" id="f1T-rP-WJn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Add Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addImageAction:" destination="Z9L-KE-zgr" eventType="touchUpInside" id="rL6-lS-ham"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ZHn-IG-Cf6">
+                                <rect key="frame" x="188.5" y="348" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IgS-Zi-5c7"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="vSl-nm-hW0" firstAttribute="width" secondItem="yB9-U3-C8b" secondAttribute="width" multiplier="0.845411" id="2Np-GQ-ath"/>
-                            <constraint firstItem="jVq-DQ-WGu" firstAttribute="centerY" secondItem="yB9-U3-C8b" secondAttribute="centerY" multiplier="0.5" id="C9l-PE-BQ4"/>
+                            <constraint firstItem="51F-xe-wXk" firstAttribute="width" secondItem="yB9-U3-C8b" secondAttribute="width" multiplier="0.845411" id="9En-Es-M9b"/>
+                            <constraint firstItem="jVq-DQ-WGu" firstAttribute="centerY" secondItem="yB9-U3-C8b" secondAttribute="centerY" multiplier="0.55" id="C9l-PE-BQ4"/>
                             <constraint firstItem="jVq-DQ-WGu" firstAttribute="centerX" secondItem="yB9-U3-C8b" secondAttribute="centerX" id="TFG-DC-HLa"/>
+                            <constraint firstItem="51F-xe-wXk" firstAttribute="top" secondItem="vSl-nm-hW0" secondAttribute="bottom" constant="20" id="TUk-Uh-n9S"/>
+                            <constraint firstItem="ZHn-IG-Cf6" firstAttribute="centerY" secondItem="vSl-nm-hW0" secondAttribute="centerY" id="U4b-ER-6Cb"/>
                             <constraint firstItem="vSl-nm-hW0" firstAttribute="centerX" secondItem="jVq-DQ-WGu" secondAttribute="centerX" id="a53-it-p5K"/>
+                            <constraint firstItem="ZHn-IG-Cf6" firstAttribute="centerX" secondItem="vSl-nm-hW0" secondAttribute="centerX" id="afD-WI-jTx"/>
+                            <constraint firstItem="51F-xe-wXk" firstAttribute="centerX" secondItem="yB9-U3-C8b" secondAttribute="centerX" id="kWQ-bE-trT"/>
                             <constraint firstItem="jVq-DQ-WGu" firstAttribute="width" secondItem="yB9-U3-C8b" secondAttribute="width" multiplier="0.869565" id="vPh-td-cUb"/>
                             <constraint firstItem="vSl-nm-hW0" firstAttribute="top" secondItem="jVq-DQ-WGu" secondAttribute="bottom" constant="20" id="vuu-UW-jIj"/>
                         </constraints>
@@ -83,9 +118,19 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Add Tweet" id="TIC-Fb-twc"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ZHn-IG-Cf6" id="GB5-yN-e4A"/>
+                        <outlet property="tweetTextView" destination="jVq-DQ-WGu" id="YNS-r3-ANw"/>
+                        <outletCollection property="buttonsCollection" destination="vSl-nm-hW0" collectionClass="NSMutableArray" id="GOW-sw-6Ot"/>
+                        <outletCollection property="buttonsCollection" destination="51F-xe-wXk" collectionClass="NSMutableArray" id="qOt-Mm-fVb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHM-Ug-w2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="aef-OD-74m"/>
+                <tapGestureRecognizer id="aef-OD-74m">
+                    <connections>
+                        <action selector="tapGesture:" destination="Z9L-KE-zgr" id="tqb-fn-RdR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3342" y="54"/>
         </scene>

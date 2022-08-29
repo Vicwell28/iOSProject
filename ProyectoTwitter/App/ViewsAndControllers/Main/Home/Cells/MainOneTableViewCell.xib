@@ -34,15 +34,15 @@
                         <rect key="frame" x="70" y="70" width="400" height="470"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IBw-PK-DUd">
-                                <rect key="frame" x="0.0" y="0.0" width="400" height="370"/>
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="166.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tkM-1M-IXh">
-                                <rect key="frame" x="0.0" y="370.5" width="400" height="199"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tkM-1M-IXh">
+                                <rect key="frame" x="0.0" y="170" width="400" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tkM-1M-IXh" secondAttribute="height" multiplier="2:1" id="LYG-VH-x3L"/>
                                 </constraints>
@@ -54,13 +54,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TmM-pJ-zxH">
-                                                <rect key="frame" x="144" y="10" width="112.5" height="20.5"/>
+                                                <rect key="frame" x="141.5" y="10" width="117.5" height="20.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Qnm-GH-Qky">
-                                                        <rect key="frame" x="0.0" y="-1" width="19" height="21.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Qnm-GH-Qky">
+                                                        <rect key="frame" x="0.0" y="2.5" width="24" height="16"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reproducir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AY0-w1-nl8">
-                                                        <rect key="frame" x="29" y="0.0" width="83.5" height="20.5"/>
+                                                        <rect key="frame" x="34" y="0.0" width="83.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -85,13 +86,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NHE-Y1-I26">
-                                                <rect key="frame" x="132.5" y="10" width="135" height="20.5"/>
+                                                <rect key="frame" x="132.5" y="10" width="135.5" height="20.5"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Itl-eW-NQF">
-                                                        <rect key="frame" x="0.0" y="-1" width="19" height="21.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Itl-eW-NQF">
+                                                        <rect key="frame" x="0.0" y="1" width="19.5" height="19"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver Ubicacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEt-eU-giT">
-                                                        <rect key="frame" x="29" y="0.0" width="106" height="20.5"/>
+                                                        <rect key="frame" x="29.5" y="0.0" width="106" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -139,8 +141,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BcI-1s-Lwu">
                                         <rect key="frame" x="0.0" y="0.0" width="133.5" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hKz-PH-4gD">
-                                                <rect key="frame" x="0.0" y="9" width="66.5" height="21"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hKz-PH-4gD">
+                                                <rect key="frame" x="0.0" y="11" width="66.5" height="17.5"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzU-1f-WeC">
                                                 <rect key="frame" x="66.5" y="10" width="67" height="20.5"/>
@@ -165,8 +168,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GB0-GL-LoY">
                                         <rect key="frame" x="0.0" y="0.0" width="133" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hzE-Oi-haf">
-                                                <rect key="frame" x="0.0" y="9" width="66.5" height="21"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit.heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hzE-Oi-haf">
+                                                <rect key="frame" x="0.0" y="11.5" width="66.5" height="17.5"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDM-35-kct">
                                                 <rect key="frame" x="66.5" y="10" width="66.5" height="20.5"/>
@@ -191,8 +195,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lAs-hb-DvT">
                                         <rect key="frame" x="0.0" y="0.0" width="133.5" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dKd-Pt-F5q">
-                                                <rect key="frame" x="0.0" y="9" width="67" height="21"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text.bubble.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dKd-Pt-F5q">
+                                                <rect key="frame" x="0.0" y="10.5" width="67" height="19.5"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbk-ad-AHS">
                                                 <rect key="frame" x="67" y="10" width="66.5" height="20.5"/>
@@ -250,6 +255,8 @@
             <connections>
                 <outlet property="authorLable" destination="1kI-Xj-udM" id="6e4-Uh-QXX"/>
                 <outlet property="imageUrlImageView" destination="tkM-1M-IXh" id="EUd-sv-gAl"/>
+                <outlet property="svLocation" destination="jC2-dl-1U2" id="Gxy-OM-bYm"/>
+                <outlet property="svVideo" destination="wcS-rZ-ob7" id="xom-0I-NQt"/>
                 <outlet property="textTextView" destination="IBw-PK-DUd" id="zGo-ER-Rut"/>
                 <outlet property="usernameLable" destination="z4M-8c-zRC" id="niR-Ud-SfZ"/>
             </connections>
@@ -257,8 +264,11 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <image name="square.and.arrow.up.circle" catalog="system" width="128" height="121"/>
+        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="106"/>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
+        <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
+        <image name="video.fill" catalog="system" width="128" height="82"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

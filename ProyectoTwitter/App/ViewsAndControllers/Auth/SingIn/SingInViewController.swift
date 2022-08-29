@@ -112,7 +112,7 @@ extension SingInViewController {
             parameters: ReqLogin(email: self.textFieldsCollection[0].text!, password: self.textFieldsCollection[1].text!),
             encoder: JSONParameterEncoder.default,
             headers: [
-                "Authorization": "bearer \(self.dataSingleton.token)",
+                "Authorization": "\(self.dataSingleton.token)",
                 "Accept" : "application/json",
                 "Content-Type" : "application/json"
             ],
