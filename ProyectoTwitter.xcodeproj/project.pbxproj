@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C16229D528BC722F0028C03A /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16229D428BC722F0028C03A /* PinCodeViewController.swift */; };
+		C16229D928BC87B00028C03A /* PinCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16229D828BC87B00028C03A /* PinCode.storyboard */; };
+		C16229DC28BC92090028C03A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16229DB28BC92090028C03A /* SplashViewController.swift */; };
+		C16229DE28BC98590028C03A /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16229DD28BC98590028C03A /* Splash.storyboard */; };
 		C17B70A228B5AC4F00AB9560 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17B709E28B5AC4F00AB9560 /* Alamofire.xcframework */; };
 		C17B70A328B5AC4F00AB9560 /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C17B709E28B5AC4F00AB9560 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C17B70A428B5AC4F00AB9560 /* MarqueeLabel.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17B709F28B5AC4F00AB9560 /* MarqueeLabel.xcframework */; };
@@ -72,6 +76,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C16229D428BC722F0028C03A /* PinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeViewController.swift; sourceTree = "<group>"; };
+		C16229D828BC87B00028C03A /* PinCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PinCode.storyboard; sourceTree = "<group>"; };
+		C16229DB28BC92090028C03A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		C16229DD28BC98590028C03A /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Splash.storyboard; path = ProyectoTwitter/App/ViewsAndControllers/Splash/Splash.storyboard; sourceTree = SOURCE_ROOT; };
 		C17B709E28B5AC4F00AB9560 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		C17B709F28B5AC4F00AB9560 /* MarqueeLabel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MarqueeLabel.xcframework; path = Carthage/Build/MarqueeLabel.xcframework; sourceTree = "<group>"; };
 		C17B70A028B5AC4F00AB9560 /* NotificationBanner.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NotificationBanner.xcframework; path = Carthage/Build/NotificationBanner.xcframework; sourceTree = "<group>"; };
@@ -132,6 +140,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C16229D228BC720B0028C03A /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				C16229D328BC72120028C03A /* PinCode */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		C16229D328BC72120028C03A /* PinCode */ = {
+			isa = PBXGroup;
+			children = (
+				C16229D428BC722F0028C03A /* PinCodeViewController.swift */,
+				C16229D828BC87B00028C03A /* PinCode.storyboard */,
+			);
+			path = PinCode;
+			sourceTree = "<group>";
+		};
+		C16229DA28BC91F10028C03A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C16229DB28BC92090028C03A /* SplashViewController.swift */,
+				C16229DD28BC98590028C03A /* Splash.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		C17B709C28B5A1CA00AB9560 /* SharedData */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +283,7 @@
 		C17CB47428A9D31800FE54F3 /* ViewsAndControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C16229DA28BC91F10028C03A /* Splash */,
 				C17CB47E28A9D3AB00FE54F3 /* Main */,
 				C17CB47A28A9D38A00FE54F3 /* Auth */,
 			);
@@ -388,6 +423,7 @@
 		C1CD346228B1F79700763C6E /* Star */ = {
 			isa = PBXGroup;
 			children = (
+				C16229D228BC720B0028C03A /* Projects */,
 				C1CD346728B1F80800763C6E /* Star.storyboard */,
 				C1CD347228B1F94200763C6E /* StarViewController.swift */,
 			);
@@ -485,8 +521,10 @@
 				C1CD346A28B1F83100763C6E /* Add.storyboard in Resources */,
 				C17CB48F28A9D5AF00FE54F3 /* SingUp.storyboard in Resources */,
 				C17CB46C28A9D22000FE54F3 /* LaunchScreen.storyboard in Resources */,
+				C16229D928BC87B00028C03A /* PinCode.storyboard in Resources */,
 				C17CB46928A9D22000FE54F3 /* Assets.xcassets in Resources */,
 				C1CD346E28B1F86600763C6E /* Profile.storyboard in Resources */,
+				C16229DE28BC98590028C03A /* Splash.storyboard in Resources */,
 				C1AF2A4D28B9A609002E6792 /* MainOneTableViewCell.xib in Resources */,
 				C17CB48628A9D47800FE54F3 /* Media.xcassets in Resources */,
 				C1CD346C28B1F84C00763C6E /* Map.storyboard in Resources */,
@@ -522,10 +560,12 @@
 				C17CB48828A9D52100FE54F3 /* SingInViewController.swift in Sources */,
 				C17B70C128B5B4BD00AB9560 /* Location.swift in Sources */,
 				C1CD347928B1F96E00763C6E /* ProfileViewController.swift in Sources */,
+				C16229DC28BC92090028C03A /* SplashViewController.swift in Sources */,
 				C17CB48128A9D3CF00FE54F3 /* MyCustomView.swift in Sources */,
 				C17CB46028A9D21A00FE54F3 /* AppDelegate.swift in Sources */,
 				C1CD347328B1F94200763C6E /* StarViewController.swift in Sources */,
 				C17CB46228A9D21A00FE54F3 /* SceneDelegate.swift in Sources */,
+				C16229D528BC722F0028C03A /* PinCodeViewController.swift in Sources */,
 				C17B70C528B5B6C300AB9560 /* ResDestroyTweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,7 +718,7 @@
 				INFOPLIST_FILE = ProyectoTwitter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = OnBoarding;
+				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -708,7 +748,7 @@
 				INFOPLIST_FILE = ProyectoTwitter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = OnBoarding;
+				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";

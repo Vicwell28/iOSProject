@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aj7-oU-Twc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pin Code View Controller-->
+        <scene sceneID="fb9-Ie-s31">
+            <objects>
+                <viewController id="aj7-oU-Twc" customClass="PinCodeViewController" customModule="ProyectoTwitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iot-Mk-ffb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="7" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3fD-EH-dxs">
+                                <rect key="frame" x="249.5" y="283.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3fD-EH-dxs" secondAttribute="height" multiplier="1:1" id="CjX-dO-Qqe"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="aj7-oU-Twc" id="n4c-ny-Fhf"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VoZ-eh-WlN">
+                                <rect key="frame" x="177" y="283.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VoZ-eh-WlN" secondAttribute="height" multiplier="1:1" id="SgY-IX-07P"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="aj7-oU-Twc" id="3jl-jk-gez"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="8" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5w-Iy-xVg">
+                                <rect key="frame" x="104.5" y="283.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="d5w-Iy-xVg" secondAttribute="height" multiplier="1:1" id="ZW7-fy-9L0"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="aj7-oU-Twc" id="d4z-fZ-8fv"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="4" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p5d-FP-1Lt">
+                                <rect key="frame" x="32" y="283.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="p5d-FP-1Lt" secondAttribute="height" multiplier="1:1" id="voC-K0-gQR"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="aj7-oU-Twc" id="Tw9-zi-ezd"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="785-ph-OoW">
+                                <rect key="frame" x="322" y="283.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="aj7-oU-Twc" id="Xop-K8-4HE"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pin Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihw-tI-45Y">
+                                <rect key="frame" x="32" y="107" width="350" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsZ-95-AaK">
+                                <rect key="frame" x="32" y="363.5" width="350" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwb-4w-rv5">
+                                <rect key="frame" x="32" y="692" width="350" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uwb-4w-rv5" secondAttribute="height" multiplier="7:1" id="EWQ-Ms-36V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Verificar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="verifyCodeAction:" destination="aj7-oU-Twc" eventType="touchUpInside" id="skt-8l-kfV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQq-sj-Fey">
+                                <rect key="frame" x="32" y="196.5" width="350" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vWD-Ga-NkL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="3fD-EH-dxs" firstAttribute="centerX" secondItem="iot-Mk-ffb" secondAttribute="centerX" multiplier="1.35" id="1GQ-ED-YqI"/>
+                            <constraint firstItem="VoZ-eh-WlN" firstAttribute="centerX" secondItem="iot-Mk-ffb" secondAttribute="centerX" id="2KD-E7-rC4"/>
+                            <constraint firstItem="d5w-Iy-xVg" firstAttribute="centerY" secondItem="iot-Mk-ffb" secondAttribute="centerY" multiplier="0.7" id="2sQ-bM-loj"/>
+                            <constraint firstItem="785-ph-OoW" firstAttribute="width" secondItem="iot-Mk-ffb" secondAttribute="width" multiplier="0.144928" id="5Q3-Bx-MvU"/>
+                            <constraint firstItem="d5w-Iy-xVg" firstAttribute="centerX" secondItem="iot-Mk-ffb" secondAttribute="centerX" multiplier="0.65" id="6cl-m1-4ry"/>
+                            <constraint firstItem="uwb-4w-rv5" firstAttribute="width" secondItem="iot-Mk-ffb" secondAttribute="width" multiplier="0.845411" id="Au9-YP-57o"/>
+                            <constraint firstItem="uwb-4w-rv5" firstAttribute="centerX" secondItem="iot-Mk-ffb" secondAttribute="centerX" id="Gx0-vQ-qwd"/>
+                            <constraint firstItem="p5d-FP-1Lt" firstAttribute="width" secondItem="iot-Mk-ffb" secondAttribute="width" multiplier="0.144928" id="LHT-qY-UAX"/>
+                            <constraint firstItem="3fD-EH-dxs" firstAttribute="centerY" secondItem="iot-Mk-ffb" secondAttribute="centerY" multiplier="0.7" id="Ph8-41-0lm"/>
+                            <constraint firstItem="xsZ-95-AaK" firstAttribute="leading" secondItem="p5d-FP-1Lt" secondAttribute="leading" id="Pnn-Qs-tMM"/>
+                            <constraint firstItem="VoZ-eh-WlN" firstAttribute="width" secondItem="iot-Mk-ffb" secondAttribute="width" multiplier="0.144928" id="QE9-h6-C1x"/>
+                            <constraint firstItem="d5w-Iy-xVg" firstAttribute="width" secondItem="iot-Mk-ffb" secondAttribute="width" multiplier="0.144928" id="QSd-Ry-iXR"/>
+                            <constraint firstItem="DQq-sj-Fey" firstAttribute="centerY" secondItem="iot-Mk-ffb" secondAttribute="centerY" multiplier="0.5" id="Qzg-zJ-xtq"/>
+                            <constraint firstItem="785-ph-OoW" firstAttribute="width" secondItem="785-ph-OoW" secondAttribute="height" multiplier="1:1" id="R06-xL-Ar7"/>
+                            <constraint firstItem="Ihw-tI-45Y" firstAttribute="centerY" secondItem="iot-Mk-ffb" secondAttribute="centerY" multiplier="0.3" id="UJO-VR-l9j"/>
+                            <constraint firstItem="785-ph-OoW" firstAttribute="centerY" secondItem="iot-Mk-ffb" secondAttribute="centerY" multiplier="0.7" id="Ybh-AH-Bje"/>
+                            <constraint firstItem="xsZ-95-AaK" firstAttribute="trailing" secondItem="785-ph-OoW" secondAttribute="trailing" id="YpV-gp-uF1"/>
+                            <constraint firstItem="VoZ-eh-WlN" firstAttribute="centerY" secondItem="iot-Mk-ffb" secondAttribute="centerY" multiplier="0.7" id="bLd-J9-wJZ"/>
+                            <constraint firstItem="785-ph-OoW" firstAttribute="centerX" secondItem="iot-Mk-ffb" secondAttribute="centerX" multiplier="1.7" id="boy-FM-wjy"/>
+                            <constraint firstItem="DQq-sj-Fey" firstAttribute="leading" secondItem="p5d-FP-1Lt" secondAttribute="leading" id="kfo-va-ZuG"/>
+                            <constraint firstItem="DQq-sj-Fey" firstAttribute="trailing" secondItem="785-ph-OoW" secondAttribute="trailing" id="mJW-72-THb"/>
+                            <constraint firstItem="Ihw-tI-45Y" firstAttribute="centerX" secondItem="iot-Mk-ffb" secondAttribute="centerX" id="mNj-ZL-pJO"/>
+                            <constraint firstItem="xsZ-95-AaK" firstAttribute="top" secondItem="VoZ-eh-WlN" secondAttribute="bottom" constant="20" id="mb3-zi-C2G"/>
+                            <constraint firstItem="3fD-EH-dxs" firstAttribute="width" secondItem="iot-Mk-ffb" secondAttribute="width" multiplier="0.144928" id="pRy-ug-4vn"/>
+                            <constraint firstItem="uwb-4w-rv5" firstAttribute="centerY" secondItem="iot-Mk-ffb" secondAttribute="centerY" multiplier="1.6" id="qBT-P9-1FB"/>
+                            <constraint firstItem="p5d-FP-1Lt" firstAttribute="centerY" secondItem="iot-Mk-ffb" secondAttribute="centerY" multiplier="0.7" id="rlR-CL-SYo"/>
+                            <constraint firstItem="p5d-FP-1Lt" firstAttribute="centerX" secondItem="iot-Mk-ffb" secondAttribute="centerX" multiplier="0.3" id="xR4-wq-Inf"/>
+                            <constraint firstItem="Ihw-tI-45Y" firstAttribute="leading" secondItem="p5d-FP-1Lt" secondAttribute="leading" id="zzP-Sy-nee"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="y7k-kL-359" appends="YES" id="AcF-fe-S4A"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="zph-oj-fA5"/>
+                    <connections>
+                        <outlet property="timeLable" destination="xsZ-95-AaK" id="l9n-dY-erk"/>
+                        <outletCollection property="textFieldsCollection" destination="p5d-FP-1Lt" collectionClass="NSMutableArray" id="8TM-7D-RB0"/>
+                        <outletCollection property="textFieldsCollection" destination="d5w-Iy-xVg" collectionClass="NSMutableArray" id="8oX-po-z4F"/>
+                        <outletCollection property="textFieldsCollection" destination="VoZ-eh-WlN" collectionClass="NSMutableArray" id="2lJ-uc-3Su"/>
+                        <outletCollection property="textFieldsCollection" destination="3fD-EH-dxs" collectionClass="NSMutableArray" id="QGF-ab-EWj"/>
+                        <outletCollection property="textFieldsCollection" destination="785-ph-OoW" collectionClass="NSMutableArray" id="clO-gw-h2A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yr-Rf-W54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="y7k-kL-359">
+                    <connections>
+                        <action selector="tapGesture:" destination="aj7-oU-Twc" id="PVr-84-jh1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4402.898550724638" y="-1338.6160714285713"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

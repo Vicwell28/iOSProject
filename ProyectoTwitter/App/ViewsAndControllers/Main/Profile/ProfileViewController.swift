@@ -47,6 +47,8 @@ class ProfileViewController: UIViewController {
     private func hideLoading() -> Void{
         self.activityIndicator.stopAnimating()
     }
+    
+    private let defaults = UserDefaults.standard
 }
 // MARK: - IBAction
 extension ProfileViewController {

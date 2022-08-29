@@ -44,6 +44,7 @@ class SingUpViewController: UIViewController {
     }
     
     // MARK: - @IBOutlet
+    private let defaults = UserDefaults.standard
     private var dataSingleton : DataSingleton = DataSingleton.shared
     var activeField: UITextField?
     @IBOutlet weak var singUpButton: UIButton!
@@ -174,6 +175,7 @@ extension SingUpViewController {
                         do {
                             let ResLogin = try JSONDecoder().decode(ResLoginRegister.self, from:Data(data))
                             self.dataSingleton.token = ResLogin.token
+                            self.defaults.set(ResLogin.token, forKey: "token")
                             print("Token: \(self.dataSingleton.token)")
                             self.performSegue(withIdentifier: "segueMain", sender: nil)
                         } catch let error {
