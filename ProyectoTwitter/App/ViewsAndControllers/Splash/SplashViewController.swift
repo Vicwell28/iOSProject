@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       
 
         // Do any additional setup after loading the view.
     }
+    
+    private let keychain = KeychainSwift()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -34,14 +38,14 @@ class SplashViewController: UIViewController {
     }
     
     private func verifyCredentials(){
-        if let token = self.defaults.string(forKey: "token"){
+        
+        if let token = self.keychain.get("token"){
             self.dataSingleton.token = token
             self.performSegue(withIdentifier: "segueMain", sender: nil)
         } else {
             self.performSegue(withIdentifier: "segueOnBoarding", sender: nil)
         }
     }
-    
     
     @IBOutlet weak var swiftImageView: UIImageView!
     private let defaults = UserDefaults.standard

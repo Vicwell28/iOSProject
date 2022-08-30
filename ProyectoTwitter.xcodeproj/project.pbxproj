@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C122C84828BED2CA00C3F03B /* KeychainSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C122C84728BED2CA00C3F03B /* KeychainSwift.xcframework */; };
+		C122C84928BED2CA00C3F03B /* KeychainSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C122C84728BED2CA00C3F03B /* KeychainSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C16229D528BC722F0028C03A /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16229D428BC722F0028C03A /* PinCodeViewController.swift */; };
 		C16229D928BC87B00028C03A /* PinCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16229D828BC87B00028C03A /* PinCode.storyboard */; };
 		C16229DC28BC92090028C03A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16229DB28BC92090028C03A /* SplashViewController.swift */; };
@@ -67,6 +69,7 @@
 			files = (
 				C17B70A928B5AC4F00AB9560 /* SnapKit.xcframework in Embed Frameworks */,
 				C17B70A728B5AC4F00AB9560 /* NotificationBanner.xcframework in Embed Frameworks */,
+				C122C84928BED2CA00C3F03B /* KeychainSwift.xcframework in Embed Frameworks */,
 				C17B70A328B5AC4F00AB9560 /* Alamofire.xcframework in Embed Frameworks */,
 				C17B70A528B5AC4F00AB9560 /* MarqueeLabel.xcframework in Embed Frameworks */,
 			);
@@ -76,6 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C122C84728BED2CA00C3F03B /* KeychainSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KeychainSwift.xcframework; path = Carthage/Build/KeychainSwift.xcframework; sourceTree = "<group>"; };
 		C16229D428BC722F0028C03A /* PinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeViewController.swift; sourceTree = "<group>"; };
 		C16229D828BC87B00028C03A /* PinCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PinCode.storyboard; sourceTree = "<group>"; };
 		C16229DB28BC92090028C03A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			files = (
 				C17B70A828B5AC4F00AB9560 /* SnapKit.xcframework in Frameworks */,
 				C17B70A628B5AC4F00AB9560 /* NotificationBanner.xcframework in Frameworks */,
+				C122C84828BED2CA00C3F03B /* KeychainSwift.xcframework in Frameworks */,
 				C17B70A228B5AC4F00AB9560 /* Alamofire.xcframework in Frameworks */,
 				C17B70A428B5AC4F00AB9560 /* MarqueeLabel.xcframework in Frameworks */,
 			);
@@ -177,6 +182,7 @@
 		C17B709D28B5AC4E00AB9560 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C122C84728BED2CA00C3F03B /* KeychainSwift.xcframework */,
 				C17B709E28B5AC4F00AB9560 /* Alamofire.xcframework */,
 				C17B709F28B5AC4F00AB9560 /* MarqueeLabel.xcframework */,
 				C17B70A028B5AC4F00AB9560 /* NotificationBanner.xcframework */,

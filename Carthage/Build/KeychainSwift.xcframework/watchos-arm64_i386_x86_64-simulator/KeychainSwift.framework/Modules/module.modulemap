@@ -1,0 +1,4 @@
+framework module KeychainSwift {
+  header "KeychainSwift-Swift.h"
+  requires objc
+}

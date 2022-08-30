@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import NotificationBanner
+import KeychainSwift
 
 class SingUpViewController: UIViewController {
     // MARK: - Override Func
@@ -53,6 +54,7 @@ class SingUpViewController: UIViewController {
     @IBOutlet var textFieldsCollection: [UITextField]!
     @IBOutlet var lablesAlertCollection: [UILabel]!
     
+    private let keychain = KeychainSwift()
 }
 
 // MARK: - IBAction
@@ -175,7 +177,7 @@ extension SingUpViewController {
                         do {
                             let ResLogin = try JSONDecoder().decode(ResLoginRegister.self, from:Data(data))
                             self.dataSingleton.token = ResLogin.token
-                            self.defaults.set(ResLogin.token, forKey: "token")
+                            self.keychain.set(ResLogin.token, forKey: "token")
                             print("Token: \(self.dataSingleton.token)")
                             self.performSegue(withIdentifier: "segueMain", sender: nil)
                         } catch let error {

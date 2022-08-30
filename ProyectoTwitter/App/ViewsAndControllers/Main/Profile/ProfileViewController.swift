@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import NotificationBanner
+import KeychainSwift
 
 class ProfileViewController: UIViewController {
     // MARK: - Override Func
@@ -35,6 +36,10 @@ class ProfileViewController: UIViewController {
         super.viewWillDisappear(animated)
         print("ProfileViewController viewWillDisappear")
     }
+    @IBAction func logoutAction(_ sender: UIButton) {
+        keychain.clear()
+        self.dismiss(animated: true)
+    }
     
     var dataSingleton : DataSingleton = DataSingleton.shared
     
@@ -48,6 +53,7 @@ class ProfileViewController: UIViewController {
         self.activityIndicator.stopAnimating()
     }
     
+    private let keychain = KeychainSwift()
     private let defaults = UserDefaults.standard
 }
 // MARK: - IBAction

@@ -8,14 +8,14 @@
   "tvOS" : [
     {
       "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
-      "hash" : "889d4ceafebd1522639bb63918b6e977d0e81a060a27726799516ed550d6c652",
+      "hash" : "396bc060a88a5c2b07df15f547a8eb01878b0e36a1d762394c812f45572f4ec1",
       "name" : "MarqueeLabel",
       "container" : "MarqueeLabel.xcframework",
       "identifier" : "tvos-arm64"
     },
     {
       "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
-      "hash" : "2498ebc0ef7c3fda9dcbc98c5878bf719bb5fdac0c3b3c137694298e4416e643",
+      "hash" : "ba18ffd92bb5899364445ff32d263d094a53588fcf21c94c60c978bd3a0c2eb1",
       "name" : "MarqueeLabel",
       "container" : "MarqueeLabel.xcframework",
       "identifier" : "tvos-arm64_x86_64-simulator"
@@ -25,14 +25,14 @@
   "iOS" : [
     {
       "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
-      "hash" : "a1dcb1f8da505ee143a906093f463bbdb93880492abc6236a374533d443dc38d",
+      "hash" : "18f3761fef9db039a19431e756d8c4b594e8796c1e1dd2f37632c577b31a92e8",
       "name" : "MarqueeLabel",
       "container" : "MarqueeLabel.xcframework",
       "identifier" : "ios-arm64_i386_x86_64-simulator"
     },
     {
       "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
-      "hash" : "dbb895e0d066006311c1c4304b1835c88690fc18d6782d4f9ebf3aed7f4682ce",
+      "hash" : "5c976afb38f3d38d126c65eb1ad391c76ae9eac62a33ad034afcfb97da784105",
       "name" : "MarqueeLabel",
       "container" : "MarqueeLabel.xcframework",
       "identifier" : "ios-arm64_armv7"

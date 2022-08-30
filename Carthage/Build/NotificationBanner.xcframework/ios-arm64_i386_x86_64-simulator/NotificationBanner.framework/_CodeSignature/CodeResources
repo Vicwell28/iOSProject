@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/NotificationBanner.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9ScViyUW6fYkZwSBb+c59f9/giw=
+		Z0UELv07CRgeUvTvvyw7CxFQ86I=
 		</data>
 		<key>Modules/NotificationBanner.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/NotificationBanner.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FrUoCWVVke08I+f8KpMplhosUqw=
+		TLI3L8FTL4eo7LVcBwEvG0D7qwQ=
 		</data>
 		<key>Modules/NotificationBanner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/NotificationBanner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		W3qOw5A1K6Se1vCHwfVhg64/8zE=
+		zzsXAg+p/E8ghvcFbcDpvv1l2/g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9ScViyUW6fYkZwSBb+c59f9/giw=
+			Z0UELv07CRgeUvTvvyw7CxFQ86I=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ox9Q5AWaT5+AudTBz/usDboLunWe2Wf9u8JtswFFpKg=
+			48diJLYYgzTVdSyMTuUmuBsMQQhe7hHMjkc2s852hNE=
 			</data>
 		</dict>
 		<key>Modules/NotificationBanner.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -166,11 +166,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FrUoCWVVke08I+f8KpMplhosUqw=
+			TLI3L8FTL4eo7LVcBwEvG0D7qwQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			T+enrJN6rauK/Lj3xxdAltAZibicYv8zbFaonjCuZFI=
+			hcxWlk/qCsYCf5IKtwvegcHp7O8vtau2WRJyFIZTcIY=
 			</data>
 		</dict>
 		<key>Modules/NotificationBanner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W3qOw5A1K6Se1vCHwfVhg64/8zE=
+			zzsXAg+p/E8ghvcFbcDpvv1l2/g=
 			</data>
 			<key>hash2</key>
 			<data>
-			yyZwoue7mg2PmAZcjLjZqxe3OaeHTnIRXsfNsIXtsYc=
+			jabIoj3XwDIELZLMQFSxJbs5Ob/AZedjUN11/4yRDho=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
