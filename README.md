@@ -6,6 +6,9 @@ iOS project is a development for mobile devices, in which requests are made to a
 ![](https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/IMG_0503.jpg =100x217)
 ![](https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/IMG_0504.jpg =100x217)
 
+<img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/IMG_0500.jpg" width="200" />
+<img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/IMG_0501.jpg" width="200" />
+<img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/IMG_0503.jpg" width="200" />
 <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/IMG_0504.jpg" width="200" />
 
 <picture>
