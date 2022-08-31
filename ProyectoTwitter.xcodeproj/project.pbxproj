@@ -51,6 +51,8 @@
 		C17CB48D28A9D5A200FE54F3 /* SingIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB48C28A9D5A200FE54F3 /* SingIn.storyboard */; };
 		C17CB48F28A9D5AF00FE54F3 /* SingUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB48E28A9D5AE00FE54F3 /* SingUp.storyboard */; };
 		C17CB49228A9D6E500FE54F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C17CB49128A9D6E500FE54F3 /* Main.storyboard */; };
+		C19DA4D528BFF27F00AA3BD1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19DA4D428BFF27F00AA3BD1 /* GameViewController.swift */; };
+		C19DA4D928BFFFD700AA3BD1 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19DA4D828BFFFD700AA3BD1 /* Game.storyboard */; };
 		C1A7A53028B5F94200CD4C36 /* DataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A7A52F28B5F94200CD4C36 /* DataSingleton.swift */; };
 		C1AF2A4C28B9A609002E6792 /* MainOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF2A4A28B9A609002E6792 /* MainOneTableViewCell.swift */; };
 		C1AF2A4D28B9A609002E6792 /* MainOneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1AF2A4B28B9A609002E6792 /* MainOneTableViewCell.xib */; };
@@ -127,6 +129,8 @@
 		C17CB48C28A9D5A200FE54F3 /* SingIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingIn.storyboard; sourceTree = "<group>"; };
 		C17CB48E28A9D5AE00FE54F3 /* SingUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingUp.storyboard; sourceTree = "<group>"; };
 		C17CB49128A9D6E500FE54F3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C19DA4D428BFF27F00AA3BD1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C19DA4D828BFFFD700AA3BD1 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		C1A7A52F28B5F94200CD4C36 /* DataSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSingleton.swift; sourceTree = "<group>"; };
 		C1AF2A4A28B9A609002E6792 /* MainOneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOneTableViewCell.swift; sourceTree = "<group>"; };
 		C1AF2A4B28B9A609002E6792 /* MainOneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainOneTableViewCell.xib; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 		C16229D228BC720B0028C03A /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				C19DA4D328BFF26B00AA3BD1 /* Game */,
 				C16229D328BC72120028C03A /* PinCode */,
 			);
 			path = Projects;
@@ -436,6 +441,15 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		C19DA4D328BFF26B00AA3BD1 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				C19DA4D428BFF27F00AA3BD1 /* GameViewController.swift */,
+				C19DA4D828BFFFD700AA3BD1 /* Game.storyboard */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 		C1AF2A4928B9A5E3002E6792 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -559,6 +573,7 @@
 				C17CB46C28A9D22000FE54F3 /* LaunchScreen.storyboard in Resources */,
 				C122C85F28BEF6B700C3F03B /* 1.png in Resources */,
 				C16229D928BC87B00028C03A /* PinCode.storyboard in Resources */,
+				C19DA4D928BFFFD700AA3BD1 /* Game.storyboard in Resources */,
 				C17CB46928A9D22000FE54F3 /* Assets.xcassets in Resources */,
 				C122C85E28BEF6B700C3F03B /* 4.png in Resources */,
 				C1CD346E28B1F86600763C6E /* Profile.storyboard in Resources */,
@@ -596,6 +611,7 @@
 				C17B70BF28B5B48C00AB9560 /* ResIndexTweets.swift in Sources */,
 				C1CD347628B1F95500763C6E /* MapViewController.swift in Sources */,
 				C1AF2A4C28B9A609002E6792 /* MainOneTableViewCell.swift in Sources */,
+				C19DA4D528BFF27F00AA3BD1 /* GameViewController.swift in Sources */,
 				C17B70C328B5B5C100AB9560 /* ReqStoreTweet.swift in Sources */,
 				C1A7A53028B5F94200CD4C36 /* DataSingleton.swift in Sources */,
 				C1CD347128B1F93100763C6E /* HomeViewController.swift in Sources */,

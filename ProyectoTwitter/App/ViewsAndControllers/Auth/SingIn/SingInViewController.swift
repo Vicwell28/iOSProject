@@ -49,6 +49,7 @@ extension SingInViewController {
     }
     
     @IBAction func textFieldAction(_ sender: UITextField) {
+        print("HOLA")
         let _ = self.verifyCredentials(sender)
     }
     
@@ -56,7 +57,6 @@ extension SingInViewController {
         self.singInRequest()
     }
 }
-
 // MARK: - Public Func
 extension SingInViewController {
     
@@ -70,10 +70,18 @@ extension SingInViewController {
                 self.lablesAlertsCollection[indexElement].isHidden = false
                 return false
             } else {
+                if !self.isValidEmail(self.textFieldsCollection[0].text!){
+                    self.lablesAlertsCollection[0].isHidden = false
+                    return false;
+                }
                 self.lablesAlertsCollection[indexElement].isHidden = true
             }
         }
         return true
+    }
+    
+    private func isValidEmail (_ email : String) -> Bool {
+        return NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}").evaluate(with: email)
     }
     
     private func singInRequest(){
