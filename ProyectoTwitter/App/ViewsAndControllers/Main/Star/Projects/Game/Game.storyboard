@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +19,7 @@
                         <subviews>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RuT-20-JBL" customClass="UIControl">
                                 <rect key="frame" x="39" y="418" width="150" height="150"/>
-                                <color key="backgroundColor" name="GrayColor"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RuT-20-JBL" secondAttribute="height" multiplier="1:1" id="JeJ-uC-ecw"/>
                                 </constraints>
@@ -41,7 +40,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFB-uC-oIG" customClass="UIControl">
                                 <rect key="frame" x="39" y="238.5" width="150" height="150"/>
-                                <color key="backgroundColor" name="GrayColor"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KFB-uC-oIG" secondAttribute="height" multiplier="1:1" id="lzd-uG-VYR"/>
                                 </constraints>
@@ -62,7 +61,7 @@
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXD-ow-Fqn" customClass="UIControl">
                                 <rect key="frame" x="225" y="238.5" width="150" height="150"/>
-                                <color key="backgroundColor" name="GrayColor"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                         <size key="value" width="0.0" height="4"/>
@@ -114,7 +113,7 @@
                             </button>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BEr-kC-BRL" customClass="UIControl">
                                 <rect key="frame" x="225" y="418" width="150" height="150"/>
-                                <color key="backgroundColor" name="GrayColor"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                         <size key="value" width="0.0" height="4"/>
@@ -136,6 +135,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLc-vw-yZs">
+                                <rect key="frame" x="32" y="614" width="350" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cps-Ze-HTq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -146,6 +151,7 @@
                             <constraint firstItem="kki-Hc-p7V" firstAttribute="width" secondItem="hsV-xp-CsS" secondAttribute="width" multiplier="0.845411" id="7h3-S2-Qhv"/>
                             <constraint firstItem="vXD-ow-Fqn" firstAttribute="width" secondItem="hsV-xp-CsS" secondAttribute="width" multiplier="0.362319" id="9yw-xf-ShS"/>
                             <constraint firstItem="kki-Hc-p7V" firstAttribute="centerX" secondItem="hsV-xp-CsS" secondAttribute="centerX" id="B5f-Jc-Eov"/>
+                            <constraint firstItem="zLc-vw-yZs" firstAttribute="trailing" secondItem="OCO-fZ-NxX" secondAttribute="trailing" id="Cbw-6x-Gzv"/>
                             <constraint firstItem="BEr-kC-BRL" firstAttribute="centerY" secondItem="hsV-xp-CsS" secondAttribute="centerY" multiplier="1.1" id="Cj7-YE-t2B"/>
                             <constraint firstItem="vXD-ow-Fqn" firstAttribute="centerY" secondItem="hsV-xp-CsS" secondAttribute="centerY" multiplier="0.7" id="DGg-3D-urN"/>
                             <constraint firstItem="vXD-ow-Fqn" firstAttribute="width" secondItem="vXD-ow-Fqn" secondAttribute="height" multiplier="1:1" id="GJd-j5-j4H"/>
@@ -158,14 +164,18 @@
                             <constraint firstItem="kki-Hc-p7V" firstAttribute="centerY" secondItem="hsV-xp-CsS" secondAttribute="centerY" multiplier="0.3" id="ioG-HY-3Sq"/>
                             <constraint firstItem="hP5-fB-vY1" firstAttribute="centerX" secondItem="hsV-xp-CsS" secondAttribute="centerX" id="kVq-ny-4UN"/>
                             <constraint firstItem="OCO-fZ-NxX" firstAttribute="width" secondItem="hsV-xp-CsS" secondAttribute="width" multiplier="0.845411" id="maW-bt-0y9"/>
+                            <constraint firstItem="zLc-vw-yZs" firstAttribute="leading" secondItem="OCO-fZ-NxX" secondAttribute="leading" id="nD9-OF-dsR"/>
+                            <constraint firstItem="zLc-vw-yZs" firstAttribute="centerX" secondItem="OCO-fZ-NxX" secondAttribute="centerX" id="qo1-9s-uEy"/>
                             <constraint firstItem="RuT-20-JBL" firstAttribute="width" secondItem="hsV-xp-CsS" secondAttribute="width" multiplier="0.362319" id="scq-PS-o9g"/>
                             <constraint firstItem="hP5-fB-vY1" firstAttribute="centerY" secondItem="hsV-xp-CsS" secondAttribute="centerY" multiplier="0.9" id="tJ3-o6-n2m"/>
                             <constraint firstItem="KFB-uC-oIG" firstAttribute="centerY" secondItem="hsV-xp-CsS" secondAttribute="centerY" multiplier="0.7" id="ttK-hV-x1R"/>
+                            <constraint firstItem="zLc-vw-yZs" firstAttribute="centerY" secondItem="hsV-xp-CsS" secondAttribute="centerY" multiplier="1.4" id="u3Z-E8-aNN"/>
                             <constraint firstItem="OCO-fZ-NxX" firstAttribute="centerY" secondItem="hsV-xp-CsS" secondAttribute="centerY" multiplier="1.6" id="xiL-cH-twX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tfT-GV-Hvb"/>
                     <connections>
+                        <outlet property="bestLable" destination="zLc-vw-yZs" id="lr4-Ui-hsD"/>
                         <outlet property="indicatorGameLable" destination="hP5-fB-vY1" id="p3v-Sj-GgN"/>
                         <outlet property="playButton" destination="OCO-fZ-NxX" id="2O2-wq-sxw"/>
                         <outletCollection property="buttonsCollection" destination="KFB-uC-oIG" collectionClass="NSMutableArray" id="oDb-3C-Tw3"/>
@@ -180,9 +190,6 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="GrayColor">
-            <color red="0.60799998044967651" green="0.60799998044967651" blue="0.60799998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
