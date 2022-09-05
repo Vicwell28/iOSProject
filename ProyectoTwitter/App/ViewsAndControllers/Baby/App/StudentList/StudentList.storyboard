@@ -1,31 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O60-b8-kV4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="s0d-6b-0kx">
+        <scene sceneID="s3K-CO-PnE">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                <viewController id="O60-b8-kV4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n3n-oW-PEh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7P-ii-JIS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inercia-l1" translatesAutoresizingMaskIntoConstraints="NO" id="d5h-43-JED">
+                                        <rect key="frame" x="172.5" y="0.5" width="69" height="69"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="d5h-43-JED" secondAttribute="height" multiplier="1:1" id="ffc-kH-9ol"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk2-X0-wH4">
+                                        <rect key="frame" x="24" y="17.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Gk2-X0-wH4" secondAttribute="height" multiplier="1:1" id="NUk-Oc-aQK"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="inercia-back" symbolScale="large"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="d5h-43-JED" firstAttribute="centerX" secondItem="o7P-ii-JIS" secondAttribute="centerX" id="3D0-zY-q5D"/>
+                                    <constraint firstItem="Gk2-X0-wH4" firstAttribute="height" secondItem="o7P-ii-JIS" secondAttribute="height" multiplier="0.5" id="8vX-Hb-pqO"/>
+                                    <constraint firstItem="d5h-43-JED" firstAttribute="centerY" secondItem="o7P-ii-JIS" secondAttribute="centerY" id="E9v-jO-eYC"/>
+                                    <constraint firstItem="Gk2-X0-wH4" firstAttribute="centerX" secondItem="o7P-ii-JIS" secondAttribute="centerX" multiplier="0.2" id="I9E-YT-vas"/>
+                                    <constraint firstAttribute="width" secondItem="o7P-ii-JIS" secondAttribute="height" multiplier="207:35" id="JN2-bb-qjq"/>
+                                    <constraint firstItem="d5h-43-JED" firstAttribute="height" secondItem="o7P-ii-JIS" secondAttribute="height" multiplier="0.983333" id="OrE-0n-Epr"/>
+                                    <constraint firstItem="Gk2-X0-wH4" firstAttribute="centerY" secondItem="o7P-ii-JIS" secondAttribute="centerY" id="ati-lp-j4a"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZKP-62-cyO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o7P-ii-JIS" firstAttribute="top" secondItem="ZKP-62-cyO" secondAttribute="top" id="5lU-4Q-uqG"/>
+                            <constraint firstItem="o7P-ii-JIS" firstAttribute="width" secondItem="n3n-oW-PEh" secondAttribute="width" id="7PZ-G7-ews"/>
+                            <constraint firstItem="o7P-ii-JIS" firstAttribute="centerX" secondItem="n3n-oW-PEh" secondAttribute="centerX" id="JoM-Mv-Yec"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4mB-rQ-q8q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3" y="62"/>
+            <point key="canvasLocation" x="-4.3478260869565224" y="61.607142857142854"/>
         </scene>
     </scenes>
     <resources>
+        <image name="inercia-back" width="100" height="100"/>
+        <image name="inercia-l1" width="180" height="180"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

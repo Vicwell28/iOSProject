@@ -1,31 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zK9-XB-Xil">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="s0d-6b-0kx">
+        <scene sceneID="9oi-mH-HE4">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                <viewController id="zK9-XB-Xil" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yf3-cT-fVX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vpp-wU-iZx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inercia-l1" translatesAutoresizingMaskIntoConstraints="NO" id="Nbq-5D-tUk">
+                                        <rect key="frame" x="172.5" y="0.5" width="69" height="69"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Nbq-5D-tUk" secondAttribute="height" multiplier="1:1" id="H7D-SE-gVA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtl-jP-W1Q">
+                                        <rect key="frame" x="24" y="17.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Jtl-jP-W1Q" secondAttribute="height" multiplier="1:1" id="4PH-I3-i4x"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="inercia-back" symbolScale="large"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Nbq-5D-tUk" firstAttribute="height" secondItem="Vpp-wU-iZx" secondAttribute="height" multiplier="0.983333" id="3v5-yM-ClH"/>
+                                    <constraint firstAttribute="width" secondItem="Vpp-wU-iZx" secondAttribute="height" multiplier="207:35" id="5bW-8P-Q9M"/>
+                                    <constraint firstItem="Nbq-5D-tUk" firstAttribute="centerX" secondItem="Vpp-wU-iZx" secondAttribute="centerX" id="An4-ge-BLi"/>
+                                    <constraint firstItem="Jtl-jP-W1Q" firstAttribute="height" secondItem="Vpp-wU-iZx" secondAttribute="height" multiplier="0.5" id="AsV-n3-F1F"/>
+                                    <constraint firstItem="Jtl-jP-W1Q" firstAttribute="centerY" secondItem="Vpp-wU-iZx" secondAttribute="centerY" id="TPw-wP-iwp"/>
+                                    <constraint firstItem="Jtl-jP-W1Q" firstAttribute="centerX" secondItem="Vpp-wU-iZx" secondAttribute="centerX" multiplier="0.2" id="hSD-Jz-c4n"/>
+                                    <constraint firstItem="Nbq-5D-tUk" firstAttribute="centerY" secondItem="Vpp-wU-iZx" secondAttribute="centerY" id="uBl-CT-E1r"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5f9-jN-feu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vpp-wU-iZx" firstAttribute="top" secondItem="5f9-jN-feu" secondAttribute="top" id="Fa1-f7-BNO"/>
+                            <constraint firstItem="Vpp-wU-iZx" firstAttribute="width" secondItem="yf3-cT-fVX" secondAttribute="width" id="O1t-F0-pfd"/>
+                            <constraint firstItem="Vpp-wU-iZx" firstAttribute="centerX" secondItem="yf3-cT-fVX" secondAttribute="centerX" id="kM1-13-DSp"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Otn-VB-q68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3" y="62"/>
+            <point key="canvasLocation" x="-4.3478260869565224" y="61.607142857142854"/>
         </scene>
     </scenes>
     <resources>
+        <image name="inercia-back" width="100" height="100"/>
+        <image name="inercia-l1" width="180" height="180"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
