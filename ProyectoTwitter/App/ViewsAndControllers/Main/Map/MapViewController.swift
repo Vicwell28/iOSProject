@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 import Alamofire
-import NotificationBanner
+import NotificationBannerSwift
 
 class MapViewController: UIViewController {
     // MARK: - Override Func

@@ -1,3 +1,0 @@
-github "Alamofire/Alamofire" ~> 5.6
-github "Daltron/NotificationBanner" "master"
-github "evgenyneu/keychain-swift" ~> 20.0

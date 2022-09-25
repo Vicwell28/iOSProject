@@ -7,7 +7,7 @@
 
 import UIKit
 import Alamofire
-import NotificationBanner
+import NotificationBannerSwift
 
 class GameViewController: UIViewController {
     //MARK: - Override func

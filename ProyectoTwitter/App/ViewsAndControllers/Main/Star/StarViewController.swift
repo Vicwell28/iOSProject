@@ -7,7 +7,7 @@
 
 import UIKit
 import Alamofire
-import NotificationBanner
+import NotificationBannerSwift
 
 class StarViewController: UIViewController {
     // MARK: - Override Func

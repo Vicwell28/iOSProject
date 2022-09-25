@@ -7,7 +7,7 @@
 
 import UIKit
 import Alamofire
-import NotificationBanner
+import NotificationBannerSwift
 import KeychainSwift
 
 class ProfileViewController: UIViewController {
