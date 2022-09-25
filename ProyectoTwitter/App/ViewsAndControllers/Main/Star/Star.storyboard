@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b2t-dj-lkj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b2t-dj-lkj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,7 +15,7 @@
                 <navigationController id="b2t-dj-lkj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="RjB-CK-ChO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="2js-Cw-bYg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -237,7 +237,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCj-Q9-k25">
                                 <rect key="frame" x="39" y="395.5" width="150" height="150"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2d-uy-9Qe">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cryptography" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m2d-uy-9Qe">
                                         <rect key="frame" x="0.0" y="122.5" width="150" height="27.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -247,7 +247,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <connections>
-                                            <segue destination="e2m-Pw-CNt" kind="show" id="etd-gb-6GU"/>
+                                            <segue destination="5Gy-VY-wCS" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="HoQ-1r-b54"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain.head.profile" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lLn-1W-HUT">
@@ -364,6 +364,14 @@
             </objects>
             <point key="canvasLocation" x="3337.68115942029" y="-680.35714285714278"/>
         </scene>
+        <!--ListCrypto-->
+        <scene sceneID="m1i-gS-qMi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ListCrypto" id="5Gy-VY-wCS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SgR-6G-lIY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4119" y="-723"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="cIW-Wp-NkC">
             <objects>
@@ -379,22 +387,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYW-XP-zK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5351" y="-680"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="fxz-X5-1pt">
-            <objects>
-                <viewController id="e2m-Pw-CNt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PHj-SQ-cGc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="yil-Eq-l6W"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="7t3-HC-H4e"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mMx-ir-mYV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4403" y="-680"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="r75-AH-Fzh">
@@ -442,7 +434,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="brain.head.profile" catalog="system" width="114" height="128"/>
+        <image name="brain.head.profile" catalog="system" width="120" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

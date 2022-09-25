@@ -94,6 +94,9 @@
 		C1A7A53028B5F94200CD4C36 /* DataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A7A52F28B5F94200CD4C36 /* DataSingleton.swift */; };
 		C1AF2A4C28B9A609002E6792 /* MainOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF2A4A28B9A609002E6792 /* MainOneTableViewCell.swift */; };
 		C1AF2A4D28B9A609002E6792 /* MainOneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1AF2A4B28B9A609002E6792 /* MainOneTableViewCell.xib */; };
+		C1B1247A28E09CAF00AD47BC /* ListCrypto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B1247928E09CAF00AD47BC /* ListCrypto.storyboard */; };
+		C1B1247E28E0A27B00AD47BC /* ListCryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B1247D28E0A27B00AD47BC /* ListCryptoViewController.swift */; };
+		C1B1248028E0D38100AD47BC /* DetailCryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B1247F28E0D38100AD47BC /* DetailCryptoViewController.swift */; };
 		C1CD346028B1C31600763C6E /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */; };
 		C1CD346628B1F7F000763C6E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD346528B1F7F000763C6E /* Home.storyboard */; };
 		C1CD346828B1F80800763C6E /* Star.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD346728B1F80800763C6E /* Star.storyboard */; };
@@ -203,6 +206,9 @@
 		C1A7A52F28B5F94200CD4C36 /* DataSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSingleton.swift; sourceTree = "<group>"; };
 		C1AF2A4A28B9A609002E6792 /* MainOneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOneTableViewCell.swift; sourceTree = "<group>"; };
 		C1AF2A4B28B9A609002E6792 /* MainOneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainOneTableViewCell.xib; sourceTree = "<group>"; };
+		C1B1247928E09CAF00AD47BC /* ListCrypto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListCrypto.storyboard; sourceTree = "<group>"; };
+		C1B1247D28E0A27B00AD47BC /* ListCryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCryptoViewController.swift; sourceTree = "<group>"; };
+		C1B1247F28E0D38100AD47BC /* DetailCryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCryptoViewController.swift; sourceTree = "<group>"; };
 		C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		C1CD346528B1F7F000763C6E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C1CD346728B1F80800763C6E /* Star.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Star.storyboard; sourceTree = "<group>"; };
@@ -258,6 +264,7 @@
 		C16229D228BC720B0028C03A /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				C1B1247828E09C7800AD47BC /* Cryptography */,
 				C19DA4D328BFF26B00AA3BD1 /* Game */,
 				C16229D328BC72120028C03A /* PinCode */,
 			);
@@ -847,6 +854,16 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		C1B1247828E09C7800AD47BC /* Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				C1B1247928E09CAF00AD47BC /* ListCrypto.storyboard */,
+				C1B1247D28E0A27B00AD47BC /* ListCryptoViewController.swift */,
+				C1B1247F28E0D38100AD47BC /* DetailCryptoViewController.swift */,
+			);
+			path = Cryptography;
+			sourceTree = "<group>";
+		};
 		C1CD346128B1F78F00763C6E /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -955,6 +972,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17CB49228A9D6E500FE54F3 /* Main.storyboard in Resources */,
+				C1B1247A28E09CAF00AD47BC /* ListCrypto.storyboard in Resources */,
 				C16715EE28C41865003D6402 /* StudentRegister.storyboard in Resources */,
 				C188669128C2AEE100C51D7C /* 2.jpg in Resources */,
 				C16715D828C417D8003D6402 /* ScanQR.storyboard in Resources */,
@@ -1061,6 +1079,7 @@
 				C17B70B928B5B2C900AB9560 /* User.swift in Sources */,
 				C1CD347B28B1F97F00763C6E /* AddViewController.swift in Sources */,
 				C17B70BB28B5B36700AB9560 /* ResError.swift in Sources */,
+				C1B1247E28E0A27B00AD47BC /* ListCryptoViewController.swift in Sources */,
 				C167161C28C41997003D6402 /* MainBabyViewController.swift in Sources */,
 				C17B70BD28B5B40600AB9560 /* ReqRegister.swift in Sources */,
 				C17B70B628B5B26700AB9560 /* ResLoginRegister.swift in Sources */,
@@ -1097,6 +1116,7 @@
 				C1CD347328B1F94200763C6E /* StarViewController.swift in Sources */,
 				C17CB46228A9D21A00FE54F3 /* SceneDelegate.swift in Sources */,
 				C16715FA28C418A3003D6402 /* SettingsViewController.swift in Sources */,
+				C1B1248028E0D38100AD47BC /* DetailCryptoViewController.swift in Sources */,
 				C167162028C419B3003D6402 /* SplashBabyViewController.swift in Sources */,
 				C167161428C41960003D6402 /* LogbookViewController.swift in Sources */,
 				C16715F028C4186C003D6402 /* StudentRegisterViewController.swift in Sources */,
