@@ -41,29 +41,3 @@ extension SplashBabyViewController {
 extension SplashBabyViewController {
 
 }
-
-////MARK: - Override func
-////MARK: - Private Var / Let
-////MARK: - Public Var / Let
-////MARK: - @IBOutlet
-////MARK: - @IBAction
-//extension PinCodeViewController {
-//
-//}
-////MARK: - public func
-//extension PinCodeViewController {
-//
-//}
-////MARK: - Private func
-//extension PinCodeViewController {
-//
-//}
-////MARK: - Services
-//extension PinCodeViewController {
-//
-//}
-////MARK: - Other
-//extension PinCodeViewController {
-//
-//}
-

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C122C84828BED2CA00C3F03B /* KeychainSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C122C84728BED2CA00C3F03B /* KeychainSwift.xcframework */; };
 		C122C84928BED2CA00C3F03B /* KeychainSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C122C84728BED2CA00C3F03B /* KeychainSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1311A9C28D0DFB60075C63F /* Wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1311A9B28D0DFB60075C63F /* Wifi.swift */; };
+		C1311A9E28D0E0380075C63F /* BabyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1311A9D28D0E0380075C63F /* BabyShared.swift */; };
 		C16229D528BC722F0028C03A /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16229D428BC722F0028C03A /* PinCodeViewController.swift */; };
 		C16229D928BC87B00028C03A /* PinCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16229D828BC87B00028C03A /* PinCode.storyboard */; };
 		C16229DC28BC92090028C03A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16229DB28BC92090028C03A /* SplashViewController.swift */; };
@@ -134,6 +136,8 @@
 
 /* Begin PBXFileReference section */
 		C122C84728BED2CA00C3F03B /* KeychainSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KeychainSwift.xcframework; path = Carthage/Build/KeychainSwift.xcframework; sourceTree = "<group>"; };
+		C1311A9B28D0DFB60075C63F /* Wifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wifi.swift; sourceTree = "<group>"; };
+		C1311A9D28D0E0380075C63F /* BabyShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyShared.swift; sourceTree = "<group>"; };
 		C16229D428BC722F0028C03A /* PinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCodeViewController.swift; sourceTree = "<group>"; };
 		C16229D828BC87B00028C03A /* PinCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PinCode.storyboard; sourceTree = "<group>"; };
 		C16229DB28BC92090028C03A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -411,6 +415,7 @@
 		C16715B928C413AC003D6402 /* UserShared */ = {
 			isa = PBXGroup;
 			children = (
+				C1311A9D28D0E0380075C63F /* BabyShared.swift */,
 			);
 			path = UserShared;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 		C16715BA28C413B9003D6402 /* Wifi */ = {
 			isa = PBXGroup;
 			children = (
+				C1311A9B28D0DFB60075C63F /* Wifi.swift */,
 			);
 			path = Wifi;
 			sourceTree = "<group>";
@@ -1042,6 +1048,7 @@
 				C167160228C41908003D6402 /* SupportViewController.swift in Sources */,
 				C16715F228C4187A003D6402 /* StudentDetailsViewController.swift in Sources */,
 				C1AF2A4C28B9A609002E6792 /* MainOneTableViewCell.swift in Sources */,
+				C1311A9C28D0DFB60075C63F /* Wifi.swift in Sources */,
 				C167161628C41973003D6402 /* ProfileBabyViewController.swift in Sources */,
 				C167161A28C4198D003D6402 /* ScanQRViewController.swift in Sources */,
 				C19DA4D528BFF27F00AA3BD1 /* GameViewController.swift in Sources */,
@@ -1060,6 +1067,7 @@
 				C17CB48128A9D3CF00FE54F3 /* MyCustomView.swift in Sources */,
 				C16715E428C41828003D6402 /* CertificadoViewController.swift in Sources */,
 				C17CB46028A9D21A00FE54F3 /* AppDelegate.swift in Sources */,
+				C1311A9E28D0E0380075C63F /* BabyShared.swift in Sources */,
 				C1CD347328B1F94200763C6E /* StarViewController.swift in Sources */,
 				C17CB46228A9D21A00FE54F3 /* SceneDelegate.swift in Sources */,
 				C16715FA28C418A3003D6402 /* SettingsViewController.swift in Sources */,
@@ -1098,6 +1106,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -1144,7 +1153,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1158,6 +1167,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -1198,7 +1208,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1213,6 +1223,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 269NMMFH34;
@@ -1243,6 +1254,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 269NMMFH34;

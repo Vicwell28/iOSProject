@@ -175,7 +175,7 @@ extension MainBabyViewController {
 //MARK: - Private func tips
 extension MainBabyViewController {
     private func drawTips(){
-        if !isDrawTips {
+        if !self.isDrawTips {
             self.isDrawTips = true
             var posY : Float = 10.0
             
@@ -196,8 +196,26 @@ extension MainBabyViewController {
 //MARK: - Private func tutorials
 extension MainBabyViewController {
     private func drawTutorials(){
-        if !isDrawTips {
+        if !self.isDrawTutorials {
+            self.isDrawTutorials = true
+            var posY : Float = 10.0
             
+            let imv = UIImageView(frame: CGRect(x: self.view.frame.size.width/2-self.view.frame.size.width*0.95/2, y: CGFloat(posY), width: self.view.frame.size.width*0.95, height: self.view.frame.size.width*0.95/2))
+            imv.image = UIImage(named: "inercia-ej2")
+            
+            posY += imv.frame.size.height + 10
+            
+            let title = UITextView(frame: CGRect(x: self.view.frame.size.width/2-self.view.frame.size.width*0.95/2, y: CGFloat(posY), width: self.view.frame.size.width*0.95, height: 10))
+            title.text = "Este va a ser el titulo para el video"
+            title = CGRect(x: self.view.frame.size.width/2-self.view.frame.size.width*0.95/2, y: CGFloat(posY), width: self.view.frame.size.width*0.95, height: title.contentSize.height)
+            
+            let desc = UITextView(frame: CGRect(x: self.view.frame.size.width/2-self.view.frame.size.width*0.95/2, y: CGFloat(posY), width: self.view.frame.size.width*0.95, height: 10))
+            desc.text = "Este va a ser la descripion para el video"
+            desc = CGRect(x: self.view.frame.size.width/2-self.view.frame.size.width*0.95/2, y: CGFloat(posY), width: self.view.frame.size.width*0.95, height: title.contentSize.height)
+            
+            self.scrViewTutorial.addSubview(imv)
+            self.scrViewTutorial.addSubview(title)
+            self.scrViewTutorial.addSubview(desc)
         }
     }
 }
@@ -205,7 +223,9 @@ extension MainBabyViewController {
 //MARK: - Private func quizzes
 extension MainBabyViewController {
     private func drawQuizzes(){
-        if !isDrawTips {
+        if !self.isDrawQuizzes {
+            self.isDrawQuizzes = true
+            var posY : Float = 10.0
             
         }
     }
@@ -214,7 +234,9 @@ extension MainBabyViewController {
 //MARK: - Private func calculator
 extension MainBabyViewController {
     private func drawCalculator(){
-        if !isDrawTips {
+        if !self.isDrawCalculator {
+            self.isDrawCalculator = true
+            var posY : Float = 10.0
             
         }
     }
