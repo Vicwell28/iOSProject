@@ -7,6 +7,7 @@ target 'ProyectoTwitter' do
   pod 'NotificationBannerSwift', '~> 3.0.0'
   pod 'KeychainSwift', '~> 20.0'
   pod 'Alamofire'
+  pod 'CryptoSwift', '~> 1.6.0'
   # Pods for ProyectoTwitter
 
 end

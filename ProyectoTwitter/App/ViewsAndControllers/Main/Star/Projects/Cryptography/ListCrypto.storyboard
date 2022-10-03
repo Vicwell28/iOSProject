@@ -195,8 +195,9 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cRN-Ja-S4B">
                                         <rect key="frame" x="5" y="0.0" width="340" height="50"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                         <connections>
+                                            <action selector="passwordChangeAction:" destination="Leq-aG-P3e" eventType="editingChanged" id="0OD-mE-akX"/>
                                             <outlet property="delegate" destination="Leq-aG-P3e" id="dby-HX-Fd0"/>
                                         </connections>
                                     </textField>

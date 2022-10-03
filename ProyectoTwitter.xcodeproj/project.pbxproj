@@ -1312,6 +1312,7 @@
 				DEVELOPMENT_TEAM = 269NMMFH34;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProyectoTwitter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VicWell;
 				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "Abrir Archivos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -1345,6 +1346,7 @@
 				DEVELOPMENT_TEAM = 269NMMFH34;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProyectoTwitter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VicWell;
 				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "Abrir Archivos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
