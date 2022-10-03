@@ -40,6 +40,7 @@
                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
+                                                        <action selector="searchTextField:" destination="Y6W-OH-hqX" eventType="editingChanged" id="i1y-QH-22h"/>
                                                         <outlet property="delegate" destination="Y6W-OH-hqX" id="etI-AH-Krj"/>
                                                     </connections>
                                                 </textField>
@@ -75,7 +76,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="125" id="auc-st-MfH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" rowHeight="125" id="auc-st-MfH" customClass="CryptoCellTableViewCell" customModule="ProyectoTwitter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="150" width="390" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="auc-st-MfH" id="nX3-E2-iZT">
@@ -150,6 +151,10 @@
                                                 <constraint firstItem="l2t-7u-2d4" firstAttribute="width" secondItem="nX3-E2-iZT" secondAttribute="width" multiplier="0.897436" id="leF-V8-L4L"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="desCellLable" destination="9AT-uM-7W0" id="6yz-0O-lBf"/>
+                                            <outlet property="titleCellLable" destination="Xns-aO-FDq" id="zLY-zD-apc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -168,6 +173,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="Rxp-H9-JjE" id="XKQ-lU-3SC"/>
                         <segue destination="Leq-aG-P3e" kind="presentation" identifier="detalleCrypto" id="MdF-0p-qja"/>
                     </connections>
                 </viewController>
@@ -190,6 +196,9 @@
                                         <rect key="frame" x="5" y="0.0" width="340" height="50"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Leq-aG-P3e" id="dby-HX-Fd0"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -235,13 +244,12 @@
                                     <action selector="selectFileAction:" destination="Leq-aG-P3e" eventType="touchUpInside" id="ja3-Lw-cfD"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gRv-Tw-jgG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hola, mundo!" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="gRv-Tw-jgG">
                                 <rect key="frame" x="20" y="293.33333333333331" width="350" height="349.99999999999994"/>
                                 <color key="backgroundColor" name="NegroClaro"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gRv-Tw-jgG" secondAttribute="height" multiplier="1:1" id="MMD-dW-3uP"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" name="Color"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -250,6 +258,9 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Leq-aG-P3e" id="Ims-zo-e5x"/>
+                                </connections>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ARo-Xa-Pwt">
                                 <rect key="frame" x="20" y="663.66666666666663" width="350" height="50"/>
@@ -258,7 +269,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="165" height="50"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="En">
+                                        <state key="normal" title="Encriptar">
                                             <color key="titleColor" name="Negro"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -277,7 +288,7 @@
                                         <rect key="frame" x="185" y="0.0" width="165" height="50"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="En">
+                                        <state key="normal" title="Desencriptar">
                                             <color key="titleColor" name="Negro"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -318,6 +329,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fxo-6P-0na"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="gRv-Tw-jgG" firstAttribute="width" secondItem="jRJ-zr-nMv" secondAttribute="width" multiplier="0.897436" id="0po-Ab-lei"/>
                             <constraint firstItem="ARo-Xa-Pwt" firstAttribute="width" secondItem="jRJ-zr-nMv" secondAttribute="width" multiplier="0.897436" id="53S-As-nCC"/>
@@ -338,6 +350,9 @@
                             <constraint firstItem="gms-dg-Axm" firstAttribute="centerX" secondItem="jRJ-zr-nMv" secondAttribute="centerX" id="xzX-ua-wBY"/>
                             <constraint firstItem="gms-dg-Axm" firstAttribute="centerY" secondItem="jRJ-zr-nMv" secondAttribute="centerY" multiplier="0.65" id="zKP-QN-9T7"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="veA-hc-zkr" appends="YES" id="owx-Fd-oX0"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="cRN-Ja-S4B" id="ZFG-2N-GFt"/>
@@ -345,6 +360,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QVt-E3-HqA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="veA-hc-zkr">
+                    <connections>
+                        <action selector="tapView:" destination="Leq-aG-P3e" id="wOz-2G-6Sa"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1048" y="-34"/>
         </scene>
