@@ -16,15 +16,81 @@ class DetailCryptoViewController: UIViewController {
     //MARK: - Override func
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.overrideUserInterfaceStyle = .light
+
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.titleLable.text = self.textTitle
+        self.desLable.text = self.textDes
+        
+//        let password: [UInt8] = Array("s33krit".utf8)
+//        let salt: [UInt8] = Array("nacllcan".utf8)
+//        /* Generate a key from a `password`. Optional if you already have a key */
+//
+//        do {
+//            let key = try PKCS5.PBKDF2(
+//                password: password,
+//                salt: salt,
+//                iterations: 4096,
+//                keyLength: 32, /* AES-256 */
+//                variant: .sha2(SHA2.Variant.sha256)
+//            ).calculate()
+//
+//            /* Generate random IV value. IV is public value. Either need to generate, or get it from elsewhere */
+//            let iv = AES.randomIV(AES.blockSize)
+//
+//            /* AES cryptor instance */
+//            let aes = try AES(key: key, blockMode: CBC(iv: iv), padding: .pkcs7)
+//
+//            /* Encrypt Data */
+//            let inputData = "jila"
+//            let encryptedBytes = try aes.encrypt(inputData.bytes)
+//            let encryptedData = Data(encryptedBytes).toHexString()
+//
+//            /* Decrypt Data */
+//            let decryptedBytes = try aes.decrypt(encryptedData.bytes)
+//            if let dec = try? aes.decrypt(Array(hex: encryptedData)) {
+//                if let l = String(data: Data(dec), encoding: .utf8){
+//                    print("mensaje \(l)")
+//                }
+//            }
+//            print(encryptedBytes)
+//            print(encryptedData)
+//
+//        } catch {
+//        }
+//
+//        public func encryptMessage(message: String, encryptionKey: String, iv: String) -> String? {
+//            if let aes = try? AES(key: encryptionKey, iv: iv),
+//               let encrypted = try? aes.encrypt(Array<UInt8>(message.utf8)) {
+//                return encrypted.toHexString()
+//            }
+//            return nil
+//        }
+//
+//        public func decryptMessage(encryptedMessage: String, encryptionKey: String, iv: String) -> String? {
+//            if let aes = try? AES(key: encryptionKey, iv: iv),
+//               let decrypted = try? aes.decrypt(Array<UInt8>(hex: encryptedMessage)) {
+//                return String(data: Data(decrypted), encoding: .utf8)
+//            }
+//            return nil
+//        }
+        
+    }
     //MARK: - Private Var / Let
     
     //MARK: - Public Var / Let
     
     //MARK: - @IBOutlet
+    @IBOutlet weak var desLable: UILabel!
+    @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var textContentView: UITextView!
+    public var textTitle : String = ""
+    public var textDes : String = ""
 }
 
 
@@ -69,6 +135,8 @@ extension DetailCryptoViewController {
         }
         return nil
     }
+    
+    
 }
 
 //MARK: - Private func

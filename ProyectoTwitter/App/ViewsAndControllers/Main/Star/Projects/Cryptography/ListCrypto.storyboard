@@ -356,8 +356,10 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="desLable" destination="Xg8-3q-cO3" id="t3s-ND-2OH"/>
                         <outlet property="passwordTextField" destination="cRN-Ja-S4B" id="ZFG-2N-GFt"/>
                         <outlet property="textContentView" destination="gRv-Tw-jgG" id="nRe-6b-RPx"/>
+                        <outlet property="titleLable" destination="Q90-Br-lz3" id="0U4-w8-xJG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QVt-E3-HqA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

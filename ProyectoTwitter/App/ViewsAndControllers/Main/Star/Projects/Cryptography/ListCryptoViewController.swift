@@ -12,6 +12,7 @@ class ListCryptoViewController: UIViewController {
     //MARK: - Override func
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.overrideUserInterfaceStyle = .light
         self.dataSourceHashCopy = self.dataSourceHash
     }
     
@@ -26,7 +27,21 @@ class ListCryptoViewController: UIViewController {
     ]
     private var dataSourceHashCopy : [structCellHash] = [structCellHash]()
     //MARK: - Public Var / Let
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detalleCrypto" {
+            if segue.destination is DetailCryptoViewController {
+                let next = segue.destination as! DetailCryptoViewController
+                
+                print("\(self.tableView.indexPathForSelectedRow?.row ?? 50)")
+                
+                if let indexRow = self.tableView.indexPathForSelectedRow?.row {
+                    next.textTitle = self.dataSourceHash[indexRow].title
+                    next.textDes = self.dataSourceHash[indexRow].desc
+                }
+            }
+        }
+    }
 
     @IBAction func searchTextField(_ sender: UITextField) {
         if let text = sender.text {
@@ -42,7 +57,7 @@ class ListCryptoViewController: UIViewController {
     }
     
     //MARK: - @IBOutlet
-
+    private var indiceMetodo : Int = 0
     @IBOutlet weak var tableView: UITableView!
 }
 
@@ -89,5 +104,6 @@ extension ListCryptoViewController : UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "detalleCrypto", sender: nil)
         print("Elemento Seleccionado \(indexPath.row)")
+        indiceMetodo = indexPath.row
     }
 }
