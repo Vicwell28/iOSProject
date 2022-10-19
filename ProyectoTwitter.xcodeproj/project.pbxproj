@@ -54,6 +54,7 @@
 		C167161C28C41997003D6402 /* MainBabyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167161B28C41997003D6402 /* MainBabyViewController.swift */; };
 		C167161E28C419A4003D6402 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167161D28C419A4003D6402 /* LoginViewController.swift */; };
 		C167162028C419B3003D6402 /* SplashBabyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167161F28C419B3003D6402 /* SplashBabyViewController.swift */; };
+		C16D7B092900565900C929FB /* QuestionUTT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16D7B082900565900C929FB /* QuestionUTT.storyboard */; };
 		C17B70B028B5B16900AB9560 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70AF28B5B16900AB9560 /* Endpoints.swift */; };
 		C17B70B428B5B25A00AB9560 /* ReqLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70B328B5B25A00AB9560 /* ReqLogin.swift */; };
 		C17B70B628B5B26700AB9560 /* ResLoginRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17B70B528B5B26700AB9560 /* ResLoginRegister.swift */; };
@@ -91,6 +92,16 @@
 		C188669528C2AEE100C51D7C /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C188668B28C2AEE100C51D7C /* 8.jpg */; };
 		C18BC79D28C431A000C9C11D /* BabyImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18BC79C28C431A000C9C11D /* BabyImages.xcassets */; };
 		C18BC79F28C431B800C9C11D /* BabyColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18BC79E28C431B800C9C11D /* BabyColors.xcassets */; };
+		C18CFD9828EDD4E30029E8DC /* EndpoinstBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CFD9728EDD4E30029E8DC /* EndpoinstBaby.swift */; };
+		C18CFD9A28EDD9320029E8DC /* ResTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CFD9928EDD9320029E8DC /* ResTutorial.swift */; };
+		C18CFD9C28EDDA350029E8DC /* ResTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CFD9B28EDDA350029E8DC /* ResTips.swift */; };
+		C18CFD9E28EDDB860029E8DC /* ResCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CFD9D28EDDB860029E8DC /* ResCalculator.swift */; };
+		C18CFDA028EDDC6E0029E8DC /* ResQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CFD9F28EDDC6E0029E8DC /* ResQuestion.swift */; };
+		C18CFDA228EDEB720029E8DC /* ResErrorBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CFDA128EDEB720029E8DC /* ResErrorBaby.swift */; };
+		C18DEAE428FF32CF00C13322 /* CollectionViewP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18DEAE328FF32CF00C13322 /* CollectionViewP.storyboard */; };
+		C18DEAE628FF331200C13322 /* CollectionViewPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DEAE528FF331200C13322 /* CollectionViewPViewController.swift */; };
+		C18DEAE828FF333200C13322 /* CollectionViewPCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DEAE728FF333200C13322 /* CollectionViewPCollectionViewCell.swift */; };
+		C1932103290041D600954FBA /* QuestionUTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1932102290041D600954FBA /* QuestionUTTViewController.swift */; };
 		C19DA4D528BFF27F00AA3BD1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19DA4D428BFF27F00AA3BD1 /* GameViewController.swift */; };
 		C19DA4D928BFFFD700AA3BD1 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19DA4D828BFFFD700AA3BD1 /* Game.storyboard */; };
 		C1A7A53028B5F94200CD4C36 /* DataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A7A52F28B5F94200CD4C36 /* DataSingleton.swift */; };
@@ -163,6 +174,7 @@
 		C167161B28C41997003D6402 /* MainBabyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBabyViewController.swift; sourceTree = "<group>"; };
 		C167161D28C419A4003D6402 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C167161F28C419B3003D6402 /* SplashBabyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashBabyViewController.swift; sourceTree = "<group>"; };
+		C16D7B082900565900C929FB /* QuestionUTT.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionUTT.storyboard; sourceTree = "<group>"; };
 		C17B709E28B5AC4F00AB9560 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		C17B709F28B5AC4F00AB9560 /* MarqueeLabel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MarqueeLabel.xcframework; path = Carthage/Build/MarqueeLabel.xcframework; sourceTree = "<group>"; };
 		C17B70A028B5AC4F00AB9560 /* NotificationBanner.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NotificationBanner.xcframework; path = Carthage/Build/NotificationBanner.xcframework; sourceTree = "<group>"; };
@@ -206,6 +218,16 @@
 		C188668B28C2AEE100C51D7C /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		C18BC79C28C431A000C9C11D /* BabyImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BabyImages.xcassets; sourceTree = "<group>"; };
 		C18BC79E28C431B800C9C11D /* BabyColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BabyColors.xcassets; sourceTree = "<group>"; };
+		C18CFD9728EDD4E30029E8DC /* EndpoinstBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpoinstBaby.swift; sourceTree = "<group>"; };
+		C18CFD9928EDD9320029E8DC /* ResTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResTutorial.swift; sourceTree = "<group>"; };
+		C18CFD9B28EDDA350029E8DC /* ResTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResTips.swift; sourceTree = "<group>"; };
+		C18CFD9D28EDDB860029E8DC /* ResCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResCalculator.swift; sourceTree = "<group>"; };
+		C18CFD9F28EDDC6E0029E8DC /* ResQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResQuestion.swift; sourceTree = "<group>"; };
+		C18CFDA128EDEB720029E8DC /* ResErrorBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResErrorBaby.swift; sourceTree = "<group>"; };
+		C18DEAE328FF32CF00C13322 /* CollectionViewP.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionViewP.storyboard; sourceTree = "<group>"; };
+		C18DEAE528FF331200C13322 /* CollectionViewPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPViewController.swift; sourceTree = "<group>"; };
+		C18DEAE728FF333200C13322 /* CollectionViewPCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPCollectionViewCell.swift; sourceTree = "<group>"; };
+		C1932102290041D600954FBA /* QuestionUTTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionUTTViewController.swift; sourceTree = "<group>"; };
 		C19DA4D428BFF27F00AA3BD1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C19DA4D828BFFFD700AA3BD1 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		C1A7A52F28B5F94200CD4C36 /* DataSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSingleton.swift; sourceTree = "<group>"; };
@@ -270,6 +292,8 @@
 		C16229D228BC720B0028C03A /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				C193210029003BB100954FBA /* QuestionsUTT */,
+				C18DEAE228FF322B00C13322 /* CollectionViewP */,
 				C1B1247828E09C7800AD47BC /* Cryptography */,
 				C19DA4D328BFF26B00AA3BD1 /* Game */,
 				C16229D328BC72120028C03A /* PinCode */,
@@ -355,6 +379,7 @@
 		C16715B228C41328003D6402 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				C18CFD9728EDD4E30029E8DC /* EndpoinstBaby.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -379,6 +404,11 @@
 		C16715B528C4135A003D6402 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				C18CFD9928EDD9320029E8DC /* ResTutorial.swift */,
+				C18CFD9B28EDDA350029E8DC /* ResTips.swift */,
+				C18CFD9D28EDDB860029E8DC /* ResCalculator.swift */,
+				C18CFD9F28EDDC6E0029E8DC /* ResQuestion.swift */,
+				C18CFDA128EDEB720029E8DC /* ResErrorBaby.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -858,6 +888,25 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		C18DEAE228FF322B00C13322 /* CollectionViewP */ = {
+			isa = PBXGroup;
+			children = (
+				C18DEAE328FF32CF00C13322 /* CollectionViewP.storyboard */,
+				C18DEAE528FF331200C13322 /* CollectionViewPViewController.swift */,
+				C18DEAE728FF333200C13322 /* CollectionViewPCollectionViewCell.swift */,
+			);
+			path = CollectionViewP;
+			sourceTree = "<group>";
+		};
+		C193210029003BB100954FBA /* QuestionsUTT */ = {
+			isa = PBXGroup;
+			children = (
+				C16D7B082900565900C929FB /* QuestionUTT.storyboard */,
+				C1932102290041D600954FBA /* QuestionUTTViewController.swift */,
+			);
+			path = QuestionsUTT;
+			sourceTree = "<group>";
+		};
 		C19DA4D328BFF26B00AA3BD1 /* Game */ = {
 			isa = PBXGroup;
 			children = (
@@ -1005,6 +1054,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17CB49228A9D6E500FE54F3 /* Main.storyboard in Resources */,
+				C16D7B092900565900C929FB /* QuestionUTT.storyboard in Resources */,
 				C1B1247A28E09CAF00AD47BC /* ListCrypto.storyboard in Resources */,
 				C16715EE28C41865003D6402 /* StudentRegister.storyboard in Resources */,
 				C188669128C2AEE100C51D7C /* 2.jpg in Resources */,
@@ -1052,6 +1102,7 @@
 				C188669328C2AEE100C51D7C /* 6.jpg in Resources */,
 				C1CD346628B1F7F000763C6E /* Home.storyboard in Resources */,
 				C167160428C4190F003D6402 /* Support.storyboard in Resources */,
+				C18DEAE428FF32CF00C13322 /* CollectionViewP.storyboard in Resources */,
 				C16715DA28C417E4003D6402 /* OwnerRegister.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1107,6 +1158,8 @@
 			files = (
 				C1CD346028B1C31600763C6E /* MainTabBarViewController.swift in Sources */,
 				C17CB48A28A9D52D00FE54F3 /* SingUpViewController.swift in Sources */,
+				C18CFDA028EDDC6E0029E8DC /* ResQuestion.swift in Sources */,
+				C18CFD9C28EDDA350029E8DC /* ResTips.swift in Sources */,
 				C17B70B428B5B25A00AB9560 /* ReqLogin.swift in Sources */,
 				C17B70B028B5B16900AB9560 /* Endpoints.swift in Sources */,
 				C17B70B928B5B2C900AB9560 /* User.swift in Sources */,
@@ -1114,10 +1167,13 @@
 				C17B70BB28B5B36700AB9560 /* ResError.swift in Sources */,
 				C1B1247E28E0A27B00AD47BC /* ListCryptoViewController.swift in Sources */,
 				C167161C28C41997003D6402 /* MainBabyViewController.swift in Sources */,
+				C18DEAE628FF331200C13322 /* CollectionViewPViewController.swift in Sources */,
 				C17B70BD28B5B40600AB9560 /* ReqRegister.swift in Sources */,
+				C18CFD9A28EDD9320029E8DC /* ResTutorial.swift in Sources */,
 				C17B70B628B5B26700AB9560 /* ResLoginRegister.swift in Sources */,
 				C167161828C4197E003D6402 /* OwnerRegisterViewController.swift in Sources */,
 				C1FB641928E1FD4500906E36 /* FileIOController.swift in Sources */,
+				C18CFD9828EDD4E30029E8DC /* EndpoinstBaby.swift in Sources */,
 				C167160628C4191B003D6402 /* InstructorListViewController.swift in Sources */,
 				C17CB46428A9D21A00FE54F3 /* OnBoardingViewController.swift in Sources */,
 				C16715F828C41897003D6402 /* SimulatorViewController.swift in Sources */,
@@ -1126,6 +1182,7 @@
 				C1CD347628B1F95500763C6E /* MapViewController.swift in Sources */,
 				C167160228C41908003D6402 /* SupportViewController.swift in Sources */,
 				C16715F228C4187A003D6402 /* StudentDetailsViewController.swift in Sources */,
+				C18CFD9E28EDDB860029E8DC /* ResCalculator.swift in Sources */,
 				C1AF2A4C28B9A609002E6792 /* MainOneTableViewCell.swift in Sources */,
 				C1311A9C28D0DFB60075C63F /* Wifi.swift in Sources */,
 				C167161628C41973003D6402 /* ProfileBabyViewController.swift in Sources */,
@@ -1143,6 +1200,7 @@
 				C17B70C128B5B4BD00AB9560 /* Location.swift in Sources */,
 				C1CD347928B1F96E00763C6E /* ProfileViewController.swift in Sources */,
 				C167160028C418C0003D6402 /* CalibrationViewController.swift in Sources */,
+				C18CFDA228EDEB720029E8DC /* ResErrorBaby.swift in Sources */,
 				C16229DC28BC92090028C03A /* SplashViewController.swift in Sources */,
 				C167160E28C41941003D6402 /* MonitorViewController.swift in Sources */,
 				C17CB48128A9D3CF00FE54F3 /* MyCustomView.swift in Sources */,
@@ -1156,7 +1214,9 @@
 				C167162028C419B3003D6402 /* SplashBabyViewController.swift in Sources */,
 				C167161428C41960003D6402 /* LogbookViewController.swift in Sources */,
 				C16715F028C4186C003D6402 /* StudentRegisterViewController.swift in Sources */,
+				C18DEAE828FF333200C13322 /* CollectionViewPCollectionViewCell.swift in Sources */,
 				C16229D528BC722F0028C03A /* PinCodeViewController.swift in Sources */,
+				C1932103290041D600954FBA /* QuestionUTTViewController.swift in Sources */,
 				C17B70C528B5B6C300AB9560 /* ResDestroyTweet.swift in Sources */,
 				C16715E628C41835003D6402 /* HelpViewController.swift in Sources */,
 			);
@@ -1316,7 +1376,7 @@
 				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "Abrir Archivos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = ListCrypto;
+				INFOPLIST_KEY_UIMainStoryboardFile = Star;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -1350,7 +1410,7 @@
 				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "Abrir Archivos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = ListCrypto;
+				INFOPLIST_KEY_UIMainStoryboardFile = Star;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";

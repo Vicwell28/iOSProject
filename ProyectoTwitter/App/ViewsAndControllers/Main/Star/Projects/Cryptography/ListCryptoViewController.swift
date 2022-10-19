@@ -25,9 +25,10 @@ class ListCryptoViewController: UIViewController {
         structCellHash(id: 5, title: "SHA-384", desc: "SH1 SIMETRICO"),
         structCellHash(id: 6, title: "SHA-512", desc: "SH1 SIMETRICO")
     ]
-    private var dataSourceHashCopy : [structCellHash] = [structCellHash]()
-    //MARK: - Public Var / Let
     
+    private var dataSourceHashCopy : [structCellHash] = [structCellHash]()
+    
+    //MARK: - Public Var / Let
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detalleCrypto" {
             if segue.destination is DetailCryptoViewController {
