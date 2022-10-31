@@ -769,6 +769,7 @@
 		C17CB47428A9D31800FE54F3 /* ViewsAndControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C1852DE92907059700B4077B /* Medics */,
 				C16715AE28C4126F003D6402 /* Baby */,
 				C16229DA28BC91F10028C03A /* Splash */,
 				C17CB47E28A9D3AB00FE54F3 /* Main */,
@@ -888,6 +889,19 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		C1852DE92907059700B4077B /* Medics */ = {
+			isa = PBXGroup;
+			children = (
+				C19BDE9C291064D9000B9A66 /* Commands */,
+				C19BDE99291064A6000B9A66 /* Resources */,
+				C19BDE942910642E000B9A66 /* Local */,
+				C19BDE932910641B000B9A66 /* Networking */,
+				C19BDE9229106413000B9A66 /* Extensions */,
+				C19BDE90291063DA000B9A66 /* App */,
+			);
+			path = Medics;
+			sourceTree = "<group>";
+		};
 		C18DEAE228FF322B00C13322 /* CollectionViewP */ = {
 			isa = PBXGroup;
 			children = (
@@ -905,6 +919,120 @@
 				C1932102290041D600954FBA /* QuestionUTTViewController.swift */,
 			);
 			path = QuestionsUTT;
+			sourceTree = "<group>";
+		};
+		C19BDE8E291063A9000B9A66 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C19BDE8F291063C8000B9A66 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C19BDE90291063DA000B9A66 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C19BDE91291063F0000B9A66 /* Cells */,
+				C19BDE8F291063C8000B9A66 /* ViewControllers */,
+				C19BDE8E291063A9000B9A66 /* Storyboards */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C19BDE91291063F0000B9A66 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C19BDE9229106413000B9A66 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C19BDE932910641B000B9A66 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C19BDE9829106465000B9A66 /* Repositories */,
+				C19BDE972910645A000B9A66 /* Models */,
+				C19BDE9629106447000B9A66 /* Requests */,
+				C19BDE9529106441000B9A66 /* Responses */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C19BDE942910642E000B9A66 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		C19BDE9529106441000B9A66 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		C19BDE9629106447000B9A66 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		C19BDE972910645A000B9A66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C19BDE9829106465000B9A66 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C19BDE99291064A6000B9A66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C19BDE9B291064B7000B9A66 /* Assets */,
+				C19BDE9A291064B2000B9A66 /* Colors */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C19BDE9A291064B2000B9A66 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		C19BDE9B291064B7000B9A66 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C19BDE9C291064D9000B9A66 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commands;
 			sourceTree = "<group>";
 		};
 		C19DA4D328BFF26B00AA3BD1 /* Game */ = {

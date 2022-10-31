@@ -35,7 +35,7 @@ class StarViewController: UIViewController {
         super.viewWillDisappear(animated)
         print("StarViewController viewWillDisappear")
     }
-    
+        
     var dataSingleton : DataSingleton = DataSingleton.shared
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
