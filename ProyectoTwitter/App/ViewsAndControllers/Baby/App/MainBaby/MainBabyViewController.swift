@@ -11,7 +11,6 @@ class MainBabyViewController: UIViewController {
     //MARK: - Override func
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,37 +35,35 @@ class MainBabyViewController: UIViewController {
     //MARK: - Public Var / Let
     
     //MARK: - @IBOutlet
+    
+    //MENU
     @IBOutlet weak var tableViewMenu: UITableView!
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var menuImv: UIImageView!
-    
+
+    //TIPS
     @IBOutlet weak var viewTip: UIView!
     @IBOutlet weak var imvTip: UIImageView!
     @IBOutlet weak var lblTip: UILabel!
     @IBOutlet weak var scrViewTip: UIScrollView!
     
+    //TUTORIALS
     @IBOutlet weak var viewQuizze: UIView!
     @IBOutlet weak var imvQuizze: UIImageView!
     @IBOutlet weak var lblQuizze: UILabel!
     @IBOutlet weak var scrViewQuizze: UIScrollView!
     
+    //QUIZZES
     @IBOutlet weak var viewTutorial: UIView!
     @IBOutlet weak var imvTutorial: UIImageView!
     @IBOutlet weak var lblTutorial: UILabel!
     @IBOutlet weak var scrViewTutorial: UIScrollView!
     
+    //CALCULATOR
     @IBOutlet weak var viewCalculator: UIView!
     @IBOutlet weak var imvCalculator: UIImageView!
     @IBOutlet weak var lblCalculator: UILabel!
     @IBOutlet weak var scrViewCalculator: UIScrollView!
-    //TIPS
-    
-    //TUTORIALS
-    
-    //QUIZZES
-    
-    //CALCULATOR
-    
 }
 //MARK: - @IBAction
 extension MainBabyViewController {
@@ -246,16 +243,24 @@ extension MainBabyViewController {
 extension MainBabyViewController {
     
 }
-//MARK: - Other
+//MARK: - UITableViewDataSource
 extension MainBabyViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
         return cell
     }
-    
-    
 }
+
+//MARK: - UITableViewDataSource
+extension MainBabyViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Index: \(indexPath.row)")
+        
+        performSegue(withIdentifier: "SegueLogin", sender: nil)
+    }
+}
+

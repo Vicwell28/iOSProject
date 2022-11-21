@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TSB-7h-Ca3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TSB-7h-Ca3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,16 +20,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzE-GZ-xgd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="80"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inercia-l1" translatesAutoresizingMaskIntoConstraints="NO" id="xqW-dZ-9Sq">
-                                        <rect key="frame" x="172.5" y="0.5" width="69" height="69"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="xqW-dZ-9Sq" secondAttribute="height" multiplier="1:1" id="joO-V4-cdG"/>
-                                        </constraints>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fj8-z2-FcE">
-                                        <rect key="frame" x="24" y="17.5" width="35" height="35"/>
+                                        <rect key="frame" x="21.5" y="20" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Fj8-z2-FcE" secondAttribute="height" multiplier="1:1" id="AfS-vW-Ryh"/>
                                         </constraints>
@@ -38,25 +33,31 @@
                                             <imageReference key="image" image="inercia-back" symbolScale="large"/>
                                         </state>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inercia-l1" translatesAutoresizingMaskIntoConstraints="NO" id="xqW-dZ-9Sq">
+                                        <rect key="frame" x="172.5" y="5.5" width="69" height="69"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xqW-dZ-9Sq" secondAttribute="height" multiplier="1:1" id="jXx-xf-fvL"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="Fj8-z2-FcE" firstAttribute="height" secondItem="mzE-GZ-xgd" secondAttribute="height" multiplier="0.5" id="2fq-Ai-0kk"/>
                                     <constraint firstItem="Fj8-z2-FcE" firstAttribute="centerX" secondItem="mzE-GZ-xgd" secondAttribute="centerX" multiplier="0.2" id="9Be-qF-SNU"/>
-                                    <constraint firstItem="xqW-dZ-9Sq" firstAttribute="centerY" secondItem="mzE-GZ-xgd" secondAttribute="centerY" id="L1m-Sp-Xje"/>
-                                    <constraint firstItem="xqW-dZ-9Sq" firstAttribute="centerX" secondItem="mzE-GZ-xgd" secondAttribute="centerX" id="Pc3-qo-c2L"/>
-                                    <constraint firstAttribute="width" secondItem="mzE-GZ-xgd" secondAttribute="height" multiplier="207:35" id="SWD-Oo-IbR"/>
-                                    <constraint firstItem="xqW-dZ-9Sq" firstAttribute="height" secondItem="mzE-GZ-xgd" secondAttribute="height" multiplier="0.983333" id="tKp-9J-dys"/>
+                                    <constraint firstItem="xqW-dZ-9Sq" firstAttribute="centerY" secondItem="mzE-GZ-xgd" secondAttribute="centerY" id="pTV-hm-neM"/>
+                                    <constraint firstItem="xqW-dZ-9Sq" firstAttribute="centerX" secondItem="mzE-GZ-xgd" secondAttribute="centerX" id="qdG-0c-DbA"/>
+                                    <constraint firstAttribute="width" secondItem="mzE-GZ-xgd" secondAttribute="height" multiplier="207:40" id="teb-8y-nJI"/>
                                     <constraint firstItem="Fj8-z2-FcE" firstAttribute="centerY" secondItem="mzE-GZ-xgd" secondAttribute="centerY" id="x26-9N-YDg"/>
+                                    <constraint firstItem="xqW-dZ-9Sq" firstAttribute="height" secondItem="mzE-GZ-xgd" secondAttribute="height" multiplier="0.857143" id="yqi-ff-bSJ"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fp0-dB-kqS"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="mzE-GZ-xgd" firstAttribute="top" secondItem="Fp0-dB-kqS" secondAttribute="top" id="WRB-mF-t3g"/>
+                            <constraint firstItem="mzE-GZ-xgd" firstAttribute="width" secondItem="IJK-8b-3Gf" secondAttribute="width" id="aJO-CK-ZTc"/>
                             <constraint firstItem="mzE-GZ-xgd" firstAttribute="centerX" secondItem="IJK-8b-3Gf" secondAttribute="centerX" id="iJs-fN-TtX"/>
-                            <constraint firstItem="mzE-GZ-xgd" firstAttribute="width" secondItem="IJK-8b-3Gf" secondAttribute="width" id="qWN-Ay-XP4"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -68,6 +69,9 @@
     <resources>
         <image name="inercia-back" width="100" height="100"/>
         <image name="inercia-l1" width="180" height="180"/>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
