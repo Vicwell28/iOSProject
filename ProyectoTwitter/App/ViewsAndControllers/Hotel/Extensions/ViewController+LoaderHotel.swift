@@ -71,18 +71,21 @@ extension UIViewController {
             })
             
             dataSourceIdsViewLoaders.removeAll()
-        }
-        
-        print("ESTE ES EL TOTAL DE VISTAS \(self.view.subviews.count)")
-        
-        for i in 0..<self.view.subviews.count {
-            if i < self.view.subviews.count {
-                let v = self.view.subviews[i]
-                if v.tag == 333333333 {
-                    v.removeFromSuperview()
+            
+            for i in 0..<self.view.subviews.count {
+                if i < self.view.subviews.count {
+                    let v = self.view.subviews[i]
+                    if v.tag == 333333333 {
+                        v.removeFromSuperview()
+                    }
                 }
             }
+            
+            print("ESTE ES EL TOTAL DE VISTAS \(self.view.subviews.count)")
         }
+        
+        
+        
     }
     
 }

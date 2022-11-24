@@ -1,18 +1,22 @@
 //
-//  Calendar+MenuHotelViewController.swift
+//  CalendarMenu+TableViewController.swift
 //  ProyectoTwitter
 //
-//  Created by soliduSystem on 20/11/22.
+//  Created by soliduSystem on 24/11/22.
 //
 
 import UIKit
 
-class Calendar_MainHotelViewController : UITableViewController {
-    
-    //MARK: - Override func
+class CalendarMenu_TableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     struct dataSourceCalendar : Codable {
@@ -58,35 +62,6 @@ class Calendar_MainHotelViewController : UITableViewController {
             dataSourceCalendarCell(date: "20/20/50", image: "imagen", desc: "desc"),
         ])
     ]
-    
-    //MARK: - Private Var / Let
-    
-    //MARK: - Public Var / Let
-    
-    
-    
-    //MARK: - @IBOutlet
-}
-
-//MARK: - @IBAction
-extension Calendar_MainHotelViewController {
-
-}
-//MARK: - public func
-extension Calendar_MainHotelViewController {
-
-}
-//MARK: - Private func
-extension Calendar_MainHotelViewController {
-
-}
-//MARK: - Services
-extension Calendar_MainHotelViewController {
-
-}
-//MARK: - Other
-extension Calendar_MainHotelViewController {
-   
 
     // MARK: - Table view data source
 
@@ -111,6 +86,49 @@ extension Calendar_MainHotelViewController {
         return self.dataSource[section].dateCalendar
     }
 
-    
+    /*
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    */
+
+    /*
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
+    }
+    */
+
+    /*
+    // Override to support rearranging the table view.
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+
+    }
+    */
+
+    /*
+    // Override to support conditional rearranging of the table view.
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the item to be re-orderable.
+        return true
+    }
+    */
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }

@@ -126,6 +126,10 @@
 		C18DEAE628FF331200C13322 /* CollectionViewPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DEAE528FF331200C13322 /* CollectionViewPViewController.swift */; };
 		C18DEAE828FF333200C13322 /* CollectionViewPCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DEAE728FF333200C13322 /* CollectionViewPCollectionViewCell.swift */; };
 		C1932103290041D600954FBA /* QuestionUTTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1932102290041D600954FBA /* QuestionUTTViewController.swift */; };
+		C194E4AF292EA24500CB689C /* PruebasContCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C194E4AE292EA24500CB689C /* PruebasContCollectionViewController.swift */; };
+		C19A1BB6292FD62B00A17DFB /* CalendarMenu+TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A1BB5292FD62B00A17DFB /* CalendarMenu+TableViewController.swift */; };
+		C19A1BB9292FE90400A17DFB /* PromosMenu+TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A1BB7292FE90400A17DFB /* PromosMenu+TableViewCell.swift */; };
+		C19A1BBA292FE90400A17DFB /* PromosMenu+TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19A1BB8292FE90400A17DFB /* PromosMenu+TableViewCell.xib */; };
 		C19BDE9E2910675E000B9A66 /* MedicsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19BDE9D2910675E000B9A66 /* MedicsStoryboard.storyboard */; };
 		C19DA4D528BFF27F00AA3BD1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19DA4D428BFF27F00AA3BD1 /* GameViewController.swift */; };
 		C19DA4D928BFFFD700AA3BD1 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19DA4D828BFFFD700AA3BD1 /* Game.storyboard */; };
@@ -278,6 +282,10 @@
 		C18DEAE528FF331200C13322 /* CollectionViewPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPViewController.swift; sourceTree = "<group>"; };
 		C18DEAE728FF333200C13322 /* CollectionViewPCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPCollectionViewCell.swift; sourceTree = "<group>"; };
 		C1932102290041D600954FBA /* QuestionUTTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionUTTViewController.swift; sourceTree = "<group>"; };
+		C194E4AE292EA24500CB689C /* PruebasContCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebasContCollectionViewController.swift; sourceTree = "<group>"; };
+		C19A1BB5292FD62B00A17DFB /* CalendarMenu+TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalendarMenu+TableViewController.swift"; sourceTree = "<group>"; };
+		C19A1BB7292FE90400A17DFB /* PromosMenu+TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PromosMenu+TableViewCell.swift"; sourceTree = "<group>"; };
+		C19A1BB8292FE90400A17DFB /* PromosMenu+TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "PromosMenu+TableViewCell.xib"; sourceTree = "<group>"; };
 		C19BDE9D2910675E000B9A66 /* MedicsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MedicsStoryboard.storyboard; sourceTree = "<group>"; };
 		C19DA4D428BFF27F00AA3BD1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C19DA4D828BFFFD700AA3BD1 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
@@ -427,6 +435,8 @@
 			children = (
 				C16078BF292ADA2900451719 /* MenuMain+TableViewCell.swift */,
 				C16078C0292ADA2900451719 /* MenuMain+TableViewCell.xib */,
+				C19A1BB7292FE90400A17DFB /* PromosMenu+TableViewCell.swift */,
+				C19A1BB8292FE90400A17DFB /* PromosMenu+TableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -443,6 +453,8 @@
 				C17C3CB0292BFD7600AB164F /* PaymentMethod+HotelViewController.swift */,
 				C17C3CB4292BFDE100AB164F /* PurchaseDatail+HotelViewController.swift */,
 				C17C3CB6292BFE0800AB164F /* QR+HotelViewController.swift */,
+				C194E4AE292EA24500CB689C /* PruebasContCollectionViewController.swift */,
+				C19A1BB5292FD62B00A17DFB /* CalendarMenu+TableViewController.swift */,
 			);
 			path = ContainerViews;
 			sourceTree = "<group>";
@@ -1373,6 +1385,7 @@
 			files = (
 				C17CB49228A9D6E500FE54F3 /* Main.storyboard in Resources */,
 				C16D7B092900565900C929FB /* QuestionUTT.storyboard in Resources */,
+				C19A1BBA292FE90400A17DFB /* PromosMenu+TableViewCell.xib in Resources */,
 				C1B1247A28E09CAF00AD47BC /* ListCrypto.storyboard in Resources */,
 				C16715EE28C41865003D6402 /* StudentRegister.storyboard in Resources */,
 				C188669128C2AEE100C51D7C /* 2.jpg in Resources */,
@@ -1486,6 +1499,7 @@
 				C18CFD9C28EDDA350029E8DC /* ResTips.swift in Sources */,
 				C17B70B428B5B25A00AB9560 /* ReqLogin.swift in Sources */,
 				C17B70B028B5B16900AB9560 /* Endpoints.swift in Sources */,
+				C19A1BB9292FE90400A17DFB /* PromosMenu+TableViewCell.swift in Sources */,
 				C17B70B928B5B2C900AB9560 /* User.swift in Sources */,
 				C14DA5442920863B00160252 /* ViewController+LoaderHotel.swift in Sources */,
 				C16078BA292AD41E00451719 /* Calendar+MainHotelViewController.swift in Sources */,
@@ -1527,6 +1541,7 @@
 				C167161E28C419A4003D6402 /* LoginViewController.swift in Sources */,
 				C17C3CA9292BFCCE00AB164F /* SingInHotelViewController.swift in Sources */,
 				C167160A28C4192C003D6402 /* InstructorRegisterViewController.swift in Sources */,
+				C19A1BB6292FD62B00A17DFB /* CalendarMenu+TableViewController.swift in Sources */,
 				C16078C1292ADA2900451719 /* MenuMain+TableViewCell.swift in Sources */,
 				C167161228C41956003D6402 /* ResultsViewController.swift in Sources */,
 				C17C3CB5292BFDE100AB164F /* PurchaseDatail+HotelViewController.swift in Sources */,
@@ -1557,6 +1572,7 @@
 				C17C3CAD292BFD3800AB164F /* DetailHotelViewController.swift in Sources */,
 				C18DEAE828FF333200C13322 /* CollectionViewPCollectionViewCell.swift in Sources */,
 				C16229D528BC722F0028C03A /* PinCodeViewController.swift in Sources */,
+				C194E4AF292EA24500CB689C /* PruebasContCollectionViewController.swift in Sources */,
 				C1932103290041D600954FBA /* QuestionUTTViewController.swift in Sources */,
 				C17B70C528B5B6C300AB9560 /* ResDestroyTweet.swift in Sources */,
 				C16078BC292AD46800451719 /* Promos+MainHotelViewController.swift in Sources */,

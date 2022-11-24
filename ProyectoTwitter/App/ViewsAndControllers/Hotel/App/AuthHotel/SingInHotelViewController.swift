@@ -15,11 +15,18 @@ class SingInHotelViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        viewCircle.cornerRadius = viewCircle.frame.width / 2
+    }
 
     //MARK: - Private Var / Let
     
     //MARK: - Public Var / Let
     
+    @IBOutlet weak var viewCircle: UIView!
     //MARK: - @IBOutlet
 }
 

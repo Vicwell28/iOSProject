@@ -12,51 +12,24 @@ class MainHotelViewController: UIViewController {
     //MARK: - Override func
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.imageViewProfile.cornerRadius = self.imageViewProfile.frame.width / 2
         
-        Timer.scheduledTimer(withTimeInterval: 4, repeats: false) { Timer in
-            self.showViewControllerLoaderHotel()
-        }
-        
-        
-        Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { Timer in
-            self.dismissViewControllerLoaderHotel()
-        }
-        
+        self.indicatorBudget.cornerRadius = self.indicatorBudget.frame.width / 2
     }
-    
-    
+   
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
+    @IBOutlet weak var indicatorBudget: UILabel!
     //MARK: - Private Var / Let
     
     
+    @IBOutlet weak var imageViewProfile: UIImageView!
     //MARK: - Public Var / Let
     
    
-    @IBAction func changeView(_ sender: UIButton) {
-        FavViewController.isHidden = true
-        PromosViewController.isHidden = true
-        CalendarViewController.isHidden = true
-        MenuViewController.isHidden = true
-
-        
-        switch sender.tag {
-        case 0:
-            MenuViewController.isHidden = false
-            break;
-        case 1:
-            CalendarViewController.isHidden = false
-            break;
-        case 2:
-            PromosViewController.isHidden = false
-            break;
-        default:
-            FavViewController.isHidden = false
-            break;
-        }
-    }
+    
     
     //MARK: - @IBOutlet
     
@@ -105,6 +78,29 @@ extension MainHotelViewController {
             self.viewMenuNotification.frame.origin.x = xMenu
         } completion: { Bool in
             
+        }
+    }
+    
+    @IBAction func changeView(_ sender: UIButton) {
+        FavViewController.isHidden = true
+        PromosViewController.isHidden = true
+        CalendarViewController.isHidden = true
+        MenuViewController.isHidden = true
+
+        
+        switch sender.tag {
+        case 0:
+            MenuViewController.isHidden = false
+            break;
+        case 1:
+            CalendarViewController.isHidden = false
+            break;
+        case 2:
+            PromosViewController.isHidden = false
+            break;
+        default:
+            FavViewController.isHidden = false
+            break;
         }
     }
 }

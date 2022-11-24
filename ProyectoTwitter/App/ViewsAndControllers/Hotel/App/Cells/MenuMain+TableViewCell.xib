@@ -31,7 +31,7 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ho4-D0-cJR">
                                         <rect key="frame" x="38" y="-33" width="80" height="80"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inercia-ej1" translatesAutoresizingMaskIntoConstraints="NO" id="czT-7a-8CK">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="czT-7a-8CK">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                             </imageView>
                                         </subviews>
@@ -166,8 +166,8 @@
     </objects>
     <resources>
         <image name="inercia-b1" width="200" height="200"/>
-        <image name="inercia-ej1" width="859" height="957"/>
         <image name="inercia-ej2" width="913" height="505"/>
+        <image name="profileImage" width="960" height="1280"/>
         <namedColor name="Negro">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
