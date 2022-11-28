@@ -14,6 +14,7 @@ class Menu_MainHotelViewController: UIViewController {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "MenuMain+TableViewCell", bundle: nil), forCellReuseIdentifier: "ManuMainCell")
         
+        
     }
     //MARK: - Private Var / Let
     
@@ -23,6 +24,12 @@ class Menu_MainHotelViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
 }
+
+//self.showViewControllerLoaderHotel()
+//Timer.scheduledTimer(withTimeInterval: 4, repeats: false) { Timer in
+//    self.dismissViewControllerLoaderHotel()
+//    self.performSegue(withIdentifier: "segueMain", sender: nil)
+//}
 
 
 
@@ -59,5 +66,6 @@ extension Menu_MainHotelViewController : UITableViewDataSource {
 extension Menu_MainHotelViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+        performSegue(withIdentifier: "segueDetailHotel", sender: nil)
     }
 }

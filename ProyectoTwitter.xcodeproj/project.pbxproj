@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A11B104A4E3C314C344F5735 /* Pods_ProyectoTwitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5485B390C0E6996EE4513991 /* Pods_ProyectoTwitter.framework */; };
+		C12D8076293092BF00197192 /* SplashHotel+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D8075293092BF00197192 /* SplashHotel+ViewController.swift */; };
 		C1311A9C28D0DFB60075C63F /* Wifi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1311A9B28D0DFB60075C63F /* Wifi.swift */; };
 		C1311A9E28D0E0380075C63F /* BabyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1311A9D28D0E0380075C63F /* BabyShared.swift */; };
 		C14DA53B2920448C00160252 /* MainHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14DA53A2920448C00160252 /* MainHotelViewController.swift */; };
@@ -102,6 +103,12 @@
 		C17D1FAC2914409900FD2FA9 /* ApiHelperMedics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17D1FAB2914409900FD2FA9 /* ApiHelperMedics.swift */; };
 		C17D1FAE2914494D00FD2FA9 /* TipsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17D1FAD2914494D00FD2FA9 /* TipsRepository.swift */; };
 		C17D1FB22914580200FD2FA9 /* MainMedicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17D1FB12914580200FD2FA9 /* MainMedicsViewController.swift */; };
+		C180506E29300C4200D8A2D1 /* DetailHotelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C180506D29300C4200D8A2D1 /* DetailHotelViewController.storyboard */; };
+		C180507029300E8600D8A2D1 /* PreviewHotel+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C180506F29300E8600D8A2D1 /* PreviewHotel+ViewController.swift */; };
+		C180507229300F4600D8A2D1 /* slide+hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C180507129300F4600D8A2D1 /* slide+hotel.swift */; };
+		C180507429300F9500D8A2D1 /* SlideHotel.xib in Resources */ = {isa = PBXBuildFile; fileRef = C180507329300F9500D8A2D1 /* SlideHotel.xib */; };
+		C180507629301FAE00D8A2D1 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = C180507529301FAE00D8A2D1 /* View.xib */; };
+		C18196052932DA460064655E /* dataSourceCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18196042932DA460064655E /* dataSourceCalendar.swift */; };
 		C188668C28C2AEE100C51D7C /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C188668228C2AEDF00C51D7C /* 7.jpg */; };
 		C188668D28C2AEE100C51D7C /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C188668328C2AEDF00C51D7C /* 3.jpg */; };
 		C188668E28C2AEE100C51D7C /* 1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C188668428C2AEDF00C51D7C /* 1.JPG */; };
@@ -139,6 +146,9 @@
 		C1B1247A28E09CAF00AD47BC /* ListCrypto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B1247928E09CAF00AD47BC /* ListCrypto.storyboard */; };
 		C1B1247E28E0A27B00AD47BC /* ListCryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B1247D28E0A27B00AD47BC /* ListCryptoViewController.swift */; };
 		C1B1248028E0D38100AD47BC /* DetailCryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B1247F28E0D38100AD47BC /* DetailCryptoViewController.swift */; };
+		C1CB62CC29351A4700EB4D8E /* OnBoarding+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB62CB29351A4700EB4D8E /* OnBoarding+ViewController.swift */; };
+		C1CB62CF29351B6E00EB4D8E /* onBoardingHotel.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1CB62CE29351B6E00EB4D8E /* onBoardingHotel.xib */; };
+		C1CB62D129351B8800EB4D8E /* onBoardingViewHotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB62D029351B8800EB4D8E /* onBoardingViewHotel.swift */; };
 		C1CD346028B1C31600763C6E /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */; };
 		C1CD346628B1F7F000763C6E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD346528B1F7F000763C6E /* Home.storyboard */; };
 		C1CD346828B1F80800763C6E /* Star.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1CD346728B1F80800763C6E /* Star.storyboard */; };
@@ -158,6 +168,7 @@
 		5485B390C0E6996EE4513991 /* Pods_ProyectoTwitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoTwitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F5E948D6CC69017717B98E /* Pods-ProyectoTwitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoTwitter.release.xcconfig"; path = "Target Support Files/Pods-ProyectoTwitter/Pods-ProyectoTwitter.release.xcconfig"; sourceTree = "<group>"; };
 		C122C84728BED2CA00C3F03B /* KeychainSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KeychainSwift.xcframework; path = Carthage/Build/KeychainSwift.xcframework; sourceTree = "<group>"; };
+		C12D8075293092BF00197192 /* SplashHotel+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SplashHotel+ViewController.swift"; sourceTree = "<group>"; };
 		C1311A9B28D0DFB60075C63F /* Wifi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wifi.swift; sourceTree = "<group>"; };
 		C1311A9D28D0E0380075C63F /* BabyShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyShared.swift; sourceTree = "<group>"; };
 		C14DA53A2920448C00160252 /* MainHotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHotelViewController.swift; sourceTree = "<group>"; };
@@ -258,6 +269,12 @@
 		C17D1FAB2914409900FD2FA9 /* ApiHelperMedics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelperMedics.swift; sourceTree = "<group>"; };
 		C17D1FAD2914494D00FD2FA9 /* TipsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsRepository.swift; sourceTree = "<group>"; };
 		C17D1FB12914580200FD2FA9 /* MainMedicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMedicsViewController.swift; sourceTree = "<group>"; };
+		C180506D29300C4200D8A2D1 /* DetailHotelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailHotelViewController.storyboard; sourceTree = "<group>"; };
+		C180506F29300E8600D8A2D1 /* PreviewHotel+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewHotel+ViewController.swift"; sourceTree = "<group>"; };
+		C180507129300F4600D8A2D1 /* slide+hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "slide+hotel.swift"; sourceTree = "<group>"; };
+		C180507329300F9500D8A2D1 /* SlideHotel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideHotel.xib; sourceTree = "<group>"; };
+		C180507529301FAE00D8A2D1 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		C18196042932DA460064655E /* dataSourceCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataSourceCalendar.swift; sourceTree = "<group>"; };
 		C188668228C2AEDF00C51D7C /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		C188668328C2AEDF00C51D7C /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		C188668428C2AEDF00C51D7C /* 1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.JPG; sourceTree = "<group>"; };
@@ -295,6 +312,9 @@
 		C1B1247928E09CAF00AD47BC /* ListCrypto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListCrypto.storyboard; sourceTree = "<group>"; };
 		C1B1247D28E0A27B00AD47BC /* ListCryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCryptoViewController.swift; sourceTree = "<group>"; };
 		C1B1247F28E0D38100AD47BC /* DetailCryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCryptoViewController.swift; sourceTree = "<group>"; };
+		C1CB62CB29351A4700EB4D8E /* OnBoarding+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnBoarding+ViewController.swift"; sourceTree = "<group>"; };
+		C1CB62CE29351B6E00EB4D8E /* onBoardingHotel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = onBoardingHotel.xib; sourceTree = "<group>"; };
+		C1CB62D029351B8800EB4D8E /* onBoardingViewHotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardingViewHotel.swift; sourceTree = "<group>"; };
 		C1CD345F28B1C31600763C6E /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		C1CD346528B1F7F000763C6E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C1CD346728B1F80800763C6E /* Star.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Star.storyboard; sourceTree = "<group>"; };
@@ -365,10 +385,10 @@
 		C14DA5322920440000160252 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				C16078B6292AD39000451719 /* ContainerViews */,
+				C1CB62CD29351B5300EB4D8E /* SingleViews */,
 				C16078AF292AC58F00451719 /* Cells */,
-				C14DA5392920445600160252 /* MainHotel */,
-				C14DA5382920444F00160252 /* AuthHotel */,
+				C16078B6292AD39000451719 /* ViewControllersHotels */,
+				C14DA5392920445600160252 /* ViewsHotel */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -376,6 +396,8 @@
 		C14DA5332920440600160252 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C18196032932DA1D0064655E /* Req */,
+				C18196022932DA130064655E /* Res */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -421,13 +443,14 @@
 			path = AuthHotel;
 			sourceTree = "<group>";
 		};
-		C14DA5392920445600160252 /* MainHotel */ = {
+		C14DA5392920445600160252 /* ViewsHotel */ = {
 			isa = PBXGroup;
 			children = (
-				C14DA53A2920448C00160252 /* MainHotelViewController.swift */,
 				C14DA53C2920449E00160252 /* MainHotelStoryboard.storyboard */,
+				C180506D29300C4200D8A2D1 /* DetailHotelViewController.storyboard */,
+				C180507529301FAE00D8A2D1 /* View.xib */,
 			);
-			path = MainHotel;
+			path = ViewsHotel;
 			sourceTree = "<group>";
 		};
 		C16078AF292AC58F00451719 /* Cells */ = {
@@ -441,9 +464,10 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		C16078B6292AD39000451719 /* ContainerViews */ = {
+		C16078B6292AD39000451719 /* ViewControllersHotels */ = {
 			isa = PBXGroup;
 			children = (
+				C14DA5382920444F00160252 /* AuthHotel */,
 				C16078B7292AD3F200451719 /* Menu+MainHotelViewController.swift */,
 				C16078B9292AD41E00451719 /* Calendar+MainHotelViewController.swift */,
 				C16078BB292AD46800451719 /* Promos+MainHotelViewController.swift */,
@@ -455,8 +479,12 @@
 				C17C3CB6292BFE0800AB164F /* QR+HotelViewController.swift */,
 				C194E4AE292EA24500CB689C /* PruebasContCollectionViewController.swift */,
 				C19A1BB5292FD62B00A17DFB /* CalendarMenu+TableViewController.swift */,
+				C180506F29300E8600D8A2D1 /* PreviewHotel+ViewController.swift */,
+				C12D8075293092BF00197192 /* SplashHotel+ViewController.swift */,
+				C1CB62CB29351A4700EB4D8E /* OnBoarding+ViewController.swift */,
+				C14DA53A2920448C00160252 /* MainHotelViewController.swift */,
 			);
-			path = ContainerViews;
+			path = ViewControllersHotels;
 			sourceTree = "<group>";
 		};
 		C16229D228BC720B0028C03A /* Projects */ = {
@@ -1064,6 +1092,21 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		C18196022932DA130064655E /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				C18196042932DA460064655E /* dataSourceCalendar.swift */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		C18196032932DA1D0064655E /* Req */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Req;
+			sourceTree = "<group>";
+		};
 		C1852DE92907059700B4077B /* Medics */ = {
 			isa = PBXGroup;
 			children = (
@@ -1268,6 +1311,17 @@
 			path = Cryptography;
 			sourceTree = "<group>";
 		};
+		C1CB62CD29351B5300EB4D8E /* SingleViews */ = {
+			isa = PBXGroup;
+			children = (
+				C180507329300F9500D8A2D1 /* SlideHotel.xib */,
+				C180507129300F4600D8A2D1 /* slide+hotel.swift */,
+				C1CB62CE29351B6E00EB4D8E /* onBoardingHotel.xib */,
+				C1CB62D029351B8800EB4D8E /* onBoardingViewHotel.swift */,
+			);
+			path = SingleViews;
+			sourceTree = "<group>";
+		};
 		C1CD346128B1F78F00763C6E /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -1390,13 +1444,16 @@
 				C16715EE28C41865003D6402 /* StudentRegister.storyboard in Resources */,
 				C188669128C2AEE100C51D7C /* 2.jpg in Resources */,
 				C16715D828C417D8003D6402 /* ScanQR.storyboard in Resources */,
+				C180506E29300C4200D8A2D1 /* DetailHotelViewController.storyboard in Resources */,
 				C188669528C2AEE100C51D7C /* 8.jpg in Resources */,
+				C180507429300F9500D8A2D1 /* SlideHotel.xib in Resources */,
 				C18BC79D28C431A000C9C11D /* BabyImages.xcassets in Resources */,
 				C167160828C41922003D6402 /* InstructorList.storyboard in Resources */,
 				C188669028C2AEE100C51D7C /* 9.jpg in Resources */,
 				C14DA53F292073B600160252 /* ColorHotel.xcassets in Resources */,
 				C188668F28C2AEE100C51D7C /* 4.jpg in Resources */,
 				C16715D128C417A5003D6402 /* SplashBaby.storyboard in Resources */,
+				C180507629301FAE00D8A2D1 /* View.xib in Resources */,
 				C19BDE9E2910675E000B9A66 /* MedicsStoryboard.storyboard in Resources */,
 				C167161028C41947003D6402 /* Monitor.storyboard in Resources */,
 				C1CD346828B1F80800763C6E /* Star.storyboard in Resources */,
@@ -1414,6 +1471,7 @@
 				C17CB46C28A9D22000FE54F3 /* LaunchScreen.storyboard in Resources */,
 				C16715E228C4181A003D6402 /* Certificado.storyboard in Resources */,
 				C16229D928BC87B00028C03A /* PinCode.storyboard in Resources */,
+				C1CB62CF29351B6E00EB4D8E /* onBoardingHotel.xib in Resources */,
 				C188669428C2AEE100C51D7C /* 5.jpg in Resources */,
 				C167160C28C41935003D6402 /* InstructorRegister.storyboard in Resources */,
 				C16715E828C4183C003D6402 /* Help.storyboard in Resources */,
@@ -1493,15 +1551,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17C3CB1292BFD7600AB164F /* PaymentMethod+HotelViewController.swift in Sources */,
+				C1CB62D129351B8800EB4D8E /* onBoardingViewHotel.swift in Sources */,
 				C1CD346028B1C31600763C6E /* MainTabBarViewController.swift in Sources */,
 				C17CB48A28A9D52D00FE54F3 /* SingUpViewController.swift in Sources */,
 				C18CFDA028EDDC6E0029E8DC /* ResQuestion.swift in Sources */,
 				C18CFD9C28EDDA350029E8DC /* ResTips.swift in Sources */,
 				C17B70B428B5B25A00AB9560 /* ReqLogin.swift in Sources */,
 				C17B70B028B5B16900AB9560 /* Endpoints.swift in Sources */,
+				C1CB62CC29351A4700EB4D8E /* OnBoarding+ViewController.swift in Sources */,
 				C19A1BB9292FE90400A17DFB /* PromosMenu+TableViewCell.swift in Sources */,
 				C17B70B928B5B2C900AB9560 /* User.swift in Sources */,
 				C14DA5442920863B00160252 /* ViewController+LoaderHotel.swift in Sources */,
+				C180507229300F4600D8A2D1 /* slide+hotel.swift in Sources */,
 				C16078BA292AD41E00451719 /* Calendar+MainHotelViewController.swift in Sources */,
 				C1CD347B28B1F97F00763C6E /* AddViewController.swift in Sources */,
 				C17B70BB28B5B36700AB9560 /* ResError.swift in Sources */,
@@ -1519,6 +1580,7 @@
 				C17CB46428A9D21A00FE54F3 /* OnBoardingViewController.swift in Sources */,
 				C16715F828C41897003D6402 /* SimulatorViewController.swift in Sources */,
 				C16715EC28C41857003D6402 /* StudentListViewController.swift in Sources */,
+				C12D8076293092BF00197192 /* SplashHotel+ViewController.swift in Sources */,
 				C17B70BF28B5B48C00AB9560 /* ResIndexTweets.swift in Sources */,
 				C1CD347628B1F95500763C6E /* MapViewController.swift in Sources */,
 				C17C3CB7292BFE0800AB164F /* QR+HotelViewController.swift in Sources */,
@@ -1539,6 +1601,7 @@
 				C17C3CAB292BFCDB00AB164F /* SingUpHotelViewController.swift in Sources */,
 				C1CD347128B1F93100763C6E /* HomeViewController.swift in Sources */,
 				C167161E28C419A4003D6402 /* LoginViewController.swift in Sources */,
+				C18196052932DA460064655E /* dataSourceCalendar.swift in Sources */,
 				C17C3CA9292BFCCE00AB164F /* SingInHotelViewController.swift in Sources */,
 				C167160A28C4192C003D6402 /* InstructorRegisterViewController.swift in Sources */,
 				C19A1BB6292FD62B00A17DFB /* CalendarMenu+TableViewController.swift in Sources */,
@@ -1560,6 +1623,7 @@
 				C17D1FB22914580200FD2FA9 /* MainMedicsViewController.swift in Sources */,
 				C1311A9E28D0E0380075C63F /* BabyShared.swift in Sources */,
 				C17C3CB3292BFDAC00AB164F /* VerifyCode+HotelViewController.swift in Sources */,
+				C180507029300E8600D8A2D1 /* PreviewHotel+ViewController.swift in Sources */,
 				C18DD775291570C60071C9A9 /* ApiHelperBaby.swift in Sources */,
 				C1CD347328B1F94200763C6E /* StarViewController.swift in Sources */,
 				C17CB46228A9D21A00FE54F3 /* SceneDelegate.swift in Sources */,

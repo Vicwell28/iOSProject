@@ -86,3 +86,27 @@ class PruebasContCollectionViewController: UICollectionViewController {
     */
 
 }
+//MARK: - Override func
+//MARK: - Private Var / Let
+//MARK: - Public Var / Let
+//MARK: - @IBOutlet
+//MARK: - @IBAction
+extension PruebasContCollectionViewController {
+
+}
+//MARK: - public func
+extension PruebasContCollectionViewController {
+
+}
+//MARK: - Private func
+extension PruebasContCollectionViewController {
+
+}
+//MARK: - Services
+extension PruebasContCollectionViewController {
+
+}
+//MARK: - Other
+extension PruebasContCollectionViewController {
+
+}

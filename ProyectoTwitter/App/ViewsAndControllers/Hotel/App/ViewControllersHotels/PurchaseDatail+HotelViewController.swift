@@ -21,6 +21,11 @@ class PurchaseDatail_HotelViewController: UIViewController {
     
     //MARK: - @IBOutlet
 
+    @IBOutlet weak var lableStepper: UILabel!
+    @IBAction func stepper(_ sender: UIStepper) {
+        self.lableStepper.text = "\(sender.value)"
+        
+    }
 }
 
 //MARK: - @IBAction

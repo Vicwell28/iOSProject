@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b5V-VQ-yNo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8lg-5U-Ycx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,24 +12,97 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash Hotel View Controller-->
         <scene sceneID="UIj-65-MKg">
             <objects>
-                <viewController id="8lg-5U-Ycx" sceneMemberID="viewController">
+                <viewController id="8lg-5U-Ycx" customClass="SplashHotel_ViewController" customModule="ProyectoTwitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="11G-zm-vbo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sph_1" translatesAutoresizingMaskIntoConstraints="NO" id="QjU-ky-h3d">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <color key="tintColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QjU-ky-h3d" secondAttribute="height" multiplier="1:1" id="gJ7-MR-pn3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Rc7-2h-Z8J"/>
                         <color key="backgroundColor" name="MirageHotel"/>
+                        <constraints>
+                            <constraint firstItem="QjU-ky-h3d" firstAttribute="centerX" secondItem="11G-zm-vbo" secondAttribute="centerX" id="FEM-l2-LBZ"/>
+                            <constraint firstItem="QjU-ky-h3d" firstAttribute="width" secondItem="11G-zm-vbo" secondAttribute="width" multiplier="0.57971" id="Lrw-cU-TBS"/>
+                            <constraint firstItem="QjU-ky-h3d" firstAttribute="centerY" secondItem="11G-zm-vbo" secondAttribute="centerY" id="RPo-R0-iLa"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <segue destination="t8y-yD-9L1" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="fNb-Rx-obP"/>
+                        <outlet property="imageView" destination="QjU-ky-h3d" id="whl-Rl-X0d"/>
                         <segue destination="b5V-VQ-yNo" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="e3t-5Y-UAl"/>
+                        <segue destination="2nt-r1-SdC" kind="presentation" identifier="segueOnBardingHotel" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="8Zt-qb-DsS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ag4-7F-n5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1401" y="-6"/>
+            <point key="canvasLocation" x="-2274" y="-52"/>
+        </scene>
+        <!--On Boarding View Controller-->
+        <scene sceneID="vrg-TT-Ckr">
+            <objects>
+                <viewController id="2nt-r1-SdC" customClass="OnBoarding_ViewController" customModule="ProyectoTwitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CyU-Oc-ked">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YR8-Ct-riZ">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ME7-Ao-5P8">
+                                <rect key="frame" x="148.5" y="704" width="117" height="26"/>
+                                <color key="pageIndicatorTintColor" name="MirageHotel"/>
+                                <color key="currentPageIndicatorTintColor" name="WaikawaGrayHotel"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhB-eW-BbH">
+                                <rect key="frame" x="32" y="779" width="350" height="55"/>
+                                <color key="backgroundColor" name="MirageHotel"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Iniciar Sesion">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="t8y-yD-9L1" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="VLI-ap-AGN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tgy-3p-3ry"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tgy-3p-3ry" firstAttribute="trailing" secondItem="YR8-Ct-riZ" secondAttribute="trailing" id="3LA-0g-F07"/>
+                            <constraint firstItem="YR8-Ct-riZ" firstAttribute="top" secondItem="Tgy-3p-3ry" secondAttribute="top" id="AE5-CB-Giv"/>
+                            <constraint firstItem="ME7-Ao-5P8" firstAttribute="centerY" secondItem="CyU-Oc-ked" secondAttribute="centerY" multiplier="1.6" id="I74-9O-Wq9"/>
+                            <constraint firstItem="JhB-eW-BbH" firstAttribute="centerX" secondItem="CyU-Oc-ked" secondAttribute="centerX" id="KZs-Ve-Vfr"/>
+                            <constraint firstItem="JhB-eW-BbH" firstAttribute="width" secondItem="CyU-Oc-ked" secondAttribute="width" multiplier="0.845411" id="RlY-Ce-BAD"/>
+                            <constraint firstItem="YR8-Ct-riZ" firstAttribute="leading" secondItem="Tgy-3p-3ry" secondAttribute="leading" id="gfY-eE-R20"/>
+                            <constraint firstItem="ME7-Ao-5P8" firstAttribute="centerX" secondItem="CyU-Oc-ked" secondAttribute="centerX" id="ifW-rh-Tvc"/>
+                            <constraint firstItem="JhB-eW-BbH" firstAttribute="width" secondItem="JhB-eW-BbH" secondAttribute="height" multiplier="70:11" id="ihv-7Y-qer"/>
+                            <constraint firstItem="JhB-eW-BbH" firstAttribute="centerY" secondItem="CyU-Oc-ked" secondAttribute="centerY" multiplier="1.8" id="sCa-n7-WlI"/>
+                            <constraint firstItem="Tgy-3p-3ry" firstAttribute="bottom" secondItem="YR8-Ct-riZ" secondAttribute="bottom" id="tYG-vl-vuX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="ME7-Ao-5P8" id="DUh-M9-Mph"/>
+                        <outlet property="scrollView" destination="YR8-Ct-riZ" id="Jee-kk-VJF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lsx-QX-j6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1384.0579710144928" y="-571.20535714285711"/>
         </scene>
         <!--Sing In Hotel View Controller-->
         <scene sceneID="pES-Ym-fNC">
@@ -63,6 +136,9 @@
                                         <color key="textColor" name="White"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="t8y-yD-9L1" id="Pza-uh-lhr"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -106,6 +182,9 @@
                                         <color key="textColor" name="White"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="send" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="t8y-yD-9L1" id="ei3-Sr-Shb"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -237,12 +316,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="textFieldEmail" destination="BrS-Hm-8d1" id="FEe-Ah-CiJ"/>
+                        <outlet property="textFieldPassword" destination="7QN-2r-XbM" id="nQY-Gb-fDe"/>
                         <outlet property="viewCircle" destination="NGM-2c-Xw0" id="8FT-fr-NRP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zI-2I-oi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-430.43478260869568" y="-611.38392857142856"/>
+            <point key="canvasLocation" x="-430" y="-589"/>
         </scene>
         <!--Main Hotel View Controller-->
         <scene sceneID="bE1-ri-iVt">
@@ -347,13 +428,14 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YZz-rK-YLL">
                                                         <rect key="frame" x="0.0" y="34.5" width="101" height="21"/>
+                                                        <color key="tintColor" name="White"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                                         <color key="textColor" name="AkaroaHotel"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LA5-2n-2kA">
-                                                        <rect key="frame" x="37.5" y="4" width="26" height="25.5"/>
-                                                        <color key="tintColor" name="AkaroaHotel"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bag.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LA5-2n-2kA">
+                                                        <rect key="frame" x="37.5" y="3" width="26" height="25"/>
+                                                        <color key="tintColor" name="White"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="LA5-2n-2kA" secondAttribute="height" multiplier="1:1" id="FKn-Ii-YXv"/>
                                                         </constraints>
@@ -389,8 +471,8 @@
                                                         <color key="textColor" name="AkaroaHotel"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FyQ-dB-BiG">
-                                                        <rect key="frame" x="37.5" y="4" width="26" height="25.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FyQ-dB-BiG">
+                                                        <rect key="frame" x="37.5" y="4" width="26" height="25"/>
                                                         <color key="tintColor" name="AkaroaHotel"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="FyQ-dB-BiG" secondAttribute="height" multiplier="1:1" id="pMG-uC-8wi"/>
@@ -427,8 +509,8 @@
                                                         <color key="textColor" name="AkaroaHotel"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hsB-Ua-Uu0">
-                                                        <rect key="frame" x="37.5" y="4" width="26" height="25.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart.fill.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hsB-Ua-Uu0">
+                                                        <rect key="frame" x="37.5" y="3.5" width="27" height="26"/>
                                                         <color key="tintColor" name="AkaroaHotel"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="hsB-Ua-Uu0" secondAttribute="height" multiplier="1:1" id="YKZ-cJ-0yk"/>
@@ -465,8 +547,8 @@
                                                         <color key="textColor" name="AkaroaHotel"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GfN-k2-M4f">
-                                                        <rect key="frame" x="37.5" y="4" width="26" height="25.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GfN-k2-M4f">
+                                                        <rect key="frame" x="37.5" y="5" width="26" height="23.5"/>
                                                         <color key="tintColor" name="AkaroaHotel"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="GfN-k2-M4f" secondAttribute="height" multiplier="1:1" id="0sI-JP-osU"/>
@@ -520,7 +602,7 @@
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJl-hs-NJu">
                                 <rect key="frame" x="0.0" y="106" width="414" height="686"/>
                                 <connections>
-                                    <segue destination="XKj-tV-c7O" kind="embed" id="cvh-EW-qV5"/>
+                                    <segue destination="oVr-QB-kjx" kind="embed" id="JcK-Gu-cNJ"/>
                                 </connections>
                             </containerView>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWP-n0-E0e">
@@ -535,8 +617,8 @@
                                     <segue destination="oSM-0m-TSE" kind="embed" id="gJd-VD-jNJ"/>
                                 </connections>
                             </containerView>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJd-AN-aD8" userLabel="Profile" customClass="UIControl">
-                                <rect key="frame" x="0.0" y="321" width="414" height="575"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJd-AN-aD8" userLabel="Profile" customClass="UIControl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vK8-WA-06s">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="896"/>
@@ -878,6 +960,15 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="40"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="5" height="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" name="Negro"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
@@ -891,8 +982,8 @@
                                     <action selector="closeMenuProfile:" destination="b5V-VQ-yNo" eventType="touchUpInside" id="p9b-5k-hUb"/>
                                 </connections>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQ2-Nh-9YV" userLabel="Notificatin" customClass="UIControl">
-                                <rect key="frame" x="0.0" y="280" width="414" height="616"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQ2-Nh-9YV" userLabel="Notificatin" customClass="UIControl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uy-eo-pEW">
                                         <rect key="frame" x="64" y="0.0" width="350" height="896"/>
@@ -1009,6 +1100,14 @@
                         <outlet property="indicatorBudget" destination="Tbi-ps-rVn" id="XVJ-Sx-O19"/>
                         <outlet property="viewMenuNotification" destination="3uy-eo-pEW" id="HGr-bR-gDN"/>
                         <outlet property="viewMenuProfile" destination="vK8-WA-06s" id="Kc7-hI-s8o"/>
+                        <outletCollection property="collectionsLablesMenu" destination="YZz-rK-YLL" collectionClass="NSMutableArray" id="CT1-py-go4"/>
+                        <outletCollection property="collectionsLablesMenu" destination="Ruu-Yy-4pz" collectionClass="NSMutableArray" id="Z71-Id-5wQ"/>
+                        <outletCollection property="collectionsLablesMenu" destination="RiU-cc-aUN" collectionClass="NSMutableArray" id="8YQ-6f-dAh"/>
+                        <outletCollection property="collectionsLablesMenu" destination="UI3-lv-5Hg" collectionClass="NSMutableArray" id="8Sk-Zs-vVi"/>
+                        <outletCollection property="collectionsImagesViewMenu" destination="LA5-2n-2kA" collectionClass="NSMutableArray" id="5K1-QT-wgo"/>
+                        <outletCollection property="collectionsImagesViewMenu" destination="FyQ-dB-BiG" collectionClass="NSMutableArray" id="Sf8-HO-G47"/>
+                        <outletCollection property="collectionsImagesViewMenu" destination="hsB-Ua-Uu0" collectionClass="NSMutableArray" id="wNI-VW-7QG"/>
+                        <outletCollection property="collectionsImagesViewMenu" destination="GfN-k2-M4f" collectionClass="NSMutableArray" id="TPs-o6-Q1m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Y4-Km-OfH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1023,7 +1122,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="686"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="300" estimatedRowHeight="300" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y2B-Ic-gus">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="300" estimatedRowHeight="300" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="y2B-Ic-gus">
                                 <rect key="frame" x="0.0" y="48" width="414" height="638"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="smZ-AD-OUN">
@@ -1113,18 +1212,27 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="y2B-Ic-gus" id="Zsc-JW-hgR"/>
+                        <segue destination="8mg-9R-mhg" kind="presentation" identifier="segueDetailHotel" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="cO7-MG-JpW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N2p-SB-mKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3986.9565217391309" y="-1146.4285714285713"/>
         </scene>
+        <!--DetailHotelViewController-->
+        <scene sceneID="tC2-Tf-iDz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailHotelViewController" id="8mg-9R-mhg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDe-sb-tCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4990" y="-1179"/>
+        </scene>
         <!--Calendar Menu Table View Controller-->
         <scene sceneID="Pvk-mr-zNr">
             <objects>
                 <tableViewController id="XKj-tV-c7O" customClass="CalendarMenu_TableViewController" customModule="ProyectoTwitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="150" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Osu-KY-FXF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="686"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -1245,6 +1353,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hx1-YR-fiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3987.68115942029" y="-611.38392857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fbx-9Y-LFF">
+            <objects>
+                <viewController id="oVr-QB-kjx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eLb-W1-BXY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="686"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="rd4-Za-teM">
+                                <rect key="frame" x="0.0" y="48" width="414" height="638"/>
+                                <color key="tintColor" name="MirageHotel"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jv3-hh-gGP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rd4-Za-teM" firstAttribute="leading" secondItem="eLb-W1-BXY" secondAttribute="leading" id="8dZ-OL-J8f"/>
+                            <constraint firstItem="rd4-Za-teM" firstAttribute="top" secondItem="Jv3-hh-gGP" secondAttribute="top" id="Y01-qN-kKt"/>
+                            <constraint firstAttribute="trailing" secondItem="rd4-Za-teM" secondAttribute="trailing" id="fB5-Li-gEP"/>
+                            <constraint firstItem="Jv3-hh-gGP" firstAttribute="bottom" secondItem="rd4-Za-teM" secondAttribute="bottom" id="kvp-BH-na4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTB-63-zxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4723" y="-618"/>
         </scene>
         <!--Promos Main Hotel View Controller-->
         <scene sceneID="EtJ-ov-rHF">
@@ -1459,7 +1594,7 @@
                                             <imageReference key="image" image="arrow.left.square.fill" catalog="system" symbolScale="large"/>
                                         </state>
                                         <connections>
-                                            <action selector="dismissViewAction" destination="bZE-y9-1zR" eventType="touchUpInside" id="hVD-wn-qzJ"/>
+                                            <action selector="dismissViewController" destination="bZE-y9-1zR" eventType="touchUpInside" id="HWE-3u-TwV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1470,7 +1605,7 @@
                                     <constraint firstAttribute="width" secondItem="2Ts-p8-9zn" secondAttribute="height" multiplier="69:10" id="Zcc-rZ-H5m"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLg-hF-WY6">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="QLg-hF-WY6">
                                 <rect key="frame" x="0.0" y="108" width="414" height="754"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fbc-zc-5y2">
@@ -1497,6 +1632,9 @@
                                                 <color key="textColor" name="White"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="bZE-y9-1zR" id="6eP-Ss-cSj"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1540,6 +1678,9 @@
                                                 <color key="textColor" name="White"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="bZE-y9-1zR" id="oo8-pN-v6x"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1583,6 +1724,9 @@
                                                 <color key="textColor" name="White"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="bZE-y9-1zR" id="HwY-py-6Lj"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1626,6 +1770,9 @@
                                                 <color key="textColor" name="White"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="bZE-y9-1zR" id="pC3-yd-X4e"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1668,6 +1815,9 @@
                                                 <color key="textColor" name="White"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="bZE-y9-1zR" id="92Q-in-eVl"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1771,6 +1921,9 @@
                                                 <color key="textColor" name="White"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="bZE-y9-1zR" id="Et2-vA-N4C"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1868,6 +2021,12 @@
                         <outlet property="buttonSingUp" destination="PBm-I7-h1g" id="XE8-Ef-Q2f"/>
                         <outlet property="scrollView" destination="QLg-hF-WY6" id="6bU-jq-wDA"/>
                         <outlet property="viewImageProfile" destination="Mse-Qs-xzT" id="Lbj-GW-mq3"/>
+                        <outletCollection property="collectionsTextFields" destination="s0u-7U-K9u" collectionClass="NSMutableArray" id="Hyz-dI-dBU"/>
+                        <outletCollection property="collectionsTextFields" destination="Ham-Kc-Clz" collectionClass="NSMutableArray" id="znN-UG-UvU"/>
+                        <outletCollection property="collectionsTextFields" destination="nrD-I0-g7B" collectionClass="NSMutableArray" id="h5Z-fM-gRB"/>
+                        <outletCollection property="collectionsTextFields" destination="UAp-oz-eRL" collectionClass="NSMutableArray" id="a2E-ij-M3C"/>
+                        <outletCollection property="collectionsTextFields" destination="RWR-Vo-o68" collectionClass="NSMutableArray" id="b4H-zY-Qxz"/>
+                        <outletCollection property="collectionsTextFields" destination="CpV-8l-5BV" collectionClass="NSMutableArray" id="JiG-sK-dB0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q67-m8-6uw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2326,23 +2485,26 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="T6w-XZ-hIr"/>
-        <segue reference="BwH-cM-DVd"/>
+        <segue reference="e3t-5Y-UAl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left.square.fill" catalog="system" width="128" height="114"/>
+        <image name="bag.fill" catalog="system" width="128" height="128"/>
+        <image name="cart.fill.badge.plus" catalog="system" width="128" height="105"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="clock.fill" catalog="system" width="128" height="123"/>
         <image name="delete.backward" catalog="system" width="128" height="102"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="inercia-ej2" width="913" height="505"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="paperclip" catalog="system" width="121" height="128"/>
-        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="profileImage" width="960" height="1280"/>
         <image name="qrcode" catalog="system" width="128" height="114"/>
         <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="109"/>
+        <image name="sph_1" width="300" height="100"/>
         <namedColor name="AkaroaHotel">
             <color red="0.76078431372549016" green="0.78431372549019607" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -24,6 +24,8 @@ class SingInHotelViewController: UIViewController {
 
     //MARK: - Private Var / Let
     
+    @IBOutlet weak var textFieldPassword: UITextField!
+    @IBOutlet weak var textFieldEmail: UITextField!
     //MARK: - Public Var / Let
     
     @IBOutlet weak var viewCircle: UIView!
@@ -47,6 +49,22 @@ extension SingInHotelViewController {
 
 }
 //MARK: - Other
-extension SingInHotelViewController {
-
+extension SingInHotelViewController : UITextFieldDelegate {
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        print(textField)
+        
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("Retrun : \(textField)")
+        
+        if textField == self.textFieldEmail {
+            self.textFieldPassword.becomeFirstResponder()
+        } else {
+            self.textFieldPassword.resignFirstResponder()
+        }
+        
+        return true
+    }
 }

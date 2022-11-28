@@ -13,7 +13,6 @@ class MainHotelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.imageViewProfile.cornerRadius = self.imageViewProfile.frame.width / 2
-        
         self.indicatorBudget.cornerRadius = self.indicatorBudget.frame.width / 2
     }
    
@@ -21,18 +20,17 @@ class MainHotelViewController: UIViewController {
         return .lightContent
     }
     
-    @IBOutlet weak var indicatorBudget: UILabel!
     //MARK: - Private Var / Let
     
     
-    @IBOutlet weak var imageViewProfile: UIImageView!
     //MARK: - Public Var / Let
-    
-   
     
     
     //MARK: - @IBOutlet
-    
+    @IBOutlet weak var indicatorBudget: UILabel!
+    @IBOutlet weak var imageViewProfile: UIImageView!
+    @IBOutlet var collectionsLablesMenu: [UILabel]!
+    @IBOutlet var collectionsImagesViewMenu: [UIImageView]!
     @IBOutlet weak var FavViewController: UIView!
     @IBOutlet weak var PromosViewController: UIView!
     @IBOutlet weak var CalendarViewController: UIView!
@@ -40,6 +38,7 @@ class MainHotelViewController: UIViewController {
     @IBOutlet weak var viewMenuNotification: UIView!
     @IBOutlet weak var viewMenuProfile: UIView!
 }
+
 //MARK: - @IBAction
 extension MainHotelViewController {
     @IBAction func showMenuProfile(_ sender: UIButton) {
@@ -86,6 +85,17 @@ extension MainHotelViewController {
         PromosViewController.isHidden = true
         CalendarViewController.isHidden = true
         MenuViewController.isHidden = true
+        
+        self.collectionsLablesMenu.forEach { $0.textColor = UIColor(named: "AkaroaHotel")
+        }
+        
+        self.collectionsImagesViewMenu.forEach { $0.tintColor = UIColor(named: "AkaroaHotel")
+        }
+        
+        self.collectionsImagesViewMenu[sender.tag].tintColor = UIColor.white
+        
+        self.collectionsLablesMenu[sender.tag].textColor = UIColor.white
+        
 
         
         switch sender.tag {

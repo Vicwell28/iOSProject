@@ -26,7 +26,7 @@ class SingUpHotelViewController: UIViewController {
 
     //MARK: - @IBOutlet
 
- 
+    @IBOutlet var collectionsTextFields: [UITextField]!
     @IBOutlet weak var buttonSingUp: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var viewImageProfile: UIView!
@@ -34,10 +34,6 @@ class SingUpHotelViewController: UIViewController {
 
 //MARK: - @IBAction
 extension SingUpHotelViewController {
-    @IBAction func dismissViewAction() {
-        self.dismiss(animated: true)
-    }
-    
     @IBAction func screenEdgeLeftAction(_ sender: UIScreenEdgePanGestureRecognizer) {
         self.dismiss(animated: true)
     }
@@ -54,7 +50,22 @@ extension SingUpHotelViewController {
 extension SingUpHotelViewController {
 
 }
-//MARK: - Other
-extension SingUpHotelViewController {
-
+//MARK: - UITextFieldDelegate
+extension SingUpHotelViewController : UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == self.collectionsTextFields[0] {
+            self.collectionsTextFields[1].becomeFirstResponder()
+        } else if textField == self.collectionsTextFields[1] {
+            self.collectionsTextFields[2].becomeFirstResponder()
+        } else if textField == self.collectionsTextFields[2] {
+            self.collectionsTextFields[3].becomeFirstResponder()
+        } else if textField == self.collectionsTextFields[3] {
+            self.collectionsTextFields[4].becomeFirstResponder()
+        } else if textField == self.collectionsTextFields[4] {
+            self.collectionsTextFields[5].becomeFirstResponder()
+        } else if textField == self.collectionsTextFields[5] {
+            self.collectionsTextFields[5].resignFirstResponder()
+        }
+        return true
+    }
 }

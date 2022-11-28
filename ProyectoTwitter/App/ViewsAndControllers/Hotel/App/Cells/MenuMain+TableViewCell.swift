@@ -8,7 +8,6 @@
 import UIKit
 
 class MenuMain_TableViewCell: UITableViewCell {
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,7 +16,6 @@ class MenuMain_TableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
     }
     
     @IBOutlet weak var viewImage: UIView!
