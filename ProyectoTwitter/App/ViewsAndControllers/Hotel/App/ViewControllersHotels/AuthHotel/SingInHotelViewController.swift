@@ -28,16 +28,39 @@ class SingInHotelViewController: UIViewController {
     @IBOutlet weak var textFieldEmail: UITextField!
     //MARK: - Public Var / Let
     
+
     @IBOutlet weak var viewCircle: UIView!
     //MARK: - @IBOutlet
 }
 
 //MARK: - @IBAction
 extension SingInHotelViewController {
-
+    @IBAction func veryCredAction(_ sender: UIButton) {
+        if let text = self.textFieldEmail.text, text.isEmpty {
+            self.showAlert(campo: "Correo Electronico")
+            return
+        }
+        
+        if let text = self.textFieldPassword.text, text.isEmpty {
+            self.showAlert(campo: "Contrase;a")
+            return
+        }
+        
+        self.showViewControllerLoaderHotel()
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { Timer in
+            self.dismissViewControllerLoaderHotel()
+            self.performSegue(withIdentifier: "segueLoginToCode", sender: nil)
+        }
+    }
 }
 //MARK: - public func
 extension SingInHotelViewController {
+    private func showAlert(campo : String) -> Void {
+        let alertController = UIAlertController(title: "", message: "Campo Requerido \(campo)", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+        
+        self.present(alertController, animated: true)
+    }
 
 }
 //MARK: - Private func

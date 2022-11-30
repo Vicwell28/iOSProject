@@ -107,7 +107,6 @@
 		C180507029300E8600D8A2D1 /* PreviewHotel+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C180506F29300E8600D8A2D1 /* PreviewHotel+ViewController.swift */; };
 		C180507229300F4600D8A2D1 /* slide+hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C180507129300F4600D8A2D1 /* slide+hotel.swift */; };
 		C180507429300F9500D8A2D1 /* SlideHotel.xib in Resources */ = {isa = PBXBuildFile; fileRef = C180507329300F9500D8A2D1 /* SlideHotel.xib */; };
-		C180507629301FAE00D8A2D1 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = C180507529301FAE00D8A2D1 /* View.xib */; };
 		C18196052932DA460064655E /* dataSourceCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18196042932DA460064655E /* dataSourceCalendar.swift */; };
 		C188668C28C2AEE100C51D7C /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C188668228C2AEDF00C51D7C /* 7.jpg */; };
 		C188668D28C2AEE100C51D7C /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C188668328C2AEDF00C51D7C /* 3.jpg */; };
@@ -273,7 +272,6 @@
 		C180506F29300E8600D8A2D1 /* PreviewHotel+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewHotel+ViewController.swift"; sourceTree = "<group>"; };
 		C180507129300F4600D8A2D1 /* slide+hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "slide+hotel.swift"; sourceTree = "<group>"; };
 		C180507329300F9500D8A2D1 /* SlideHotel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideHotel.xib; sourceTree = "<group>"; };
-		C180507529301FAE00D8A2D1 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		C18196042932DA460064655E /* dataSourceCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataSourceCalendar.swift; sourceTree = "<group>"; };
 		C188668228C2AEDF00C51D7C /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		C188668328C2AEDF00C51D7C /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -448,7 +446,6 @@
 			children = (
 				C14DA53C2920449E00160252 /* MainHotelStoryboard.storyboard */,
 				C180506D29300C4200D8A2D1 /* DetailHotelViewController.storyboard */,
-				C180507529301FAE00D8A2D1 /* View.xib */,
 			);
 			path = ViewsHotel;
 			sourceTree = "<group>";
@@ -1453,7 +1450,6 @@
 				C14DA53F292073B600160252 /* ColorHotel.xcassets in Resources */,
 				C188668F28C2AEE100C51D7C /* 4.jpg in Resources */,
 				C16715D128C417A5003D6402 /* SplashBaby.storyboard in Resources */,
-				C180507629301FAE00D8A2D1 /* View.xib in Resources */,
 				C19BDE9E2910675E000B9A66 /* MedicsStoryboard.storyboard in Resources */,
 				C167161028C41947003D6402 /* Monitor.storyboard in Resources */,
 				C1CD346828B1F80800763C6E /* Star.storyboard in Resources */,

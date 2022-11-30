@@ -70,27 +70,27 @@ extension OnBoarding_ViewController {
     private func createSlides() -> [onBoardingViewHotel] {
 
         let slide1 : onBoardingViewHotel = Bundle.main.loadNibNamed("onBoardingHotel", owner: self, options: nil)?.first as! onBoardingViewHotel
-        slide1.imageOnBoarding.image = UIImage(named: "EmptyState")
+        slide1.imageOnBoarding.image = UIImage(named: "imgHotel1")
         slide1.titleOnBoarding.text = "A real-life bear"
         slide1.desOnBoarding.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
         
         let slide2 : onBoardingViewHotel = Bundle.main.loadNibNamed("onBoardingHotel", owner: self, options: nil)?.first as! onBoardingViewHotel
-        slide2.imageOnBoarding.image = UIImage(named: "EmptyState")
+        slide2.imageOnBoarding.image = UIImage(named: "imgHotel2")
         slide2.titleOnBoarding.text = "A real-life bear"
         slide2.desOnBoarding.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
         
         let slide3 : onBoardingViewHotel = Bundle.main.loadNibNamed("onBoardingHotel", owner: self, options: nil)?.first as! onBoardingViewHotel
-        slide3.imageOnBoarding.image = UIImage(named: "EmptyState")
+        slide3.imageOnBoarding.image = UIImage(named: "imgHotel3")
         slide3.titleOnBoarding.text = "A real-life bear"
         slide3.desOnBoarding.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
         
         let slide4 : onBoardingViewHotel = Bundle.main.loadNibNamed("onBoardingHotel", owner: self, options: nil)?.first as! onBoardingViewHotel
-        slide4.imageOnBoarding.image = UIImage(named: "EmptyState")
+        slide4.imageOnBoarding.image = UIImage(named: "imgHotel1")
         slide4.titleOnBoarding.text = "A real-life bear"
         slide4.desOnBoarding.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
         
         let slide5 : onBoardingViewHotel = Bundle.main.loadNibNamed("onBoardingHotel", owner: self, options: nil)?.first as! onBoardingViewHotel
-        slide5.imageOnBoarding.image = UIImage(named: "EmptyState")
+        slide5.imageOnBoarding.image = UIImage(named: "imgHotel2")
         slide5.titleOnBoarding.text = "A real-life bear"
         slide5.desOnBoarding.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
         

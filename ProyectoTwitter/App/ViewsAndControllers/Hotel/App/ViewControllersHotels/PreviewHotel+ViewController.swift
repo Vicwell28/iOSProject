@@ -44,6 +44,15 @@ class PreviewHotel_ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.scrollView.contentSize = CGSizeMake(0, self.btnReservar.frame.origin.y + self.btnReservar.frame.size.height + 20)
+        
+        self.scrollViewTimer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true, block: { Timer in
+            self.scrollViewToRigth(self.scrollViewImage)
+        })
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.scrollViewTimer.invalidate()
     }
     
     //MARK: - Private Var / Let
@@ -51,6 +60,10 @@ class PreviewHotel_ViewController: UIViewController {
     //MARK: - Public Var / Let
     private let locationHotel = CLLocation(latitude: 23.256054, longitude: -106.459264);
     private var slides:[slide_hotel] = []
+    
+    private var indexScrollView : Int = 1
+    private var scrollViewContentOffSetS : CGFloat = 0.0
+    private var scrollViewTimer : Timer = Timer()
     
     //MARK: - @IBOutlet
     @IBOutlet weak var btnReservar: UIButton!
@@ -70,26 +83,38 @@ extension PreviewHotel_ViewController {
 }
 //MARK: - Private func
 extension PreviewHotel_ViewController {
-    func createSlides() -> [slide_hotel] {
+    
+    private func scrollViewToRigth(_ scrollView : UIScrollView) -> Void {
+        if self.indexScrollView >= self.slides.count {
+            self.indexScrollView = 1
+            self.scrollViewContentOffSetS = 0
+        } else {
+            self.indexScrollView += 1
+            self.scrollViewContentOffSetS += self.view.frame.size.width
+        }
+        scrollView.setContentOffset(CGPoint(x: self.scrollViewContentOffSetS, y: scrollView.frame.origin.y), animated: true);
+    }
+    
+    private func createSlides() -> [slide_hotel] {
         let slide1 : slide_hotel = Bundle.main.loadNibNamed("SlideHotel", owner: self)?.first as! slide_hotel
-        slide1.imgSlide.image = UIImage(named: "EmptyState")
+        slide1.imgSlide.image = UIImage(named: "imgHotelSec")
         
         let slide2 : slide_hotel = Bundle.main.loadNibNamed("SlideHotel", owner: self)?.first as! slide_hotel
-        slide2.imgSlide.image = UIImage(named: "EmptyState")
+        slide2.imgSlide.image = UIImage(named: "imgHotelSec")
         
         let slide3 : slide_hotel = Bundle.main.loadNibNamed("SlideHotel", owner: self)?.first as! slide_hotel
-        slide3.imgSlide.image = UIImage(named: "EmptyState")
+        slide3.imgSlide.image = UIImage(named: "imgHotelSec")
         
         let slide4 : slide_hotel = Bundle.main.loadNibNamed("SlideHotel", owner: self)?.first as! slide_hotel
-        slide4.imgSlide.image = UIImage(named: "EmptyState")
+        slide4.imgSlide.image = UIImage(named: "imgHotelSec")
         
         let slide5 : slide_hotel = Bundle.main.loadNibNamed("SlideHotel", owner: self)?.first as! slide_hotel
-        slide5.imgSlide.image = UIImage(named: "EmptyState")
+        slide5.imgSlide.image = UIImage(named: "imgHotelSec")
         
         return [slide1, slide2, slide3, slide4, slide5]
     }
     
-    func setupSlideScrollView(slides : [slide_hotel]) {
+    private func setupSlideScrollView(slides : [slide_hotel]) {
         scrollViewImage.frame = CGRect(x: 0, y: 0, width: scrollViewImage.superview!.frame.width, height: scrollViewImage.superview!.frame.height)
         scrollViewImage.contentSize = CGSize(width: scrollViewImage.superview!.frame.width * CGFloat(slides.count), height: scrollViewImage.superview!.frame.height)
         scrollViewImage.isPagingEnabled = true
@@ -108,6 +133,10 @@ extension PreviewHotel_ViewController {
 extension PreviewHotel_ViewController : UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
+        let pageIndex2 = round(scrollView.contentOffset.x/view.frame.width) + 1
+        
         pageControl.currentPage = Int(pageIndex)
+        self.indexScrollView = Int(pageIndex2)
+        self.scrollViewContentOffSetS = scrollView.contentOffset.x
     }
 }

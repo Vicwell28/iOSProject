@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ag4-7F-n5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2274" y="-52"/>
+            <point key="canvasLocation" x="-2519" y="-147"/>
         </scene>
         <!--On Boarding View Controller-->
         <scene sceneID="vrg-TT-Ckr">
@@ -234,7 +234,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="TPH-uy-cBx" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="jjE-J0-EEb"/>
+                                    <action selector="veryCredAction:" destination="t8y-yD-9L1" eventType="touchUpInside" id="Ykv-SZ-swP"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0D-Ft-n0A">
@@ -319,6 +319,7 @@
                         <outlet property="textFieldEmail" destination="BrS-Hm-8d1" id="FEe-Ah-CiJ"/>
                         <outlet property="textFieldPassword" destination="7QN-2r-XbM" id="nQY-Gb-fDe"/>
                         <outlet property="viewCircle" destination="NGM-2c-Xw0" id="8FT-fr-NRP"/>
+                        <segue destination="TPH-uy-cBx" kind="presentation" identifier="segueLoginToCode" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="fYd-Ym-lg6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zI-2I-oi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1249,7 +1250,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vz-nL-QUC">
                                                     <rect key="frame" x="0.0" y="0.0" width="77" height="103"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="ugG-Rp-svM">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgHotelLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ugG-Rp-svM">
                                                             <rect key="frame" x="6.5" y="19.5" width="64" height="64"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ugG-Rp-svM" secondAttribute="height" multiplier="1:1" id="pMr-xx-2VT"/>
@@ -1443,7 +1444,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fw-Ts-LbC">
                                                     <rect key="frame" x="0.0" y="0.0" width="190" height="250"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inercia-ej2" translatesAutoresizingMaskIntoConstraints="NO" id="aJM-Pw-cwr">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgHotelSec" translatesAutoresizingMaskIntoConstraints="NO" id="aJM-Pw-cwr">
                                                             <rect key="frame" x="0.0" y="0.0" width="190" height="100"/>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKe-9g-JT2">
@@ -1452,7 +1453,7 @@
                                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECW-yq-hmP">
                                                                     <rect key="frame" x="57.5" y="-30" width="75" height="75"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="irF-1c-ZDa">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgHotelLogo" translatesAutoresizingMaskIntoConstraints="NO" id="irF-1c-ZDa">
                                                                             <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                                                         </imageView>
                                                                     </subviews>
@@ -2053,7 +2054,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se a enviado un codigo de verificacion al numero 871265150" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUM-Do-dOR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se a enviado un codigo de verificacion al numero  +52 871265150" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUM-Do-dOR">
                                 <rect key="frame" x="44" y="138" width="326" height="80"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -2377,7 +2378,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n1T-I2-Sae">
                                                     <rect key="frame" x="0.0" y="0.0" width="65" height="87"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="zn6-9U-BsY">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgHotelLogo" translatesAutoresizingMaskIntoConstraints="NO" id="zn6-9U-BsY">
                                                             <rect key="frame" x="5" y="16.5" width="54.5" height="54"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="zn6-9U-BsY" secondAttribute="height" multiplier="1:1" id="hCX-t0-TbJ"/>
@@ -2480,11 +2481,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uuc-8h-Adi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2030" y="642"/>
+            <point key="canvasLocation" x="1894" y="751"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="T6w-XZ-hIr"/>
+        <segue reference="fYd-Ym-lg6"/>
         <segue reference="e3t-5Y-UAl"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2496,7 +2497,8 @@
         <image name="delete.backward" catalog="system" width="128" height="102"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
-        <image name="inercia-ej2" width="913" height="505"/>
+        <image name="imgHotelLogo" width="225" height="225"/>
+        <image name="imgHotelSec" width="1115" height="488"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="paperclip" catalog="system" width="121" height="128"/>
         <image name="person" catalog="system" width="128" height="121"/>

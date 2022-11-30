@@ -22,7 +22,7 @@
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBE-pd-tvN">
                         <rect key="frame" x="5" y="25" width="390" height="250"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inercia-ej2" translatesAutoresizingMaskIntoConstraints="NO" id="LrW-b5-0ZB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgHotelSec" translatesAutoresizingMaskIntoConstraints="NO" id="LrW-b5-0ZB">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="110"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SX6-ao-l9q">
@@ -31,7 +31,7 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ho4-D0-cJR">
                                         <rect key="frame" x="38" y="-33" width="80" height="80"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="czT-7a-8CK">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgHotelLogo" translatesAutoresizingMaskIntoConstraints="NO" id="czT-7a-8CK">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                             </imageView>
                                         </subviews>
@@ -74,7 +74,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omO-3I-nXM">
                                         <rect key="frame" x="123" y="5" width="247" height="42"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qc1-Pi-KYG">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starHotel" translatesAutoresizingMaskIntoConstraints="NO" id="qc1-Pi-KYG">
                                                 <rect key="frame" x="71.666666666666657" y="8" width="147" height="26"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7di-dy-Mei">
@@ -165,9 +165,10 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="imgHotelLogo" width="225" height="225"/>
+        <image name="imgHotelSec" width="1115" height="488"/>
         <image name="inercia-b1" width="200" height="200"/>
-        <image name="inercia-ej2" width="913" height="505"/>
-        <image name="profileImage" width="960" height="1280"/>
+        <image name="starHotel" width="840" height="197"/>
         <namedColor name="Negro">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

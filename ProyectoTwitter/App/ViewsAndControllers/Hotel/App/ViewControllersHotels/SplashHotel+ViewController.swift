@@ -50,7 +50,6 @@ extension SplashHotel_ViewController {
 //MARK: - Private func
 extension SplashHotel_ViewController {
     private func changeImageView(){
-        print("entor")
         if indexImageView == 7 {
 
             if self.indexImageViewVueltas == 10 {

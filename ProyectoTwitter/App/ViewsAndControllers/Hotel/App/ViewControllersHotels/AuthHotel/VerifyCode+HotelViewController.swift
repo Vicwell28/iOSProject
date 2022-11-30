@@ -62,7 +62,7 @@ extension VerifyCode_HotelViewController {
             indexPosition += 1
         } else {
             self.showViewControllerLoaderHotel()
-            Timer.scheduledTimer(withTimeInterval: 4, repeats: false) { Timer in
+            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { Timer in
                 self.dismissViewControllerLoaderHotel()
                 self.performSegue(withIdentifier: "segueMain", sender: nil)
             }

@@ -15,17 +15,22 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nan-gR-JWv">
-                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nan-gR-JWv">
+                    <rect key="frame" x="10" y="58" width="394" height="794"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="mlU-9O-7NU"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="nan-gR-JWv" firstAttribute="leading" secondItem="mlU-9O-7NU" secondAttribute="leading" id="Fkx-8A-99C"/>
-                <constraint firstItem="mlU-9O-7NU" firstAttribute="trailing" secondItem="nan-gR-JWv" secondAttribute="trailing" id="IZx-Au-RSm"/>
-                <constraint firstItem="nan-gR-JWv" firstAttribute="top" secondItem="mlU-9O-7NU" secondAttribute="top" id="Iv2-XS-sGV"/>
-                <constraint firstItem="mlU-9O-7NU" firstAttribute="bottom" secondItem="nan-gR-JWv" secondAttribute="bottom" id="UoA-jO-SVW"/>
+                <constraint firstItem="nan-gR-JWv" firstAttribute="leading" secondItem="mlU-9O-7NU" secondAttribute="leading" constant="10" id="Fkx-8A-99C"/>
+                <constraint firstItem="mlU-9O-7NU" firstAttribute="trailing" secondItem="nan-gR-JWv" secondAttribute="trailing" constant="10" id="IZx-Au-RSm"/>
+                <constraint firstItem="nan-gR-JWv" firstAttribute="top" secondItem="mlU-9O-7NU" secondAttribute="top" constant="10" id="Iv2-XS-sGV"/>
+                <constraint firstItem="mlU-9O-7NU" firstAttribute="bottom" secondItem="nan-gR-JWv" secondAttribute="bottom" constant="10" id="UoA-jO-SVW"/>
             </constraints>
             <connections>
                 <outlet property="imgSlide" destination="nan-gR-JWv" id="dXR-QA-aOl"/>
