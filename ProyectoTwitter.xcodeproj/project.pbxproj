@@ -103,6 +103,8 @@
 		C17D1FAC2914409900FD2FA9 /* ApiHelperMedics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17D1FAB2914409900FD2FA9 /* ApiHelperMedics.swift */; };
 		C17D1FAE2914494D00FD2FA9 /* TipsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17D1FAD2914494D00FD2FA9 /* TipsRepository.swift */; };
 		C17D1FB22914580200FD2FA9 /* MainMedicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17D1FB12914580200FD2FA9 /* MainMedicsViewController.swift */; };
+		C17FB84D2937B2EB00A9DBB6 /* MetodoPago+TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17FB84B2937B2EB00A9DBB6 /* MetodoPago+TableViewCell.swift */; };
+		C17FB84E2937B2EB00A9DBB6 /* MetodoPago+TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C17FB84C2937B2EB00A9DBB6 /* MetodoPago+TableViewCell.xib */; };
 		C180506E29300C4200D8A2D1 /* DetailHotelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C180506D29300C4200D8A2D1 /* DetailHotelViewController.storyboard */; };
 		C180507029300E8600D8A2D1 /* PreviewHotel+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C180506F29300E8600D8A2D1 /* PreviewHotel+ViewController.swift */; };
 		C180507229300F4600D8A2D1 /* slide+hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C180507129300F4600D8A2D1 /* slide+hotel.swift */; };
@@ -268,6 +270,8 @@
 		C17D1FAB2914409900FD2FA9 /* ApiHelperMedics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelperMedics.swift; sourceTree = "<group>"; };
 		C17D1FAD2914494D00FD2FA9 /* TipsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsRepository.swift; sourceTree = "<group>"; };
 		C17D1FB12914580200FD2FA9 /* MainMedicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMedicsViewController.swift; sourceTree = "<group>"; };
+		C17FB84B2937B2EB00A9DBB6 /* MetodoPago+TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetodoPago+TableViewCell.swift"; sourceTree = "<group>"; };
+		C17FB84C2937B2EB00A9DBB6 /* MetodoPago+TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "MetodoPago+TableViewCell.xib"; sourceTree = "<group>"; };
 		C180506D29300C4200D8A2D1 /* DetailHotelViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailHotelViewController.storyboard; sourceTree = "<group>"; };
 		C180506F29300E8600D8A2D1 /* PreviewHotel+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewHotel+ViewController.swift"; sourceTree = "<group>"; };
 		C180507129300F4600D8A2D1 /* slide+hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "slide+hotel.swift"; sourceTree = "<group>"; };
@@ -457,6 +461,8 @@
 				C16078C0292ADA2900451719 /* MenuMain+TableViewCell.xib */,
 				C19A1BB7292FE90400A17DFB /* PromosMenu+TableViewCell.swift */,
 				C19A1BB8292FE90400A17DFB /* PromosMenu+TableViewCell.xib */,
+				C17FB84B2937B2EB00A9DBB6 /* MetodoPago+TableViewCell.swift */,
+				C17FB84C2937B2EB00A9DBB6 /* MetodoPago+TableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1441,6 +1447,7 @@
 				C16715EE28C41865003D6402 /* StudentRegister.storyboard in Resources */,
 				C188669128C2AEE100C51D7C /* 2.jpg in Resources */,
 				C16715D828C417D8003D6402 /* ScanQR.storyboard in Resources */,
+				C17FB84E2937B2EB00A9DBB6 /* MetodoPago+TableViewCell.xib in Resources */,
 				C180506E29300C4200D8A2D1 /* DetailHotelViewController.storyboard in Resources */,
 				C188669528C2AEE100C51D7C /* 8.jpg in Resources */,
 				C180507429300F9500D8A2D1 /* SlideHotel.xib in Resources */,
@@ -1552,6 +1559,7 @@
 				C17CB48A28A9D52D00FE54F3 /* SingUpViewController.swift in Sources */,
 				C18CFDA028EDDC6E0029E8DC /* ResQuestion.swift in Sources */,
 				C18CFD9C28EDDA350029E8DC /* ResTips.swift in Sources */,
+				C17FB84D2937B2EB00A9DBB6 /* MetodoPago+TableViewCell.swift in Sources */,
 				C17B70B428B5B25A00AB9560 /* ReqLogin.swift in Sources */,
 				C17B70B028B5B16900AB9560 /* Endpoints.swift in Sources */,
 				C1CB62CC29351A4700EB4D8E /* OnBoarding+ViewController.swift in Sources */,

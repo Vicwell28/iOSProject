@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "visaHotel.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -16,7 +16,7 @@ extension UIViewController {
         dataSourceIdsViewLoaders.append(UIView(frame: self.view.bounds))
         dataSourceIdsViewLoaders[0].backgroundColor = UIColor.black.withAlphaComponent(0.25)
         dataSourceIdsViewLoaders[0].tag = 333333333
-
+        
         dataSourceIdsViewLoaders.append(UIView(frame: CGRect(
             x: dataSourceIdsViewLoaders[0].frame.width/2-dataSourceIdsViewLoaders[0].frame.width*0.80/2,
             y: dataSourceIdsViewLoaders[0].frame.height/2-dataSourceIdsViewLoaders[0].frame.width*0.50/4,
@@ -55,7 +55,7 @@ extension UIViewController {
         self.view.addSubview(dataSourceIdsViewLoaders[0])
         
         dataSourceIdsViewLoaders[0].alpha = 0
-
+        
         UIView.animate(withDuration: 1) {
             dataSourceIdsViewLoaders[0].alpha = 1
         }
@@ -80,12 +80,6 @@ extension UIViewController {
                     }
                 }
             }
-            
-            print("ESTE ES EL TOTAL DE VISTAS \(self.view.subviews.count)")
         }
-        
-        
-        
     }
-    
 }
