@@ -24,8 +24,16 @@ class SaveDate_HotelViewController: UIViewController {
    
     //MARK: - Public Var / Let
     
+    @IBAction func showDatePicker(_ sender: UIButton) {
+        self.datePicker.superview!.isHidden = false
+    }
+    
+    @IBAction func hideDatePicker(_ sender: UIButton) {
+        self.datePicker.superview!.isHidden = true
+    }
     //MARK: - @IBOutlet
-
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     @IBAction func ShowTableview(_ sender: UIButton) {
         switch sender.tag {
         case 0:

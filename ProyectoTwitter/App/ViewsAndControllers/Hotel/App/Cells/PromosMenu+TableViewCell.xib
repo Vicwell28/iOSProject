@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -119,8 +120,11 @@
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTU-h6-S0Q">
                                         <rect key="frame" x="326" y="12.666666666666664" width="50" height="50"/>
+                                        <color key="tintColor" name="White"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button" image="inercia-b1"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="suit.heart" catalog="system" symbolScale="large"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -191,7 +195,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="SkV-Th-8RM"/>
             <connections>
-                <outlet property="viewImage" destination="7Gb-5i-L3s" id="6yw-aR-wQd"/>
+                <outlet property="viewImage" destination="492-cs-MTP" id="oqN-Bv-5wF"/>
             </connections>
             <point key="canvasLocation" x="609.16030534351148" y="316.90140845070425"/>
         </tableViewCell>
@@ -199,10 +203,13 @@
     <resources>
         <image name="imgHotelLogo" width="225" height="225"/>
         <image name="imgHotelSec" width="1115" height="488"/>
-        <image name="inercia-b1" width="200" height="200"/>
         <image name="starHotel" width="840" height="197"/>
+        <image name="suit.heart" catalog="system" width="128" height="107"/>
         <namedColor name="Negro">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

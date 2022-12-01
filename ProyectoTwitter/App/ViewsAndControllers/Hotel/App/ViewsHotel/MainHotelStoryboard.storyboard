@@ -58,7 +58,7 @@
                                 <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ME7-Ao-5P8">
-                                <rect key="frame" x="148.5" y="704" width="117" height="26"/>
+                                <rect key="frame" x="149" y="704" width="116" height="26"/>
                                 <color key="pageIndicatorTintColor" name="MirageHotel"/>
                                 <color key="currentPageIndicatorTintColor" name="WaikawaGrayHotel"/>
                             </pageControl>
@@ -210,6 +210,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NGM-2c-Xw0" secondAttribute="height" multiplier="1:1" id="wyb-PV-7QD"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="81e-cy-rdJ" appends="YES" id="EPF-Vd-E3X"/>
+                                </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVK-R4-L55">
                                 <rect key="frame" x="96" y="84.5" width="222" height="55"/>
@@ -286,6 +289,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SS9-ep-sgT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ZBS-TF-AKI" firstAttribute="centerX" secondItem="x0D-Ft-n0A" secondAttribute="centerX" id="4Vu-k1-9WF"/>
                             <constraint firstItem="sBH-6V-kwy" firstAttribute="top" secondItem="t1Q-bd-ERm" secondAttribute="bottom" constant="5" id="8Au-fI-juh"/>
@@ -314,6 +318,9 @@
                             <constraint firstItem="x0D-Ft-n0A" firstAttribute="centerY" secondItem="aq1-tl-GrC" secondAttribute="centerY" multiplier="1.7" id="sx5-Oz-jj4"/>
                             <constraint firstItem="ZBS-TF-AKI" firstAttribute="centerY" secondItem="x0D-Ft-n0A" secondAttribute="centerY" id="xKd-je-rWh"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="81e-cy-rdJ" appends="YES" id="tpf-AB-aa2"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="textFieldEmail" destination="BrS-Hm-8d1" id="FEe-Ah-CiJ"/>
@@ -323,6 +330,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zI-2I-oi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="81e-cy-rdJ">
+                    <connections>
+                        <action selector="endEdithingView:" destination="t8y-yD-9L1" id="iJr-lD-lhC"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-430" y="-589"/>
         </scene>
@@ -1992,6 +2004,9 @@
                                     <constraint firstItem="TJY-yL-PdJ" firstAttribute="centerX" secondItem="QLg-hF-WY6" secondAttribute="centerX" id="qNN-C0-388"/>
                                     <constraint firstItem="VZm-wu-3Vr" firstAttribute="top" secondItem="Mse-Qs-xzT" secondAttribute="bottom" constant="10" id="tFK-Ze-8Ys"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bmq-d8-Zoo" appends="YES" id="2pT-3R-dix"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="geF-Fu-XSC"/>
@@ -2016,6 +2031,7 @@
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="4mm-89-I91" appends="YES" id="yAq-5J-lgr"/>
+                            <outletCollection property="gestureRecognizers" destination="bmq-d8-Zoo" appends="YES" id="p6B-Ag-RKW"/>
                         </connections>
                     </view>
                     <connections>
@@ -2037,6 +2053,11 @@
                         <action selector="screenEdgeLeftAction:" destination="bZE-y9-1zR" id="PTB-5q-HLH"/>
                     </connections>
                 </screenEdgePanGestureRecognizer>
+                <tapGestureRecognizer id="bmq-d8-Zoo">
+                    <connections>
+                        <action selector="endEdithingView:" destination="bZE-y9-1zR" id="eki-Zc-Ll5"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-430.43478260869568" y="-1328.5714285714284"/>
         </scene>
@@ -2485,7 +2506,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fYd-Ym-lg6"/>
+        <segue reference="T6w-XZ-hIr"/>
         <segue reference="e3t-5Y-UAl"/>
     </inferredMetricsTieBreakers>
     <resources>

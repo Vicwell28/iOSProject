@@ -82,4 +82,9 @@ extension UIViewController {
             }
         }
     }
+    
+    
+    @IBAction func endEdithingView(_ sender : UIScreenEdgePanGestureRecognizer) {
+        self.view.endEditing(true)
+    }
 }

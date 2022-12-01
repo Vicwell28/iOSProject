@@ -33,17 +33,12 @@ class QR_HotelViewController: UIViewController {
                 self.okContainerView.alpha = 1
             } completion: { Bool in
                 Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { Timer in
-                    
                     print("PANTALLAS : \(String(describing: self.view.window))")
                     print("PANTALLAS : \(String(describing: self.view.window?.rootViewController))")
                     self.view.window?.rootViewController?.dismiss(animated: true)
-                    
-                    
                 }
             }
         }
-
-        
     }
     @IBOutlet weak var okContainerView: UIView!
     @IBOutlet weak var qrContainerView: UIView!
