@@ -25,6 +25,7 @@ iOS project is a development for mobile devices, in which requests are made to a
 
 # Hotel
 
+<div style="display: flex; flex-wrap: wrap;">
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/2.0.png" width="200"/>  |  
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/2.1.png" width="200"/>  |  
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/2.2.png" width="200"/>  |  
@@ -44,3 +45,4 @@ iOS project is a development for mobile devices, in which requests are made to a
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/2.16.png" width="200"/>  |  
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/2.17.png" width="200"/>  |  
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/2.18.png" width="200"/>  |  
+</div>
