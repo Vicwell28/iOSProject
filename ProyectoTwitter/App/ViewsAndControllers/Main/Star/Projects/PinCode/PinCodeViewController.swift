@@ -29,7 +29,6 @@ class PinCodeViewController: UIViewController {
     }
     
     //MARK: - Private Var / Let
-    private var indexPos : UInt8 = 0
     private var stringcodeUser : String = String()
     private var stringCodeAvailable : String = "12345"
     private var isEmptyTextField : Bool = false
@@ -37,8 +36,6 @@ class PinCodeViewController: UIViewController {
     private var seconds : Int = 0
     
     //MARK: - Public Var / Let
-    
-    
     @IBOutlet weak var timeLable: UILabel!
     
     //MARK: - @IBOutlet
@@ -69,10 +66,15 @@ extension PinCodeViewController {
             self.stringcodeUser += textField.text!
         }
         
-        if self.stringcodeUser == self.stringCodeAvailable {
-            NotificationBanner(title: "", subtitle: "VALIDO",  style: .success).show()
-        } else {
-            NotificationBanner(title: "", subtitle: "INVALIDO",  style: .warning).show()
+        self.showLoadingExtension()
+        Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { Timer in
+            self.hideLoadingExtension()
+            
+            if self.stringcodeUser == self.stringCodeAvailable {
+                NotificationBanner(title: "", subtitle: "VALIDO",  style: .success).show()
+            } else {
+                NotificationBanner(title: "", subtitle: "INVALIDO",  style: .warning).show()
+            }
         }
     }
 }
@@ -90,52 +92,37 @@ extension PinCodeViewController {
 }
 //MARK: - Other
 extension PinCodeViewController : UITextFieldDelegate{
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.2) {
+            textField.transform = CGAffineTransform(scaleX: 1.1, y: 1.1);
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.2) {
+            textField.transform = CGAffineTransform(scaleX: 0.9, y: 0.9);
+        }
+    }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if string == "" {
-            if self.indexPos > 0 {
-                self.textFieldsCollection[Int(self.indexPos)].text = ""
-                self.indexPos -= 1
-                self.textFieldsCollection[Int(self.indexPos)].becomeFirstResponder()
-                return false
-            }
-        } else {
-            if self.indexPos < self.textFieldsCollection.count-1 {
-                self.textFieldsCollection[Int(self.indexPos)].text = string
-                self.indexPos += 1
-                self.textFieldsCollection[Int(self.indexPos)].becomeFirstResponder()
-            } else if textField.hasText {
+            if(self.textFieldsCollection[textField.tag].hasText){
+                self.textFieldsCollection[textField.tag].text = ""
+                if(textField.tag > 0){
+                    self.textFieldsCollection[(textField.tag - 1)].becomeFirstResponder()
+                }
                 return false
             }
         }
+            
+        if textField.tag < self.textFieldsCollection.count-1 {
+            self.textFieldsCollection[(textField.tag)].text = string
+            self.textFieldsCollection[(textField.tag + 1)].becomeFirstResponder()
+        }
+
+        textField.text = string
+        textField.resignFirstResponder()
         return true
+        
     }
 }
-
-
-////MARK: - Override func
-////MARK: - Private Var / Let
-////MARK: - Public Var / Let
-////MARK: - @IBOutlet
-////MARK: - @IBAction
-//extension PinCodeViewController {
-//
-//}
-////MARK: - public func
-//extension PinCodeViewController {
-//
-//}
-////MARK: - Private func
-//extension PinCodeViewController {
-//
-//}
-////MARK: - Services
-//extension PinCodeViewController {
-//
-//}
-////MARK: - Other
-//extension PinCodeViewController {
-//
-//}
-
-
-
