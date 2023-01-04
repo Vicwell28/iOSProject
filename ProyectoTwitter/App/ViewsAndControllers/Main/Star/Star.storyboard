@@ -399,10 +399,10 @@
             </objects>
             <point key="canvasLocation" x="5351" y="-1492"/>
         </scene>
-        <!--CollectionViewP-->
+        <!--MainHotelStoryboard-->
         <scene sceneID="8M0-xi-f6V">
             <objects>
-                <viewControllerPlaceholder storyboardName="CollectionViewP" id="6iC-Aw-8LR" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MainHotelStoryboard" id="6iC-Aw-8LR" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="BcT-hO-5Ua"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="McG-1n-yqX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
