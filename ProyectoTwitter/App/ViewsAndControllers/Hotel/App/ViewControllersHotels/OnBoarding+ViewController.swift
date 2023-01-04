@@ -136,7 +136,6 @@ extension OnBoarding_ViewController : UIScrollViewDelegate{
         let percentOffset: CGPoint = CGPoint(x: percentageHorizontalOffset, y: percentageVerticalOffset)
         
         if(percentOffset.x > 0 && percentOffset.x <= 0.25) {
-            
             slides[0].imageOnBoarding.transform = CGAffineTransform(scaleX: (0.25-percentOffset.x)/0.25, y: (0.25-percentOffset.x)/0.25)
             slides[1].imageOnBoarding.transform = CGAffineTransform(scaleX: percentOffset.x/0.25, y: percentOffset.x/0.25)
             
@@ -147,7 +146,6 @@ extension OnBoarding_ViewController : UIScrollViewDelegate{
         } else if(percentOffset.x > 0.50 && percentOffset.x <= 0.75) {
             slides[2].imageOnBoarding.transform = CGAffineTransform(scaleX: (0.75-percentOffset.x)/0.25, y: (0.75-percentOffset.x)/0.25)
             slides[3].imageOnBoarding.transform = CGAffineTransform(scaleX: percentOffset.x/0.75, y: percentOffset.x/0.75)
-            
         } else if(percentOffset.x > 0.75 && percentOffset.x <= 1) {
             slides[3].imageOnBoarding.transform = CGAffineTransform(scaleX: (1-percentOffset.x)/0.25, y: (1-percentOffset.x)/0.25)
             slides[4].imageOnBoarding.transform = CGAffineTransform(scaleX: percentOffset.x, y: percentOffset.x)

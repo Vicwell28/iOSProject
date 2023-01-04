@@ -14,6 +14,18 @@ class SplashBabyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("Entro")
+        super.viewWillAppear(animated)
+        
+        CalculatorRepositoryBaby.index { res, err in
+            print(err ?? "nada")
+            print(res ?? "nada")
+        }
+        
+         
+    }
     //MARK: - Private Var / Let
     private var datosUserBaby = BabyShared.shared
     private var dataSourceTips : [ResTips] = [ResTips]()
@@ -29,6 +41,7 @@ class SplashBabyViewController: UIViewController {
 
 //MARK: - @IBAction
 extension SplashBabyViewController {
+   
 
 }
 //MARK: - public func

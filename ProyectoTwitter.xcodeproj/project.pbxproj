@@ -128,7 +128,6 @@
 		C18CFD9E28EDDB860029E8DC /* ResCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CFD9D28EDDB860029E8DC /* ResCalculator.swift */; };
 		C18CFDA028EDDC6E0029E8DC /* ResQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CFD9F28EDDC6E0029E8DC /* ResQuestion.swift */; };
 		C18CFDA228EDEB720029E8DC /* ResErrorBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18CFDA128EDEB720029E8DC /* ResErrorBaby.swift */; };
-		C18DD775291570C60071C9A9 /* ApiHelperBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DD774291570C60071C9A9 /* ApiHelperBaby.swift */; };
 		C18DD7772915721E0071C9A9 /* UIViewController+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DD7762915721E0071C9A9 /* UIViewController+Loader.swift */; };
 		C18DEAE428FF32CF00C13322 /* CollectionViewP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18DEAE328FF32CF00C13322 /* CollectionViewP.storyboard */; };
 		C18DEAE628FF331200C13322 /* CollectionViewPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DEAE528FF331200C13322 /* CollectionViewPViewController.swift */; };
@@ -161,6 +160,20 @@
 		C1CD347628B1F95500763C6E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD347528B1F95500763C6E /* MapViewController.swift */; };
 		C1CD347928B1F96E00763C6E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD347828B1F96E00763C6E /* ProfileViewController.swift */; };
 		C1CD347B28B1F97F00763C6E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CD347A28B1F97F00763C6E /* AddViewController.swift */; };
+		C1E88126294111D000D11C74 /* ApiHelperBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E88125294111D000D11C74 /* ApiHelperBaby.swift */; };
+		C1E88129294130E700D11C74 /* UserRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E88128294130E700D11C74 /* UserRepositoryBaby.swift */; };
+		C1E8812C2941329900D11C74 /* ResAuthBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E8812B2941329900D11C74 /* ResAuthBaby.swift */; };
+		C1E8812E2941346F00D11C74 /* AuthRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E8812D2941346F00D11C74 /* AuthRepositoryBaby.swift */; };
+		C1E88130294134B800D11C74 /* OtherRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E8812F294134B800D11C74 /* OtherRepositoryBaby.swift */; };
+		C1E88132294134DD00D11C74 /* TutorialsRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E88131294134DD00D11C74 /* TutorialsRepositoryBaby.swift */; };
+		C1E88134294134EF00D11C74 /* TipsRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E88133294134EF00D11C74 /* TipsRepositoryBaby.swift */; };
+		C1E88136294134FF00D11C74 /* FaqsRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E88135294134FF00D11C74 /* FaqsRepositoryBaby.swift */; };
+		C1E881382941350D00D11C74 /* CalculatorRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E881372941350D00D11C74 /* CalculatorRepositoryBaby.swift */; };
+		C1E8813A2941352700D11C74 /* QuizesRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E881392941352700D11C74 /* QuizesRepositoryBaby.swift */; };
+		C1E8813C2941354000D11C74 /* EvaluationsRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E8813B2941354000D11C74 /* EvaluationsRepositoryBaby.swift */; };
+		C1E8813E2941356900D11C74 /* DeviceRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E8813D2941356900D11C74 /* DeviceRepositoryBaby.swift */; };
+		C1E881402941358100D11C74 /* NecessitiesRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E8813F2941358100D11C74 /* NecessitiesRepositoryBaby.swift */; };
+		C1E881432941359A00D11C74 /* AssignationRepositoryBaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E881422941359A00D11C74 /* AssignationRepositoryBaby.swift */; };
 		C1F442042925651200480442 /* TipsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F442032925651200480442 /* TipsResponse.swift */; };
 		C1FB641928E1FD4500906E36 /* FileIOController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FB641828E1FD4500906E36 /* FileIOController.swift */; };
 /* End PBXBuildFile section */
@@ -295,7 +308,6 @@
 		C18CFD9D28EDDB860029E8DC /* ResCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResCalculator.swift; sourceTree = "<group>"; };
 		C18CFD9F28EDDC6E0029E8DC /* ResQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResQuestion.swift; sourceTree = "<group>"; };
 		C18CFDA128EDEB720029E8DC /* ResErrorBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResErrorBaby.swift; sourceTree = "<group>"; };
-		C18DD774291570C60071C9A9 /* ApiHelperBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelperBaby.swift; sourceTree = "<group>"; };
 		C18DD7762915721E0071C9A9 /* UIViewController+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loader.swift"; sourceTree = "<group>"; };
 		C18DEAE328FF32CF00C13322 /* CollectionViewP.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionViewP.storyboard; sourceTree = "<group>"; };
 		C18DEAE528FF331200C13322 /* CollectionViewPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPViewController.swift; sourceTree = "<group>"; };
@@ -328,6 +340,20 @@
 		C1CD347528B1F95500763C6E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C1CD347828B1F96E00763C6E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C1CD347A28B1F97F00763C6E /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		C1E88125294111D000D11C74 /* ApiHelperBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelperBaby.swift; sourceTree = "<group>"; };
+		C1E88128294130E700D11C74 /* UserRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryBaby.swift; sourceTree = "<group>"; };
+		C1E8812B2941329900D11C74 /* ResAuthBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResAuthBaby.swift; sourceTree = "<group>"; };
+		C1E8812D2941346F00D11C74 /* AuthRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryBaby.swift; sourceTree = "<group>"; };
+		C1E8812F294134B800D11C74 /* OtherRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherRepositoryBaby.swift; sourceTree = "<group>"; };
+		C1E88131294134DD00D11C74 /* TutorialsRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsRepositoryBaby.swift; sourceTree = "<group>"; };
+		C1E88133294134EF00D11C74 /* TipsRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsRepositoryBaby.swift; sourceTree = "<group>"; };
+		C1E88135294134FF00D11C74 /* FaqsRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqsRepositoryBaby.swift; sourceTree = "<group>"; };
+		C1E881372941350D00D11C74 /* CalculatorRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorRepositoryBaby.swift; sourceTree = "<group>"; };
+		C1E881392941352700D11C74 /* QuizesRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizesRepositoryBaby.swift; sourceTree = "<group>"; };
+		C1E8813B2941354000D11C74 /* EvaluationsRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationsRepositoryBaby.swift; sourceTree = "<group>"; };
+		C1E8813D2941356900D11C74 /* DeviceRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRepositoryBaby.swift; sourceTree = "<group>"; };
+		C1E8813F2941358100D11C74 /* NecessitiesRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NecessitiesRepositoryBaby.swift; sourceTree = "<group>"; };
+		C1E881422941359A00D11C74 /* AssignationRepositoryBaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignationRepositoryBaby.swift; sourceTree = "<group>"; };
 		C1F442032925651200480442 /* TipsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsResponse.swift; sourceTree = "<group>"; };
 		C1FB641828E1FD4500906E36 /* FileIOController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIOController.swift; sourceTree = "<group>"; };
 		EF16AF05D5BE9309A863686A /* Pods-ProyectoTwitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoTwitter.debug.xcconfig"; path = "Target Support Files/Pods-ProyectoTwitter/Pods-ProyectoTwitter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -352,6 +378,13 @@
 				B9F5E948D6CC69017717B98E /* Pods-ProyectoTwitter.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1206B9F293AAA06008FE71A /* AutoVenta */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AutoVenta;
 			sourceTree = "<group>";
 		};
 		C122C84A28BED98000C3F03B /* ImagesProyect */ = {
@@ -590,10 +623,11 @@
 		C16715B328C41335003D6402 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C1E88127294130D200D11C74 /* Repository */,
 				C16715B628C41360003D6402 /* Request */,
 				C16715B528C4135A003D6402 /* Response */,
 				C16715B428C41354003D6402 /* Models */,
-				C18DD774291570C60071C9A9 /* ApiHelperBaby.swift */,
+				C1E88125294111D000D11C74 /* ApiHelperBaby.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -608,6 +642,7 @@
 		C16715B528C4135A003D6402 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				C1E8812A2941328B00D11C74 /* Auth */,
 				C18CFD9928EDD9320029E8DC /* ResTutorial.swift */,
 				C18CFD9B28EDDA350029E8DC /* ResTips.swift */,
 				C18CFD9D28EDDB860029E8DC /* ResCalculator.swift */,
@@ -974,6 +1009,7 @@
 		C17CB47428A9D31800FE54F3 /* ViewsAndControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C1206B9F293AAA06008FE71A /* AutoVenta */,
 				C14DA531292043D500160252 /* Hotel */,
 				C1852DE92907059700B4077B /* Medics */,
 				C16715AE28C4126F003D6402 /* Baby */,
@@ -1372,6 +1408,33 @@
 			path = Add;
 			sourceTree = "<group>";
 		};
+		C1E88127294130D200D11C74 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C1E88128294130E700D11C74 /* UserRepositoryBaby.swift */,
+				C1E8812D2941346F00D11C74 /* AuthRepositoryBaby.swift */,
+				C1E8812F294134B800D11C74 /* OtherRepositoryBaby.swift */,
+				C1E88131294134DD00D11C74 /* TutorialsRepositoryBaby.swift */,
+				C1E88133294134EF00D11C74 /* TipsRepositoryBaby.swift */,
+				C1E88135294134FF00D11C74 /* FaqsRepositoryBaby.swift */,
+				C1E881372941350D00D11C74 /* CalculatorRepositoryBaby.swift */,
+				C1E881392941352700D11C74 /* QuizesRepositoryBaby.swift */,
+				C1E8813B2941354000D11C74 /* EvaluationsRepositoryBaby.swift */,
+				C1E8813D2941356900D11C74 /* DeviceRepositoryBaby.swift */,
+				C1E8813F2941358100D11C74 /* NecessitiesRepositoryBaby.swift */,
+				C1E881422941359A00D11C74 /* AssignationRepositoryBaby.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C1E8812A2941328B00D11C74 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C1E8812B2941329900D11C74 /* ResAuthBaby.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		C1FB641728E1FCBA00906E36 /* Write */ = {
 			isa = PBXGroup;
 			children = (
@@ -1554,7 +1617,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17C3CB1292BFD7600AB164F /* PaymentMethod+HotelViewController.swift in Sources */,
+				C1E881382941350D00D11C74 /* CalculatorRepositoryBaby.swift in Sources */,
 				C1CB62D129351B8800EB4D8E /* onBoardingViewHotel.swift in Sources */,
+				C1E8812E2941346F00D11C74 /* AuthRepositoryBaby.swift in Sources */,
 				C1CD346028B1C31600763C6E /* MainTabBarViewController.swift in Sources */,
 				C17CB48A28A9D52D00FE54F3 /* SingUpViewController.swift in Sources */,
 				C18CFDA028EDDC6E0029E8DC /* ResQuestion.swift in Sources */,
@@ -1573,6 +1638,7 @@
 				C18DD7772915721E0071C9A9 /* UIViewController+Loader.swift in Sources */,
 				C1B1247E28E0A27B00AD47BC /* ListCryptoViewController.swift in Sources */,
 				C167161C28C41997003D6402 /* MainBabyViewController.swift in Sources */,
+				C1E88134294134EF00D11C74 /* TipsRepositoryBaby.swift in Sources */,
 				C18DEAE628FF331200C13322 /* CollectionViewPViewController.swift in Sources */,
 				C17B70BD28B5B40600AB9560 /* ReqRegister.swift in Sources */,
 				C18CFD9A28EDD9320029E8DC /* ResTutorial.swift in Sources */,
@@ -1580,6 +1646,7 @@
 				C167161828C4197E003D6402 /* OwnerRegisterViewController.swift in Sources */,
 				C1FB641928E1FD4500906E36 /* FileIOController.swift in Sources */,
 				C18CFD9828EDD4E30029E8DC /* EndpoinstBaby.swift in Sources */,
+				C1E88126294111D000D11C74 /* ApiHelperBaby.swift in Sources */,
 				C167160628C4191B003D6402 /* InstructorListViewController.swift in Sources */,
 				C17CB46428A9D21A00FE54F3 /* OnBoardingViewController.swift in Sources */,
 				C16715F828C41897003D6402 /* SimulatorViewController.swift in Sources */,
@@ -1588,8 +1655,10 @@
 				C17B70BF28B5B48C00AB9560 /* ResIndexTweets.swift in Sources */,
 				C1CD347628B1F95500763C6E /* MapViewController.swift in Sources */,
 				C17C3CB7292BFE0800AB164F /* QR+HotelViewController.swift in Sources */,
+				C1E8812C2941329900D11C74 /* ResAuthBaby.swift in Sources */,
 				C17D1FAE2914494D00FD2FA9 /* TipsRepository.swift in Sources */,
 				C167160228C41908003D6402 /* SupportViewController.swift in Sources */,
+				C1E8813A2941352700D11C74 /* QuizesRepositoryBaby.swift in Sources */,
 				C16715F228C4187A003D6402 /* StudentDetailsViewController.swift in Sources */,
 				C18CFD9E28EDDB860029E8DC /* ResCalculator.swift in Sources */,
 				C1AF2A4C28B9A609002E6792 /* MainOneTableViewCell.swift in Sources */,
@@ -1608,18 +1677,23 @@
 				C18196052932DA460064655E /* dataSourceCalendar.swift in Sources */,
 				C17C3CA9292BFCCE00AB164F /* SingInHotelViewController.swift in Sources */,
 				C167160A28C4192C003D6402 /* InstructorRegisterViewController.swift in Sources */,
+				C1E88130294134B800D11C74 /* OtherRepositoryBaby.swift in Sources */,
 				C19A1BB6292FD62B00A17DFB /* CalendarMenu+TableViewController.swift in Sources */,
 				C16078C1292ADA2900451719 /* MenuMain+TableViewCell.swift in Sources */,
+				C1E881432941359A00D11C74 /* AssignationRepositoryBaby.swift in Sources */,
 				C167161228C41956003D6402 /* ResultsViewController.swift in Sources */,
 				C17C3CB5292BFDE100AB164F /* PurchaseDatail+HotelViewController.swift in Sources */,
 				C17B8D2628E3BDA200132E49 /* CryptoCellTableViewCell.swift in Sources */,
 				C17CB48828A9D52100FE54F3 /* SingInViewController.swift in Sources */,
 				C17B70C128B5B4BD00AB9560 /* Location.swift in Sources */,
+				C1E88136294134FF00D11C74 /* FaqsRepositoryBaby.swift in Sources */,
 				C1CD347928B1F96E00763C6E /* ProfileViewController.swift in Sources */,
 				C167160028C418C0003D6402 /* CalibrationViewController.swift in Sources */,
 				C18CFDA228EDEB720029E8DC /* ResErrorBaby.swift in Sources */,
 				C16078B8292AD3F200451719 /* Menu+MainHotelViewController.swift in Sources */,
 				C16229DC28BC92090028C03A /* SplashViewController.swift in Sources */,
+				C1E881402941358100D11C74 /* NecessitiesRepositoryBaby.swift in Sources */,
+				C1E8813C2941354000D11C74 /* EvaluationsRepositoryBaby.swift in Sources */,
 				C167160E28C41941003D6402 /* MonitorViewController.swift in Sources */,
 				C17CB48128A9D3CF00FE54F3 /* MyCustomView.swift in Sources */,
 				C16715E428C41828003D6402 /* CertificadoViewController.swift in Sources */,
@@ -1628,10 +1702,10 @@
 				C1311A9E28D0E0380075C63F /* BabyShared.swift in Sources */,
 				C17C3CB3292BFDAC00AB164F /* VerifyCode+HotelViewController.swift in Sources */,
 				C180507029300E8600D8A2D1 /* PreviewHotel+ViewController.swift in Sources */,
-				C18DD775291570C60071C9A9 /* ApiHelperBaby.swift in Sources */,
 				C1CD347328B1F94200763C6E /* StarViewController.swift in Sources */,
 				C17CB46228A9D21A00FE54F3 /* SceneDelegate.swift in Sources */,
 				C16715FA28C418A3003D6402 /* SettingsViewController.swift in Sources */,
+				C1E88132294134DD00D11C74 /* TutorialsRepositoryBaby.swift in Sources */,
 				C1B1248028E0D38100AD47BC /* DetailCryptoViewController.swift in Sources */,
 				C167162028C419B3003D6402 /* SplashBabyViewController.swift in Sources */,
 				C16078BE292AD47A00451719 /* Fav+MainHotelViewController.swift in Sources */,
@@ -1643,9 +1717,11 @@
 				C194E4AF292EA24500CB689C /* PruebasContCollectionViewController.swift in Sources */,
 				C1932103290041D600954FBA /* QuestionUTTViewController.swift in Sources */,
 				C17B70C528B5B6C300AB9560 /* ResDestroyTweet.swift in Sources */,
+				C1E8813E2941356900D11C74 /* DeviceRepositoryBaby.swift in Sources */,
 				C16078BC292AD46800451719 /* Promos+MainHotelViewController.swift in Sources */,
 				C16715E628C41835003D6402 /* HelpViewController.swift in Sources */,
 				C14DA53B2920448C00160252 /* MainHotelViewController.swift in Sources */,
+				C1E88129294130E700D11C74 /* UserRepositoryBaby.swift in Sources */,
 				C17D1FAC2914409900FD2FA9 /* ApiHelperMedics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
