@@ -14,12 +14,14 @@ iOS project is a development for mobile devices, in which requests are made to a
 
 # Other
 
+<div style="display: flex; flex-wrap: wrap;">
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/1.1.png" width="200"/>  |  
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/1.2.png" width="200"/>  |  
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/1.3.png" width="200"/>  |  
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/1.4.png" width="200"/>  |  
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/1.5.png" width="200"/>  |  
-| <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/1.6.png" width="200"/>  |  
+| <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/1.6.png" width="200"/>  |
+</div>
 
 # Hotel
 
