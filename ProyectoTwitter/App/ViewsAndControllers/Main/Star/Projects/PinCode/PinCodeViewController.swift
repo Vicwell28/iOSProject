@@ -100,7 +100,7 @@ extension PinCodeViewController : UITextFieldDelegate{
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         UIView.animate(withDuration: 0.2) {
-            textField.transform = CGAffineTransform(scaleX: 0.9, y: 0.9);
+            textField.transform = CGAffineTransform(scaleX: 1, y: 1);
         }
     }
     

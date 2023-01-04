@@ -116,14 +116,24 @@ extension GameViewController {
         self.buttonsCollection.forEach { UIControl in
             UIControl.backgroundColor = UIColor.lightGray
         }
-        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.turnON), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.turnON), userInfo: nil, repeats: false)
     }
     
     @objc func turnON() {
+        print(self.PositionGame)
+        print(self.indexShow)
         if indexShow < self.PositionGame.count {
             //sigue aumentando
             self.buttonsCollection[self.PositionGame[self.indexShow]].backgroundColor = UIColor.white
-            self.indexShow += 1
+            UIView.animate(withDuration: 0.25) {
+                self.buttonsCollection[self.PositionGame[self.indexShow]].transform = CGAffineTransform(scaleX: 1.025, y: 1.025)
+            } completion: { Bool in
+                UIView.animate(withDuration: 0.25) {
+                    self.buttonsCollection[self.PositionGame[self.indexShow]].transform = CGAffineTransform(scaleX: 1, y: 1)
+                    self.indexShow += 1
+                }
+            }
+
         } else {
             //TERMINO SIGUE EL JUGADOR
             self.indexShow = 0
