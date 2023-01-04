@@ -11,3 +11,13 @@ iOS project is a development for mobile devices, in which requests are made to a
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/8.jpg" width="200"/>  | 
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/9.jpg" width="200"/>  | 
 | <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/10.jpg" width="200"/>  | 
+
+
+
+# Other
+
+| <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/1.1.png" width="200"/>  |  
+
+# Hotel
+
+| <img src="https://github.com/Vicwell28/iOSProject/blob/main/ProyectoTwitter/App/ImagesProyect/2.0.png" width="200"/>  |  
