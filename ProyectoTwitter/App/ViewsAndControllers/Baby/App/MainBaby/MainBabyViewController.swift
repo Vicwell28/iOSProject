@@ -24,6 +24,7 @@ class MainBabyViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
+    
     //MARK: - Private Var / Let
     private var indiceMenu : UInt8 = 0
     private var isShowMenu : Bool = false

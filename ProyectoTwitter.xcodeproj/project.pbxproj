@@ -16,6 +16,8 @@
 		C14DA53F292073B600160252 /* ColorHotel.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14DA53E292073B600160252 /* ColorHotel.xcassets */; };
 		C14DA542292073CC00160252 /* ImagesHotel.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14DA541292073CC00160252 /* ImagesHotel.xcassets */; };
 		C14DA5442920863B00160252 /* ViewController+LoaderHotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14DA5432920863B00160252 /* ViewController+LoaderHotel.swift */; };
+		C15EDD49297AF71D003B83E0 /* LoginOpenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15EDD48297AF71D003B83E0 /* LoginOpenStoryboard.storyboard */; };
+		C15EDD4D297AF8AC003B83E0 /* LoginOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15EDD4C297AF8AC003B83E0 /* LoginOpenViewController.swift */; };
 		C16078B8292AD3F200451719 /* Menu+MainHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16078B7292AD3F200451719 /* Menu+MainHotelViewController.swift */; };
 		C16078BA292AD41E00451719 /* Calendar+MainHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16078B9292AD41E00451719 /* Calendar+MainHotelViewController.swift */; };
 		C16078BC292AD46800451719 /* Promos+MainHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16078BB292AD46800451719 /* Promos+MainHotelViewController.swift */; };
@@ -215,6 +217,8 @@
 		C14DA53E292073B600160252 /* ColorHotel.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorHotel.xcassets; sourceTree = "<group>"; };
 		C14DA541292073CC00160252 /* ImagesHotel.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesHotel.xcassets; sourceTree = "<group>"; };
 		C14DA5432920863B00160252 /* ViewController+LoaderHotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+LoaderHotel.swift"; sourceTree = "<group>"; };
+		C15EDD48297AF71D003B83E0 /* LoginOpenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginOpenStoryboard.storyboard; sourceTree = "<group>"; };
+		C15EDD4C297AF8AC003B83E0 /* LoginOpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOpenViewController.swift; sourceTree = "<group>"; };
 		C16078B7292AD3F200451719 /* Menu+MainHotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+MainHotelViewController.swift"; sourceTree = "<group>"; };
 		C16078B9292AD41E00451719 /* Calendar+MainHotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+MainHotelViewController.swift"; sourceTree = "<group>"; };
 		C16078BB292AD46800451719 /* Promos+MainHotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promos+MainHotelViewController.swift"; sourceTree = "<group>"; };
@@ -560,6 +564,135 @@
 				C180506D29300C4200D8A2D1 /* DetailHotelViewController.storyboard */,
 			);
 			path = ViewsHotel;
+			sourceTree = "<group>";
+		};
+		C15EDD3A297AF65D003B83E0 /* Open */ = {
+			isa = PBXGroup;
+			children = (
+				C15EDD40297AF68E003B83E0 /* App */,
+				C15EDD3F297AF685003B83E0 /* Networking */,
+				C15EDD3E297AF67E003B83E0 /* Extensions */,
+				C15EDD3D297AF678003B83E0 /* Local */,
+				C15EDD3C297AF670003B83E0 /* Resources */,
+				C15EDD3B297AF667003B83E0 /* Commands */,
+			);
+			path = Open;
+			sourceTree = "<group>";
+		};
+		C15EDD3B297AF667003B83E0 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		C15EDD3C297AF670003B83E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C15EDD42297AF6A7003B83E0 /* Assets */,
+				C15EDD41297AF69F003B83E0 /* Colors */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C15EDD3D297AF678003B83E0 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		C15EDD3E297AF67E003B83E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C15EDD3F297AF685003B83E0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C15EDD44297AF6C3003B83E0 /* Res */,
+				C15EDD43297AF6BD003B83E0 /* Req */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C15EDD40297AF68E003B83E0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C15EDD47297AF6D8003B83E0 /* Cells */,
+				C15EDD46297AF6D1003B83E0 /* Storyboards */,
+				C15EDD45297AF6C9003B83E0 /* ViewControllers */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C15EDD41297AF69F003B83E0 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		C15EDD42297AF6A7003B83E0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C15EDD43297AF6BD003B83E0 /* Req */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Req;
+			sourceTree = "<group>";
+		};
+		C15EDD44297AF6C3003B83E0 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		C15EDD45297AF6C9003B83E0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C15EDD4A297AF88E003B83E0 /* ViewControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C15EDD46297AF6D1003B83E0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C15EDD48297AF71D003B83E0 /* LoginOpenStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C15EDD47297AF6D8003B83E0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C15EDD4A297AF88E003B83E0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C15EDD4B297AF89F003B83E0 /* Auth */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C15EDD4B297AF89F003B83E0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C15EDD4C297AF8AC003B83E0 /* LoginOpenViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		C16078AF292AC58F00451719 /* Cells */ = {
@@ -1084,6 +1217,7 @@
 		C17CB47428A9D31800FE54F3 /* ViewsAndControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C15EDD3A297AF65D003B83E0 /* Open */,
 				C1206B9F293AAA06008FE71A /* AutoVenta */,
 				C14DA531292043D500160252 /* Hotel */,
 				C1852DE92907059700B4077B /* Medics */,
@@ -1636,6 +1770,7 @@
 				C1D06C802965FBFC0061BA87 /* 2.1.png in Resources */,
 				C1CD346E28B1F86600763C6E /* Profile.storyboard in Resources */,
 				C16715FE28C418B7003D6402 /* Calibration.storyboard in Resources */,
+				C15EDD49297AF71D003B83E0 /* LoginOpenStoryboard.storyboard in Resources */,
 				C188668C28C2AEE100C51D7C /* 7.jpg in Resources */,
 				C16229DE28BC98590028C03A /* Splash.storyboard in Resources */,
 				C1AF2A4D28B9A609002E6792 /* MainOneTableViewCell.xib in Resources */,
@@ -1798,6 +1933,7 @@
 				C17CB48128A9D3CF00FE54F3 /* MyCustomView.swift in Sources */,
 				C16715E428C41828003D6402 /* CertificadoViewController.swift in Sources */,
 				C17CB46028A9D21A00FE54F3 /* AppDelegate.swift in Sources */,
+				C15EDD4D297AF8AC003B83E0 /* LoginOpenViewController.swift in Sources */,
 				C17D1FB22914580200FD2FA9 /* MainMedicsViewController.swift in Sources */,
 				C1311A9E28D0E0380075C63F /* BabyShared.swift in Sources */,
 				C17C3CB3292BFDAC00AB164F /* VerifyCode+HotelViewController.swift in Sources */,
